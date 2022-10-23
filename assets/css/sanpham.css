@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-fluid.header {
+  background-color: rgb(54, 160, 231);
+}
+
+.col-8 {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.header.container .row .col-8 .search input {
+  width: 500px;
+  padding: 5px 10px;
+  margin-left: 50px;
+}
+
+.header.container .row .col-8 .search button {
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  background-color: #000;
+}
+
+.header.container .row .col-8 .search i {
+  color: white;
+}
+
+.header.container .row .col-4 {
+  color: white;
+  display: flex;
+}
+
+.header.container .row .col-4 .user-info,
+.header.container .row .col-4 .cart,
+.header.container .row .col-4 .news {
+  width: 33%;
+  height: 100%;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(10%);
+}
+
+.header.container .row .col-4 .user-info a,
+.header.container .row .col-4 .cart a,
+.header.container .row .col-4 .news a {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.header.container .row .col-4 .user-info i,
+.header.container .row .col-4 .cart i,
+.header.container .row .col-4 .news i {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Nav */
+
+.container-fluid.nav {
+  background-color: #000;
+  height: 40px;
+}
+
+.nav.container {
+  width: 100%;
+}
+
+.container-fluid.nav .row {
+  align-items: center;
+  width: inherit;
+}
+
+.container-fluid.nav .row .col-4 {
+  display: flex;
+}
+
+.container-fluid.nav .row .col-4 .phone,
+.container-fluid.nav .row .col-4 .sales,
+.container-fluid.nav .row .col-4 .laptop {
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+
+.container-fluid.nav .row .col-4 .phone i,
+.container-fluid.nav .row .col-4 .laptop i,
+.container-fluid.nav .row .col-4 .sales i {
+  color: white;
+  font-size: 20px;
+}
+
+.container-fluid.nav .row .col-4 .phone:hover,
+.container-fluid.nav .row .col-4 .laptop:hover,
+.container-fluid.nav .row .col-4 .sales:hover {
+  cursor: pointer;
+}
+
+.container-fluid.nav .row .col-4 .phone:hover i,
+.container-fluid.nav .row .col-4 .laptop:hover i,
+.container-fluid.nav .row .col-4 .phone:hover span,
+.container-fluid.nav .row .col-4 .laptop:hover span,
+.container-fluid.nav .row .col-4 .sales:hover span,
+.container-fluid.nav .row .col-4 .sales:hover i {
+  color: rgb(160, 159, 159);
+}
+
+.container-fluid.nav .row .col-4 .phone span,
+.container-fluid.nav .row .col-4 .laptop span,
+.container-fluid.nav .row .col-4 .sales span {
+  color: white;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
