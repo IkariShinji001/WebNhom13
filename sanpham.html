@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/sanpham.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
 </head>
 
@@ -99,7 +101,7 @@
         </div>
 
         <div class="row slider">
-            <div class="col-6">
+            <div class="col-6" data-aos="fade-right">
                 <div class="slider-product">
                     <div class="prev-btn">
                         <i class="fa-solid fa-angle-left"></i>
@@ -176,7 +178,7 @@
 
             <!-- Detail information product -->
 
-            <div class="col-6 details-infor-product">
+            <div class="col-6 details-infor-product" data-aos="fade-left">
                 <h3>Thông tin kỹ thuật</h3>
                 <table class="table table-hover">
                     <tbody>
@@ -232,7 +234,7 @@
         </div>
     </div>
 
-    <div class="container-fluid highlight-product">
+    <div class="container-fluid highlight-product" data-aos="fade-down">
         <div class="container">
             <h3>Đặc điểm nổi bật của iPhone 13 Pro Max</h3>
             <div class="row">
@@ -261,7 +263,7 @@
     <div class="container-fluid user-rating">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4" data-aos="flip-left">
                     <div class="content text-center">
                         <div class="ratings">
                             <span class="product-rating">4.6</span><span>/5</span>
@@ -278,7 +280,7 @@
                     </div>
                 </div>
 
-                <div class="col-8">
+                <div class="col-8" data-aos="fade-left">
                     <div class="user-question-input">
                         <h3>Đặt câu hỏi về sản phẩm</h3>
                         <textarea placeholder="Xin vui lòng nhập câu hỏi,..." id=""></textarea>
@@ -288,7 +290,7 @@
             </div>
         </div>
 
-        <div class="container user-question">
+        <div class="container user-question" data-aos="fade-up">
             <div class="row">
                 <h3>Câu hỏi từ khách hàng</h3>
                 <div class="col">
@@ -359,5 +361,6 @@
 </body>
 
 <script src="./assets/js/sanpham.js"></script>
+
 
 </html>
