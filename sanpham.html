@@ -8,7 +8,10 @@
     <script src="https://kit.fontawesome.com/69b4b078b4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/sanpham.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
     <title>Document</title>
@@ -18,36 +21,42 @@
     <div class="container-fluid header">
         <div class="header container">
             <div class="row">
-                <div class="col-8">
-                    <div class="logo">
-                        <img src="./assets/img/Logo.png.png" alt="Logo">
-                    </div>
-
-                    <div class="search">
-                        <input type="text" placeholder="Search for ...">
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="col-4">
+                    <div class="search-box">
+                        <input type="text" class="search-in" placeholder="Type to search" name="">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
+                        </a>
                     </div>
 
                 </div>
 
+                <div class="col" style="margin-left: 50px;">
+                    <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+                    <a href="#">
+                        <p class="title">DPN TECHNOLOTGIES</p>
+                    </a>
+                </div>
+
                 <div class="col-4">
-                    <div class="news">
+                    <div class="cart">
                         <a href="#">
-                            <i class="fa-solid fa-newspaper"></i>
-                            <p>Thông tin hay</p>
-                        </a>
-                    </div>
-                    <div class="user-info">
-                        <a href="#">
-                            <i class="fa-solid fa-user"></i>
-                            <p>Tài khoản của tôi</p>
+                            <i class="fa-solid fa-cart-shopping cart-in"></i>
+                            Giỏ hàng
                         </a>
                     </div>
 
-                    <div class="cart">
+                    <div class="user-info">
                         <a href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Giỏ hàng</p>
+                            <i class="fa-solid fa-user user-info-in"></i>
+                            Tài khoản của tôi
+                        </a>
+                    </div>
+
+                    <div class="news">
+                        <a href="#">
+                            <i class="fa-solid fa-newspaper news-in"></i>
+                            Thông tin
                         </a>
                     </div>
                 </div>
@@ -79,7 +88,152 @@
         </div>
     </div>
 
+
+
+    <div class="product container">
+        <div class="row title">
+            <div class="col title-item">
+                <h3>iPhone 13 Pro Max 128GB </h3>
+            </div>
+        </div>
+
+        <div class="row slider">
+            <div class="col-6">
+                <div class="slider-product">
+                    <div class="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="next-btn">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <img src="./assets/img/SanPham/600_iphone_13_pro_max_128gb_xanh.jpg" alt="">
+                </div>
+
+                <div class="infor-product">
+                    <div class="price-product">
+                        <span>27.990.000đ</span> <span class="non-sales-price">33.990.000đ</span>
+                    </div>
+                    <!-- Memories option -->
+                    <div class="row memories-option">
+                        <div class="col-3 active">
+                            <label for="128GB">
+                                <input id="128GB" type="radio" name="option">
+                                <label for="128GB"><strong>128GB</strong></label>
+                                <span>27.990.000đ</span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label for="256GB">
+                                <input id="256GB" type="radio" name="option">
+                                <label for="256GB"> <strong>256GB</strong></label>
+                                <span>30.990.000đ</span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label for="512GB">
+                                <input id="512GB" type="radio" name="option">
+                                <label for="512GB"><strong>512GB</strong></label>
+                                <span>33.490.000đ</span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label for="1TB">
+                                <input id="1TB" type="radio" name="option">
+                                <label for="1TB"><strong> 1 TB</strong></label>
+                                <span>36.490.000đ</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promotion">
+                    <h3>Ưu đãi thêm</h3>
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Bảo hành 2 năm chính hãng</span>
+                        <br>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Tặng PMH 400.000đ khi mua Sạc 35W</span>
+                        <br>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Tăng độ đẹp trai lên 10 lần</span>
+
+                    </div>
+                </div>
+
+                <div class="buy">
+                    <button type="button" class="btn btn-primary buy-btn">MUA NGAY <br>
+                        <span style="font-size: 14px;">Giao hàng miễn phí ngay hôm nay</span></button>
+                </div>
+
+                <div class="mark-infor">
+                    <div><i class="fa-solid fa-certificate"></i><span>Cam kết hàng chính hãng</span></div>
+                    <div><i class="fa-solid fa-truck"></i><span>Giao hàng toàn quốc</span></div>
+                </div>
+
+            </div>
+
+            <!-- Detail information product -->
+
+            <div class="col-6 details-infor-product">
+                <h3>Thông tin kỹ thuật</h3>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <td scope="row">Màn hình</td>
+                            <td colspan="3"> 6.7 inch, OLED, Super Retina XDR, 2778 x 1284 Pixels</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Camera sau</td>
+                            <td colspan="3">12.0 MP + 12.0 MP + 12.0 MP</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Camera Selfie</td>
+                            <td colspan="3">12.0 MP</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Bộ nhớ trong</td>
+                            <td colspan="3"> 128 GB</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">CPU</td>
+                            <td colspan="3"> Apple A15 Bionic</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">GPU</td>
+                            <td colspan="3">Apple GPU 5 nhân</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Dung lượng pin</td>
+                            <td colspan="3">4352 mAh</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Hệ điều hành</td>
+                            <td colspan="3">iOS 15</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Thẻ sim</td>
+                            <td colspan="3"> 1 - 1 eSIM, 1 Nano SIM</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Xuất xứ</td>
+                            <td colspan="3">Trung Quốc</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Thời gian ra mắt</td>
+                            <td colspan="3"> 09/2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" style="text-decoration: none;">Xem thêm chi tiết<i style="margin-left: 10px;"
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+        </div>
+    </div>
+
     <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
 </body>
+
+<script src="./assets/js/sanpham.js"></script>
 
 </html>

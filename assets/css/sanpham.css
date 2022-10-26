@@ -9,71 +9,103 @@
   background-color: rgb(54, 160, 231);
 }
 
-.col-8 {
-  display: flex;
+.container-fluid.header.col {
+  display: inline-flex;
   align-items: center;
 }
 
-.logo img {
-  width: 60px;
-  height: 60px;
+.container-fluid.header.col-3 {
+  display: inline-flex;
 }
 
-.header.container .row .col-8 .search input {
-  width: 500px;
-  padding: 5px 10px;
-  margin-left: 50px;
-}
-
-.header.container .row .col-8 .search button {
-  border: none;
-  outline: none;
-  padding: 7px 20px;
-  background-color: #000;
-}
-
-.header.container .row .col-8 .search i {
-  color: white;
-}
-
-.header.container .row .col-4 {
-  color: white;
-  display: flex;
-}
-
-.header.container .row .col-4 .user-info,
-.header.container .row .col-4 .cart,
-.header.container .row .col-4 .news {
-  width: 33%;
-  height: 100%;
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(10%);
-}
-
-.header.container .row .col-4 .user-info a,
-.header.container .row .col-4 .cart a,
-.header.container .row .col-4 .news a {
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+a {
   text-decoration: none;
 }
-.header.container .row .col-4 .user-info i,
-.header.container .row .col-4 .cart i,
-.header.container .row .col-4 .news i {
-  width: 40px;
+
+.search-box {
+  width: 400px;
+  background-color: black;
+  border-radius: 40px;
   height: 40px;
-  background-color: white;
+  padding: 1px;
+  margin-bottom: 15px;
+  margin-top: 19px;
+}
+
+.search-in {
+  background: none;
+  border: none;
+  line-height: 37px;
+  margin-left: 30px;
+  outline: none;
+  color: white;
+  width: 310px;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.search-icon {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 14px;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.container-fluid.header .title {
+  font-family: "Oswald";
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+.container-fluid.header .title:hover {
+  color: rgb(20, 20, 20);
+}
+
+.news,
+.cart,
+.user-info {
+  display: inline-flex;
+  float: right;
+  padding: 10px 10px 5px 10px;
+}
+
+.news a,
+.cart a,
+.user-info a {
+  color: black;
+  font: 30px;
+}
+
+.news i,
+.cart i,
+.user-info i {
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  background-color: white;
+  border-radius: 25%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.cart a:hover > .cart-in,
+.news a:hover > .news-in,
+.user-info a:hover > .user-info-in {
+  background-color: black;
+  color: white;
 }
 
 /* Nav */
@@ -133,4 +165,176 @@
   margin-left: 5px;
   text-transform: uppercase;
   font-size: 15px;
+}
+
+/* Product */
+
+.product.container .col.title-item {
+  padding-top: 20px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.product.container .col.title-item h3 {
+  font-size: 25px;
+}
+
+.product.container .row.slider {
+  margin-top: 40px;
+}
+
+.product.container .row.slider .slider-product {
+  border: 4px solid rgb(19, 103, 121);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px 0;
+}
+
+.product.container .row.slider .slider-product img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.product.container .row.slider .slider-product .prev-btn {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+
+.product.container .row.slider .slider-product .prev-btn:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.product.container .row.slider .slider-product .next-btn {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+
+.product.container .row.slider .slider-product .next-btn:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.product.container .row.slider .infor-product .price-product {
+  margin-top: 20px;
+}
+
+.product.container .row.slider .infor-product .price-product span {
+  font-size: 30px;
+  font-weight: 500;
+  color: #cb1c22;
+}
+
+.product.container .row.slider .infor-product .price-product .non-sales-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(161, 158, 158);
+  margin-left: 20px;
+  text-decoration: line-through;
+}
+
+.product.container .row.slider .infor-product .row.memories-option {
+  margin-top: 20px;
+}
+
+.product.container .row.slider .infor-product .row.memories-option .col-3 {
+  text-align: center;
+  height: 55px;
+  border-radius: 4px;
+  transition: background ease 0.5s;
+  cursor: pointer;
+}
+
+.product.container
+  .row.slider
+  .infor-product
+  .row.memories-option
+  .col-3.active {
+  background-color: #ccc;
+}
+
+.product.container .row.slider .infor-product .row.memories-option label {
+  cursor: pointer;
+}
+
+.product.container
+  .row.slider
+  .infor-product
+  .row.memories-option
+  .col-3:hover {
+  background-color: #ccc;
+}
+
+.product.container .row.slider .infor-product .row.memories-option label input {
+  width: 20px;
+  height: 15px;
+}
+
+.product.container .row.slider .promotion {
+  margin-top: 30px;
+}
+
+.product.container .row.slider .promotion h3 {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgb(237, 235, 235);
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.product.container .row.slider .promotion > div {
+  margin-top: 20px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(156, 252, 248, 1) 11.2%,
+    rgba(110, 123, 251, 1) 91.1%
+  );
+}
+
+.product.container .row.slider .promotion > div i {
+  margin: 10px 0;
+  color: #39a165;
+  font-size: 20px;
+}
+
+.product.container .row.slider .buy .buy-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #cb1c22;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.product.container .row.slider .buy .buy-btn:hover {
+  width: 100%;
+  height: 50px;
+  background-color: #ae1427;
+}
+
+.product.container .row.slider .mark-infor {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product.container .row.slider .mark-infor i {
+  color: #ae1427;
+  margin-right: 10px;
+}
+
+/* Details information product */
+
+.product.container .row.slider .details-infor-product h3 {
+  color: #ae1427;
 }
