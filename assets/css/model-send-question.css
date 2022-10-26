@@ -1,0 +1,57 @@
+.container.model {
+  width: 55%;
+  position: fixed;
+  z-index: 100;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: white;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 10px;
+  height: auto;
+  padding-top: 20px;
+}
+.container.model i {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container.model h3 {
+  text-align: center;
+}
+
+.container.model .table .label {
+  width: 18%;
+  font-weight: 500;
+}
+
+.container.model .table input {
+  width: 100%;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.container.model .table button {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: #cb1c22;
+}
+.container.model .table button:hover {
+  background-color: #ae1427;
+}
+
+.contianer-fuild.opacity-layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  height: 2960px;
+  display: none;
+}

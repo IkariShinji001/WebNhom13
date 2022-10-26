@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/sanpham.css">
+    <link rel="stylesheet" href="./assets/css/model-send-question.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
@@ -230,6 +231,10 @@
                 </table>
                 <a href="#" style="text-decoration: none;">Xem thêm chi tiết<i style="margin-left: 10px;"
                         class="fa-solid fa-caret-right"></i></a>
+
+                <div class="banner" data-aos="fade-left">
+                    <img src="./assets/img/SanPham/DPN STORE (1).png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -262,100 +267,155 @@
 
     <div class="container-fluid user-rating">
         <div class="container">
-            <div class="row">
-                <div class="col-4" data-aos="flip-left">
-                    <div class="content text-center">
-                        <div class="ratings">
-                            <span class="product-rating">4.6</span><span>/5</span>
-                            <div class="stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+            <div class="container">
+                <h3>Đánh giá và câu hỏi từ khách hàng</h3>
+                <div class="row">
+                    <div class="col-4" data-aos="flip-left">
+                        <div class="content text-center">
+                            <div class="ratings">
+                                <span class="product-rating">4.6</span><span>/5</span>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <span>46 lượt đánh giá & 15 reviews</span>
+                                </div>
                             </div>
-                            <div class="rating-text">
-                                <span>46 lượt đánh giá & 15 reviews</span>
-                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-8" data-aos="fade-left">
+                        <div class="user-question-input">
+                            <h3>Đặt câu hỏi về sản phẩm</h3>
+                            <textarea placeholder="Xin vui lòng nhập câu hỏi,..." id="question" required
+                                minlength="10"></textarea>
+                            <button type="button" class="btn btn-primary btn-send-question">Gửi câu hỏi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container user-question" data-aos="fade-up">
+                <div class="row">
+                    <h3>Câu hỏi từ khách hàng</h3>
+                    <div class="col">
+                        <div class="avatar">
+                            <img src="./assets/img/SanPham/a85c1da4e1a65181cc0d56694a72093b.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="user-name">
+                            <p><strong> Duy Trần</strong></p>
+                        </div>
+                        <div class="question">
+                            <p>Điện thoại này có bán trả góp 50 năm không vậy shop?
+                            </p>
+                        </div>
+                        <div class="answer-btn">
+                            <p>Trả lời</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-8" data-aos="fade-left">
-                    <div class="user-question-input">
-                        <h3>Đặt câu hỏi về sản phẩm</h3>
-                        <textarea placeholder="Xin vui lòng nhập câu hỏi,..." id=""></textarea>
-                        <button type="button" class="btn btn-primary">Gửi câu hỏi</button>
+                <div class="row">
+                    <div class="col">
+                        <div class="avatar">
+                            <img src="./assets/img/SanPham/a85c1da4e1a65181cc0d56694a72093b.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="user-name">
+                            <p><strong>Huỳnh Phụng</strong></p>
+                        </div>
+                        <div class="question">
+                            <p>Iphone 13 Pro Max xấu quá, thua Nokia 1280 của mình!!!
+                            </p>
+                        </div>
+                        <div class="answer-btn">
+                            <p>Trả lời</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="avatar">
+                            <img src="./assets/img/SanPham/a85c1da4e1a65181cc0d56694a72093b.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="user-name">
+                            <p><strong>Văn Nhí</strong></p>
+                        </div>
+                        <div class="question">
+                            <p>Gửi 50 điện thoại tới công ty của mình nha. Cần tặng cho nhân viên.
+                            </p>
+                        </div>
+                        <div class="answer-btn">
+                            <p>Trả lời</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="container user-question" data-aos="fade-up">
-            <div class="row">
-                <h3>Câu hỏi từ khách hàng</h3>
-                <div class="col">
-                    <div class="avatar">
-                        <img src="./assets/img/SanPham/a85c1da4e1a65181cc0d56694a72093b.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-11">
-                    <div class="user-name">
-                        <p><strong> Duy Trần</strong></p>
-                    </div>
-                    <div class="question">
-                        <p>Điện thoại này có bán trả góp 50 năm không vậy shop?
-                        </p>
-                    </div>
-                    <div class="answer-btn">
-                        <p>Trả lời</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="avatar">
-                        <img src="./assets/img/SanPham/a85c1da4e1a65181cc0d56694a72093b.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-11">
-                    <div class="user-name">
-                        <p><strong>Huỳnh Phụng</strong></p>
-                    </div>
-                    <div class="question">
-                        <p>Iphone 13 Pro Max xấu quá, thua Nokia 1280 của mình!!!
-                        </p>
-                    </div>
-                    <div class="answer-btn">
-                        <p>Trả lời</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col">
-                    <div class="avatar">
-                        <img src="./assets/img/SanPham/a85c1da4e1a65181cc0d56694a72093b.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-11">
-                    <div class="user-name">
-                        <p><strong>Văn Nhí</strong></p>
-                    </div>
-                    <div class="question">
-                        <p>Gửi 50 điện thoại tới công ty của mình nha. Cần tặng cho nhân viên.
-                        </p>
-                    </div>
-                    <div class="answer-btn">
-                        <p>Trả lời</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
+    <div class="container model">
+        <h3>Hoàn thành gửi câu hỏi</h3>
+        <i class="fa-solid fa-x"></i>
+        <hr>
+        <table class="table table-borderless">
+            <form action="#" method="POST">
+                <tbody>
+                    <tr>
+                        <td scope="row" class="label"> <label for="user-question-name">Họ và tên:*</label></td>
+                        <td colspan="3"> <input type="text" placeholder="Xin vui lòng nhập họ và tên"
+                                id="user-question-name"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="label"><label for="user-question-number">Số điện thoại:*</label></td>
+                        <td colspan="3"><input type="text" placeholder="Xin vui lòng nhập số điện thoại"
+                                id="user-question-number"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="label"><label for="user-question-email">Email:*</label></td>
+                        <td colspan="3"><input type="text" placeholder="Xin vui lòng nhập email"
+                                id="user-question-email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><button class="btn btn-primary send-question" type="submit">Gửi câu hỏi</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </form>
+        </table>
+    </div>
+
+    <div class="contianer-fuild opacity-layer"></div>
+
+    <!-- Toast -->
+
+    <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+        <div class="toast" style="position: absolute; top: 0; right: 0;">
+            <div class="toast-header">
+                <img src="..." class="rounded mr-2" alt="...">
+                <strong class="mr-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
 </body>
