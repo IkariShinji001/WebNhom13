@@ -4,3 +4,9 @@
 
 Thành viên gồm 3 người : Duy, Nhí, Phụng.
 
+- Ngôn ngữ sử dụng:
+  - HTML
+  - CSS (Bootstrap 5, AoS)
+  - Javascript
+
+
