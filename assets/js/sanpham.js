@@ -11,8 +11,6 @@ var sendQuestionBtn = document.querySelector(".send-question");
 var userQuestion = document.getElementById("question");
 var toasts = document.querySelector(".toast");
 
-console.log(sendQuestionBtn);
-
 openSendQuestionBtn.addEventListener("click", () => {
   opacityLayer.style.display = "block";
   sendQuestModel.style.display = "block";
@@ -76,4 +74,62 @@ opacityLayer.addEventListener("click", () => {
   sendQuestModel.style.display = "none";
 });
 
-// Validate
+/// Memories option
+
+var memoriesOption = document.querySelectorAll(".options");
+
+memoriesOption.forEach((option) => {
+  option.addEventListener("click", () => {
+    memoriesOption.forEach((option) => {
+      if (!option.checked) {
+        var divParent = option.parentNode.parentNode;
+        divParent.classList.remove("active");
+      }
+    });
+    if (option.checked) {
+      var divParent = option.parentNode.parentNode;
+      if (divParent.className == "active") {
+        divParent.classList.remove("active");
+      } else {
+        divParent.classList.add("active");
+      }
+    }
+  });
+});
+
+// Toast
+
+const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
+  const main = document.querySelector(".container.toasts");
+  console.log(main);
+  if (main) {
+    const myToast = document.createElement("div");
+    const icons = {
+      success: "fas fa-check-circle",
+      error: "fas fa-exclamation-circle",
+    };
+
+    const icon = icons[type];
+    myToast.classList.add("toasts", `toast--${type}`);
+    myToast.innerHTML = ` 
+    <div class="toast__icon">
+      <i class="${icon}"></i>
+    </div>
+    <div class="toast__body">
+      <h4 class="toast__title">${title}</h4>
+      <p class="toast__msg">${msg}</p>
+  </div>`;
+    main.append(myToast);
+
+    setTimeout(() => {
+      main.removeChild(myToast);
+    }, duration + 1000);
+  }
+};
+
+toast({
+  title: "Success",
+  msg: "Hehl",
+  type: "success",
+  duration: 3000,
+});

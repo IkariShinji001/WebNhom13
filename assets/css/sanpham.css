@@ -495,3 +495,15 @@ a {
   color: blue;
   cursor: pointer;
 }
+
+/* Toast */
+
+/* .container.toast {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.6);
+} */
