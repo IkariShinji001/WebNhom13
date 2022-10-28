@@ -1,0 +1,98 @@
+body{
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+}
+.size-carousel{
+    width: 70%;
+    margin:0 auto;
+   
+    
+
+}
+.border{
+    border-color: #ddd;
+    background-color: white;
+    border: 10px solid #ddd;
+    width: 300px;
+    height: 400px;
+    
+}
+.position-ite{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.container{
+    max-width: 1200px;'
+    
+}
+.container-border{
+    border:1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    margin: px 0px;
+}
+.border-img{
+    border-image: url(./happy-halloween2-1182x800.png) 20% round;
+}
+.footer-design{
+ display: inline-flex;
+
+}
+.col-2-4{
+    padding: 0 5px;
+    list-style: none;
+   
+
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: 4px;
+    border-top-color: black;
+    margin-top: 10px;
+    position: absolute;
+    left: 152px;
+    height: 300;
+}
+.img-bank,.img-check,.img-cer{
+    width: 45px;
+    height: 26px;
+}
+.footer-item{
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+    
+}
+.font-right{
+    font-weight: 500;
+    
+
+}
+.pay{
+    padding-top: 25px;
+}
+.Cer{
+    padding-top: 80px;
+}
+.select-Item{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.select-Item .zoom-img{
+    overflow: hidden;
+    transition: all 0.75s ease;
+}
+.box-select{
+    height: 130px;
+    background-color: white;
+    margin: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+
+}
+.select-Item:hover .zoom-img{
+transform:scale(1.2);
+}
