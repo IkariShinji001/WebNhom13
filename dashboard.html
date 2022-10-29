@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <script src="https://kit.fontawesome.com/8ae11d514b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://css.gg/css' rel='stylesheet'>
+    
+        <title>Trang quản lý</title>
+            <link rel="icon" href="./assets/img/Logo.png.png">
+</head>
+<body>
+    <header class="container-fluid header ">
+        <div class="header container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="search-box">
+                        <input type="text" class="search-in" placeholder="Type to search" name="">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
+                        </a>
+                    </div> 
+
+                </div>       
+
+                <div class="col" style="margin-left: 50px;">
+                    <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+                    <a href="#"><p class="title">DPN TECHNOLOTGIES</p></a>
+                </div>
+
+                <div class="col-4">
+                    <div class="cart">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping cart-in"></i>
+                            Giỏ hàng
+                        </a>
+                    </div>
+                    
+                    <div class="user-info">
+                        <a href="#">
+                            <i class="fa-solid fa-user user-info-in"></i>
+                            Tài khoản của tôi
+                        </a>
+                    </div>
+
+                    <div class="news">
+                        <a href="#">
+                            <i class="fa-solid fa-newspaper news-in"></i>
+                            Thông tin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid nav">
+        <div class="nav container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="phone">
+                        <i class="fa-solid fa-mobile"></i>
+                        <span>Điện thoại</span>
+                    </div>
+
+                    <div class="laptop">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>Laptop</span>
+                    </div>
+
+                    <div class="sales">
+                        <i class="fa-solid fa-percent"></i>
+                        <span>Khuyến mãi</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--dashboard-->
+
+    <!--sidebar-->
+    <aside class="sidebar">
+        <div class="sidebar-in">
+            <div>
+                <img src="./assets/img/dashboard, edit/user-pic.png" class="user-pic" alt="profile-pic">
+                <p class="name"><b>DPN Technologies</b></p>
+                <p class="email">dpntechnologies@gmail.com</p>
+
+            </div>
+            <div class="tab-active aside-item">
+                <a href="./dashboard.html">
+                    <i class="fa-solid fa-laptop menu-icon-active"></i>
+                    <span class="tab-name-active">Dashboard</span>
+                </a>
+            </div>
+
+            <div class="aside-item">
+                    <div>
+                        <i class="fa-solid fa-pen-to-square menu-icon" style="font-size: 19px;"></i>
+                        <span class="tab-name">Quản lý
+                            <ul class="tab-name-child" style="list-style-type: circle;">
+                                <li><a href="./edit-user.html" class="tab-name-label">Quản lý người dùng</a></li>
+                                <li><a href="./edit-product.html" class="tab-name-label">Quản lý sản phẩm</a></li>
+                            </ul>
+                        </span>
+                        
+                    </div>
+            </div>
+        </div>
+    </aside>
+
+    <!--main content-->
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-6" >
+                    <div class="page-header" data-aos="fade-right">Xin chào, DPN Technologies!</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class='col-4'>
+                    <div class="card" data-aos="fade-down" >
+                        <div class="card-items">
+                            <div class="icon">
+                                <i class="fa-solid fa-money-check-dollar "></i>
+                            </div>
+                            <div>
+                                <h4 class="label">Doanh thu</h4>
+                                <h4 style="font-weight:600;">15,000,000VND</h4>
+                                <p style="font-size: 14px; color:rgb(172, 172, 172)">+5% tháng trước</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col-4'>
+                    <div class="card" data-aos="fade-down" data-aos-delay="100">
+                        <div class="card-items">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                            </div>
+                            <div>
+                                <h4 class="label">Số đơn hàng</h4>
+                                <h4 style="font-weight:600;">102</h4>
+                                <p style="font-size: 14px; color:rgb(172, 172, 172)">+20% tháng trước</p>
+                            </div>
+                        </div>
+                    </div>               
+                </div>
+
+                <div class='col-4'>
+                    <div class="card" data-aos="fade-down" data-aos-delay="200">
+                        <div class="card-items">
+                            <div class="icon">
+                                <i class="fa-solid fa-person"></i>
+                            </div>
+                            <div>
+                                <h4 class="label">Số khách ghé thăm</h4>
+                                <h4 style="font-weight:600;">2038</h4>
+                                <p style="font-size: 14px; color:rgb(172, 172, 172)">+64% tháng trước</p>
+                            </div>
+                        </div>
+                    </div>               
+                </div>            
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="display: inline-table; padding: 0 30px 0 30px;">
+                        <div class="row">
+                            <div class="col-12"><h6 style="margin: 15px 0 20px 0;" data-aos="fade-right">Danh sách đơn hàng</h6></div>
+                        </div>
+                        <table class="table" data-aos="fade-down">
+                            <tr >
+                                <th >Mã đơn hàng</th>
+                                <th>Tên khách hàng</th>
+                                <th>Ngày đặt hàng</th>
+                                <th>Ngày giao hàng</th>
+                                <th>Tổng tiền</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                            <tr>
+                                <td style="color:#808080">4328</td>
+                                <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                <td>08/10/2022</td>
+                                <td>09/10/2022</td>
+                                <td style="font-weight:500">2,700,000 VND</td>
+                                <td style="color:green">Đã giao</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#808080">4328</td>
+                                <td style="font-weight:500">Trần Phương Mỹ Quyên</td>
+                                <td>08/10/2022</td>
+                                <td>09/10/2022</td>
+                                <td style="font-weight:500">2,700,000 VND</td>
+                                <td style="color:green">Đã giao</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#808080">4328</td>
+                                <td style="font-weight:500">Lê Trần Phương Nam</td>
+                                <td>08/10/2022</td>
+                                <td>09/10/2022</td>
+                                <td style="font-weight:500">2,700,000 VND</td>
+                                <td style="color:green">Đã giao</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#808080">4328</td>
+                                <td style="font-weight:500">Lê Văn Tuấn Kiệt</td>
+                                <td>08/10/2022</td>
+                                <td>09/10/2022</td>
+                                <td style="font-weight:500">2,700,000 VND</td>
+                                <td style="color:rgb(255, 0, 0)">Đang vận chuyển</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#808080">4328</td>
+                                <td style="font-weight:500">Nguyễn Hà Đông Mỹ Phương</td>
+                                <td>08/10/2022</td>
+                                <td>09/10/2022</td>
+                                <td style="font-weight:500">2,700,000 VND</td>
+                                <td style="color:green">Đã giao</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#808080">4328</td>
+                                <td style="font-weight:500">Huỳnh Văn Nam</td>
+                                <td>08/10/2022</td>
+                                <td>09/10/2022</td>
+                                <td style="font-weight:500">2,700,000 VND</td>
+                                <td style="color:rgb(255, 0, 0)">Đang vận chuyển</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        
+
+        AOS.init();
+    </script>
+</body>
+</html>
