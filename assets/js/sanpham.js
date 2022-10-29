@@ -1,6 +1,5 @@
 // Initial Animation on Scroll Libery
 AOS.init();
-
 // Send question open model
 
 var openSendQuestionBtn = document.querySelector(".btn-send-question");
@@ -15,30 +14,91 @@ openSendQuestionBtn.addEventListener("click", () => {
   opacityLayer.style.display = "block";
   sendQuestModel.style.display = "block";
   // Validate
-  sendQuestionBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    var userQuestionName = document.getElementById("user-question-name");
-    var userQuestionPhone = document.getElementById("user-question-number");
-    var userQuestionMail = document.getElementById("user-question-email");
-    var x = 0;
-    if (!validateName(userQuestionName.value)) {
-      alert("Tên phải lớn hơn 4 ký tự!");
-      x++;
-    }
-    if (!validatePhone(userQuestionPhone.value)) {
-      alert("Số điện thoại sai!");
-      x++;
-    }
-    if (!validateMail(userQuestionMail.value)) {
-      alert("Mail sai định dạng!");
-      x++;
-    }
-
-    if (x == 0) {
-      alert("Câu hỏi đã được gửi đi");
-    }
-  });
 });
+
+sendQuestionBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  var userQuestionName = document.getElementById("user-question-name");
+  var userQuestionPhone = document.getElementById("user-question-number");
+  var userQuestionMail = document.getElementById("user-question-email");
+  var x = 0;
+  if (!validateName(userQuestionName.value)) {
+    toast({
+      title: "Error",
+      msg: "Vui lòng nhập tên lớn hơn 4 ký tự",
+      type: "error",
+      duration: 3000,
+    });
+    ++x;
+  }
+  if (!validatePhone(userQuestionPhone.value)) {
+    toast({
+      title: "Error",
+      msg: "Số điện thoại không khả dụng",
+      type: "error",
+      duration: 3000,
+    });
+    ++x;
+  }
+  if (!validateMail(userQuestionMail.value)) {
+    toast({
+      title: "Error",
+      msg: "Vui lòng đúng định dạng mail",
+      type: "error",
+      duration: 3000,
+    });
+    ++x;
+  }
+
+  if (x == 0) {
+    let question = document.querySelector("#question").value;
+    console.log(userQuestionName.value);
+    console.log(question);
+    if (question) {
+      toast({
+        title: "Success",
+        msg: "Câu hỏi đã được gửi đi",
+        type: "success",
+        duration: 3000,
+      });
+      createQuestion(userQuestionName.value, question);
+    } else {
+      toast({
+        title: "Error",
+        msg: "Xin đừng để trống câu hỏi",
+        type: "error",
+        duration: 3000,
+      });
+    }
+  }
+});
+
+const createQuestion = (name, question) => {
+  console.log(name);
+  console.log(question);
+  let main = document.querySelector(".container.user-question");
+  let div = document.createElement("div");
+  div.classList.add("row");
+  div.innerHTML = `<div class="col">
+  <div class="avatar">
+      <img src="./assets/img/SanPham/a85c1da4e1a65181cc0d56694a72093b.jpg" alt="">
+  </div>
+  </div>
+  <div class="col-11">
+    <div class="user-name">
+      <p><strong>${name}</strong></p>
+    </div>
+  <div class="question">
+      <p>${question}
+      </p>
+  </div>
+  <div class="answer-btn">
+      <p>Trả lời</p>
+  </div>
+</div>`;
+
+  main.append(div);
+};
 
 const validateName = (name) => {
   if (name.length > 4) {
@@ -126,10 +186,3 @@ const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
     }, duration + 1000);
   }
 };
-
-toast({
-  title: "Success",
-  msg: "Hehl",
-  type: "success",
-  duration: 3000,
-});
