@@ -317,7 +317,12 @@
                             <h3>Đặt câu hỏi về sản phẩm</h3>
                             <textarea placeholder="Xin vui lòng nhập câu hỏi,..." id="question" required
                                 minlength="10"></textarea>
-                            <button type="button" class="btn btn-primary btn-send-question">Gửi câu hỏi</button>
+                            <!-- <button type="button" class="btn btn-primary btn-send-question">Gửi câu hỏi</button> -->
+
+                            <button type="button" class="btn btn-primary btn-send-question" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Gửi câu hỏi
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -390,7 +395,7 @@
         </div>
     </div>
 
-    <div class="container model">
+    <!-- <div class="container model">
         <h3>Hoàn thành gửi câu hỏi</h3>
         <i class="fa-solid fa-x"></i>
         <hr>
@@ -420,9 +425,41 @@
                 </tbody>
             </form>
         </table>
+    </div> -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 600px;
+            transform: translateX(-60px);">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Hoàn thành thông tin để gửi câu hỏi</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row" style="margin-top: 15px; margin-bottom: 15px">
+                        <div class="col-3">Họ và tên:*</div>
+                        <div class="col-9"><input class="w-100" type="text" placeholder="Xin vui lòng nhập họ và tên"
+                                id="user-question-name"></div>
+                    </div>
+                    <div class="row" style="margin-top: 15px; margin-bottom: 15px">
+                        <div class="col-3">Số điện thoại:*</div>
+                        <div class="col-9"><input class="w-100" type="text" placeholder="Xin vui lòng nhập họ và tên"
+                                id="user-question-number"></div>
+                    </div>
+                    <div class="row" style="margin-top: 15px; margin-bottom: 15px">
+                        <div class="col-3">Email:*</div>
+                        <div class="col-9"><input class="w-100" type="text" placeholder="Xin vui lòng nhập họ và tên"
+                                id="user-question-email"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary send-question">Gửi câu
+                        hỏi</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="contianer-fuild opacity-layer"></div>
 
     <!-- Toast -->
 

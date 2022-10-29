@@ -3,7 +3,7 @@ AOS.init();
 // Send question open model
 
 var openSendQuestionBtn = document.querySelector(".btn-send-question");
-var closeSendQuestionBtn = document.querySelector(".fa-solid.fa-x");
+var closeSendQuestionBtn = document.querySelector(".btn-close");
 var opacityLayer = document.querySelector(".opacity-layer");
 var sendQuestModel = document.querySelector(".container.model");
 var sendQuestionBtn = document.querySelector(".send-question");
@@ -121,18 +121,6 @@ const validatePhone = (phone) => {
   }
   return false;
 };
-
-// Close Model
-
-closeSendQuestionBtn.addEventListener("click", () => {
-  opacityLayer.style.display = "none";
-  sendQuestModel.style.display = "none";
-});
-
-opacityLayer.addEventListener("click", () => {
-  opacityLayer.style.display = "none";
-  sendQuestModel.style.display = "none";
-});
 
 /// Memories option
 
