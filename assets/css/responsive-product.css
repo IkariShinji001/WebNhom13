@@ -1,0 +1,44 @@
+@media screen and (max-width: 1200px) {
+  .product.container .row.slider .carousel-item img {
+    height: 260px;
+  }
+  .product.container .row.slider .details-infor-product .banner img {
+    height: 250px;
+  }
+
+  .product.container .row.slider .details-infor-product {
+    margin-top: 40px;
+  }
+
+  .container-fluid.user-rating .content {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .container-fluid.user-rating .user-question-input {
+    margin-top: 40px;
+  }
+
+  .container-fluid.user-rating .user-question .row .col {
+    height: 62px;
+  }
+
+  .container-fluid.user-rating .user-question .avatar img {
+    border-radius: 10%;
+  }
+  .container-fluid.user-rating .user-question p {
+    margin-bottom: 8px;
+  }
+  .container-fluid.user-rating .user-question .answer-btn {
+    padding-bottom: 10px;
+  }
+
+  .product.container .row.slider .infor-product .row.memories-option {
+    font-size: 14px;
+  }
+
+  .product.container .row.slider .infor-product .row.memories-option .col-3 {
+    padding: 5px 0;
+    height: max-content;
+  }
+}

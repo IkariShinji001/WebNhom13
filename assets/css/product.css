@@ -274,10 +274,20 @@ a {
 
 .product.container .row.slider .buy .buy-btn {
   width: 100%;
-  height: 50px;
+  height: 55px;
   background-color: #cb1c22;
   margin-top: 20px;
   padding-bottom: 50px;
+}
+
+.product.container .row.slider .add-cart-btn i {
+  font-size: 20px;
+}
+
+.product.container .row.slider .add-cart-btn {
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
 }
 
 .product.container .row.slider .buy .buy-btn:hover {
@@ -455,7 +465,18 @@ a {
   border-radius: 100%;
 }
 
+.container-fluid.user-rating .user-question .question p,
+.container-fluid.user-rating .user-question .user-name p {
+  margin-bottom: 6px;
+}
+
 .container-fluid.user-rating .user-question .answer-btn p {
+  display: inline;
   color: blue;
   cursor: pointer;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
 }

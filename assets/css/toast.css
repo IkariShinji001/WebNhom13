@@ -1,8 +1,16 @@
-.container.toasts {
-  z-index: 1500 !important;
+.container1 {
+  position: relative;
+  width: 1280px;
 }
 
-.container.toasts .toasts {
+.container.toasts {
+  z-index: 1500 !important;
+  position: fixed;
+  top: 20px;
+  right: -920px;
+}
+
+.container.toasts .toast1 {
   z-index: 1500;
   width: 360px;
   height: 80px;
@@ -14,9 +22,6 @@
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
   padding: 30px 0;
   /* display: block; */
-  position: fixed;
-  top: 30px;
-  right: 40px;
   animation: SlideInLeft ease 0.4s, FadeOut linear 1s 3s forwards;
 }
 
@@ -53,8 +58,8 @@
   color: #ff623d;
 }
 
-.toasts + .toasts {
-  margin-top: 100px;
+.toast1 + .toast1 {
+  margin-top: 24px;
 }
 
 .container.toasts .toast__icon {

@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/sanpham.css">
-    <link rel="stylesheet" href="./assets/css/model-send-question.css">
+    <link rel="stylesheet" href="./assets/css/toast.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/responsive-product.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
@@ -102,7 +103,7 @@
         </div>
 
         <div class="row slider">
-            <div class="col-6" data-aos="fade-right">
+            <div class="col-xl-6" data-aos="fade-right">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -194,6 +195,14 @@
                     <button type="button" class="btn btn-primary buy-btn">MUA NGAY <br>
                         <span style="font-size: 14px;">Giao hàng miễn phí ngay hôm nay</span></button>
                 </div>
+                <div class="add-cart">
+                    <button type="button" class="btn btn-primary add-cart-btn"> <i class="fa-solid fa-cart-plus"></i>
+                        <br> THÊM VÀO GIỎ HÀNG
+                    </button>
+
+                    <br>
+
+                </div>
 
                 <div class="mark-infor">
                     <div><i class="fa-solid fa-certificate"></i><span>Cam kết hàng chính hãng</span></div>
@@ -204,7 +213,7 @@
 
             <!-- Detail information product -->
 
-            <div class="col-6 details-infor-product" data-aos="fade-left">
+            <div class="col-xl-6 details-infor-product" data-aos="fade-left">
                 <h3>Thông tin kỹ thuật</h3>
                 <table class="table table-hover">
                     <tbody>
@@ -295,7 +304,7 @@
             <div class="container">
                 <h3>Đánh giá và câu hỏi từ khách hàng</h3>
                 <div class="row">
-                    <div class="col-4" data-aos="flip-left">
+                    <div class="col-xl-4" data-aos="flip-left">
                         <div class="content text-center">
                             <div class="ratings">
                                 <span class="product-rating">4.6</span><span>/5</span>
@@ -312,7 +321,7 @@
                         </div>
                     </div>
 
-                    <div class="col-8" data-aos="fade-left">
+                    <div class="col-xl-8" data-aos="fade-left">
                         <div class="user-question-input">
                             <h3>Đặt câu hỏi về sản phẩm</h3>
                             <textarea placeholder="Xin vui lòng nhập câu hỏi,..." id="question" required
@@ -395,37 +404,6 @@
         </div>
     </div>
 
-    <!-- <div class="container model">
-        <h3>Hoàn thành gửi câu hỏi</h3>
-        <i class="fa-solid fa-x"></i>
-        <hr>
-        <table class="table table-borderless">
-            <form action="#" method="POST">
-                <tbody>
-                    <tr>
-                        <td scope="row" class="label"> <label for="user-question-name">Họ và tên:*</label></td>
-                        <td colspan="3"> <input type="text" placeholder="Xin vui lòng nhập họ và tên"
-                                id="user-question-name"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="label"><label for="user-question-number">Số điện thoại:*</label></td>
-                        <td colspan="3"><input type="text" placeholder="Xin vui lòng nhập số điện thoại"
-                                id="user-question-number"></td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="label"><label for="user-question-email">Email:*</label></td>
-                        <td colspan="3"><input type="text" placeholder="Xin vui lòng nhập email"
-                                id="user-question-email">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><button class="btn btn-primary send-question" type="submit">Gửi câu hỏi</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </form>
-        </table>
-    </div> -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -463,13 +441,15 @@
 
     <!-- Toast -->
 
-    <div class="container toasts">
+    <div class="container1">
+        <div class="container toasts">
+        </div>
     </div>
 
     <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
 </body>
 
-<script src="./assets/js/sanpham.js"></script>
+<script src="./assets/js/product.js"></script>
 
 
 </html>

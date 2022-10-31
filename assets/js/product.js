@@ -52,8 +52,6 @@ sendQuestionBtn.addEventListener("click", (e) => {
 
   if (x == 0) {
     let question = document.querySelector("#question").value;
-    console.log(userQuestionName.value);
-    console.log(question);
     if (question) {
       toast({
         title: "Success",
@@ -158,7 +156,7 @@ const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
     };
 
     const icon = icons[type];
-    myToast.classList.add("toasts", `toast--${type}`);
+    myToast.classList.add("toast1", `toast--${type}`);
     myToast.innerHTML = ` 
     <div class="toast__icon">
       <i class="${icon}"></i>
