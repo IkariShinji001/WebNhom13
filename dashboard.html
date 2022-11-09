@@ -88,157 +88,167 @@
 
     <!--dashboard-->
 
-    <!--sidebar-->
-    <aside class="sidebar">
-        <div class="sidebar-in">
-            <div>
-                <img src="./assets/img/dashboard, edit/user-pic.png" class="user-pic" alt="profile-pic">
-                <p class="name"><b>DPN Technologies</b></p>
-                <p class="email">dpntechnologies@gmail.com</p>
+    <div class="container-fluid">
 
-            </div>
-            <div class="tab-active aside-item">
-                <a href="./dashboard.html">
-                    <i class="fa-solid fa-laptop menu-icon-active"></i>
-                    <span class="tab-name-active">Dashboard</span>
-                </a>
-            </div>
-
-            <div class="aside-item">
+        <!--sidebar-->
+        <div class="col-4">
+            <aside class="sidebar">
+                <div class="sidebar-in">
                     <div>
-                        <i class="fa-solid fa-pen-to-square menu-icon" style="font-size: 19px;"></i>
-                        <span class="tab-name">Quản lý
-                            <ul class="tab-name-child" style="list-style-type: circle;">
-                                <li><a href="./edit-user.html" class="tab-name-label">Quản lý người dùng</a></li>
-                                <li><a href="./edit-product.html" class="tab-name-label">Quản lý sản phẩm</a></li>
-                            </ul>
-                        </span>
-                        
+                        <img src="./assets/img/dashboard, edit/user-pic.png" class="user-pic" alt="profile-pic">
+                        <p class="name"><b>DPN Technologies</b></p>
+                        <p class="email">dpntechnologies@gmail.com</p>
+
                     </div>
-            </div>
+                    <div class="tab-active aside-item">
+                        <a href="./dashboard.html">
+                            <i class="fa-solid fa-laptop menu-icon-active"></i>
+                            <span class="tab-name-active">Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="aside-item">
+                        <div>
+                            <i class="fa-solid fa-pen-to-square menu-icon" style="font-size: 19px;"></i>
+                            <span class="tab-name">Quản lý
+                                <ul class="tab-name-child" style="list-style-type: circle;">
+                                    <li><a href="./edit-user.html" class="tab-name-label">Quản lý người dùng</a></li>
+                                    <li><a href="./edit-product.html" class="tab-name-label">Quản lý sản phẩm</a></li>
+                                </ul>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </div>
-    </aside>
 
-    <!--main content-->
-    <div class="main-panel">
-        <div class="content-wrapper">
-            <div class="row">
-                <div class="col-6" >
-                    <div class="page-header" data-aos="fade-right">Xin chào, DPN Technologies!</div>
-                </div>
-            </div>
+        <!--main-content-->
+        <div class="col-12">
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="page-header" data-aos="fade-right">Xin chào, DPN Technologies!</div>
+                        </div>
+                    </div>
 
-            <div class="row">
-                <div class='col-4'>
-                    <div class="card" data-aos="fade-down" >
-                        <div class="card-items">
-                            <div class="icon">
-                                <i class="fa-solid fa-money-check-dollar "></i>
+                    <div class="row">
+                        <div class='col-4'>
+                            <div class="card" data-aos="fade-down">
+                                <div class="card-items">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-money-check-dollar "></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="label">Doanh thu</h4>
+                                        <h4 style="font-weight:600;">15,000,000VND</h4>
+                                        <p style="font-size: 14px; color:rgb(172, 172, 172)">+5% tháng trước</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="label">Doanh thu</h4>
-                                <h4 style="font-weight:600;">15,000,000VND</h4>
-                                <p style="font-size: 14px; color:rgb(172, 172, 172)">+5% tháng trước</p>
+                        </div>
+
+                        <div class='col-4'>
+                            <div class="card" data-aos="fade-down" data-aos-delay="100">
+                                <div class="card-items">
+                                    <div class="icon">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="label">Số đơn hàng</h4>
+                                        <h4 style="font-weight:600;">102</h4>
+                                        <p style="font-size: 14px; color:rgb(172, 172, 172)">+20% tháng trước</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='col-4'>
+                            <div class="card" data-aos="fade-down" data-aos-delay="200">
+                                <div class="card-items">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-person"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="label">Số khách ghé thăm</h4>
+                                        <h4 style="font-weight:600;">2038</h4>
+                                        <p style="font-size: 14px; color:rgb(172, 172, 172)">+64% tháng trước</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class='col-4'>
-                    <div class="card" data-aos="fade-down" data-aos-delay="100">
-                        <div class="card-items">
-                            <div class="icon">
-                                <i class="fa-sharp fa-solid fa-cart-plus"></i>
-                            </div>
-                            <div>
-                                <h4 class="label">Số đơn hàng</h4>
-                                <h4 style="font-weight:600;">102</h4>
-                                <p style="font-size: 14px; color:rgb(172, 172, 172)">+20% tháng trước</p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="display: inline-table; padding: 0 30px 0 30px;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 style="margin: 15px 0 20px 0;" data-aos="fade-right">Danh sách đơn hàng
+                                        </h6>
+                                    </div>
+                                </div>
+                                <table class="table" data-aos="fade-down">
+                                    <tr>
+                                        <th>Mã đơn hàng</th>
+                                        <th>Tên khách hàng</th>
+                                        <th>Ngày đặt hàng</th>
+                                        <th>Ngày giao hàng</th>
+                                        <th>Tổng tiền</th>
+                                        <th>Trạng thái</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="color:#808080">4328</td>
+                                        <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                        <td>08/10/2022</td>
+                                        <td>09/10/2022</td>
+                                        <td style="font-weight:500">2,700,000 VND</td>
+                                        <td style="color:green">Đã giao</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color:#808080">4328</td>
+                                        <td style="font-weight:500">Trần Phương Mỹ Quyên</td>
+                                        <td>08/10/2022</td>
+                                        <td>09/10/2022</td>
+                                        <td style="font-weight:500">2,700,000 VND</td>
+                                        <td style="color:green">Đã giao</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color:#808080">4328</td>
+                                        <td style="font-weight:500">Lê Trần Phương Nam</td>
+                                        <td>08/10/2022</td>
+                                        <td>09/10/2022</td>
+                                        <td style="font-weight:500">2,700,000 VND</td>
+                                        <td style="color:green">Đã giao</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color:#808080">4328</td>
+                                        <td style="font-weight:500">Lê Văn Tuấn Kiệt</td>
+                                        <td>08/10/2022</td>
+                                        <td>09/10/2022</td>
+                                        <td style="font-weight:500">2,700,000 VND</td>
+                                        <td style="color:rgb(255, 0, 0)">Đang vận chuyển</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color:#808080">4328</td>
+                                        <td style="font-weight:500">Nguyễn Hà Đông Mỹ Phương</td>
+                                        <td>08/10/2022</td>
+                                        <td>09/10/2022</td>
+                                        <td style="font-weight:500">2,700,000 VND</td>
+                                        <td style="color:green">Đã giao</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color:#808080">4328</td>
+                                        <td style="font-weight:500">Huỳnh Văn Nam</td>
+                                        <td>08/10/2022</td>
+                                        <td>09/10/2022</td>
+                                        <td style="font-weight:500">2,700,000 VND</td>
+                                        <td style="color:rgb(255, 0, 0)">Đang vận chuyển</td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
-                    </div>               
-                </div>
-
-                <div class='col-4'>
-                    <div class="card" data-aos="fade-down" data-aos-delay="200">
-                        <div class="card-items">
-                            <div class="icon">
-                                <i class="fa-solid fa-person"></i>
-                            </div>
-                            <div>
-                                <h4 class="label">Số khách ghé thăm</h4>
-                                <h4 style="font-weight:600;">2038</h4>
-                                <p style="font-size: 14px; color:rgb(172, 172, 172)">+64% tháng trước</p>
-                            </div>
-                        </div>
-                    </div>               
-                </div>            
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="card" style="display: inline-table; padding: 0 30px 0 30px;">
-                        <div class="row">
-                            <div class="col-12"><h6 style="margin: 15px 0 20px 0;" data-aos="fade-right">Danh sách đơn hàng</h6></div>
-                        </div>
-                        <table class="table" data-aos="fade-down">
-                            <tr >
-                                <th >Mã đơn hàng</th>
-                                <th>Tên khách hàng</th>
-                                <th>Ngày đặt hàng</th>
-                                <th>Ngày giao hàng</th>
-                                <th>Tổng tiền</th>
-                                <th>Trạng thái</th>
-                            </tr>
-                            <tr>
-                                <td style="color:#808080">4328</td>
-                                <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                <td>08/10/2022</td>
-                                <td>09/10/2022</td>
-                                <td style="font-weight:500">2,700,000 VND</td>
-                                <td style="color:green">Đã giao</td>
-                            </tr>
-                            <tr>
-                                <td style="color:#808080">4328</td>
-                                <td style="font-weight:500">Trần Phương Mỹ Quyên</td>
-                                <td>08/10/2022</td>
-                                <td>09/10/2022</td>
-                                <td style="font-weight:500">2,700,000 VND</td>
-                                <td style="color:green">Đã giao</td>
-                            </tr>
-                            <tr>
-                                <td style="color:#808080">4328</td>
-                                <td style="font-weight:500">Lê Trần Phương Nam</td>
-                                <td>08/10/2022</td>
-                                <td>09/10/2022</td>
-                                <td style="font-weight:500">2,700,000 VND</td>
-                                <td style="color:green">Đã giao</td>
-                            </tr>
-                            <tr>
-                                <td style="color:#808080">4328</td>
-                                <td style="font-weight:500">Lê Văn Tuấn Kiệt</td>
-                                <td>08/10/2022</td>
-                                <td>09/10/2022</td>
-                                <td style="font-weight:500">2,700,000 VND</td>
-                                <td style="color:rgb(255, 0, 0)">Đang vận chuyển</td>
-                            </tr>
-                            <tr>
-                                <td style="color:#808080">4328</td>
-                                <td style="font-weight:500">Nguyễn Hà Đông Mỹ Phương</td>
-                                <td>08/10/2022</td>
-                                <td>09/10/2022</td>
-                                <td style="font-weight:500">2,700,000 VND</td>
-                                <td style="color:green">Đã giao</td>
-                            </tr>
-                            <tr>
-                                <td style="color:#808080">4328</td>
-                                <td style="font-weight:500">Huỳnh Văn Nam</td>
-                                <td>08/10/2022</td>
-                                <td>09/10/2022</td>
-                                <td style="font-weight:500">2,700,000 VND</td>
-                                <td style="color:rgb(255, 0, 0)">Đang vận chuyển</td>
-                            </tr>
-                        </table>
                     </div>
                 </div>
             </div>
