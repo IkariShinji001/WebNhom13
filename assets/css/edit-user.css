@@ -183,6 +183,7 @@ width: 280px;
 box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
 position: fixed;
 top:119px;
+margin-left:-10px;
 }
 
 aside.sidebar .sidebar-in{
@@ -269,13 +270,13 @@ aside .aside-item{
 
 /*main content*/
 .main-panel {
-margin-left:280px;
-width: 81.5%;
-height: auto;
-padding-top: 70px;
-display: flex;
-flex-direction: column;
-background-color: rgb(249, 249, 249);
+  margin-left:265px;
+  width: 83%;
+  height: auto;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
 }
 
 .content-wrapper {
