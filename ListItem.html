@@ -3,12 +3,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thế giới di động</title>
-    <link rel="stylesheet" href="ListItem.css">
+    <title>Danh sach</title>
+    <link rel="stylesheet" href="./assets/css/ListItem.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="/assets/aos-master/aos-master/dist/aos.css" rel="stylesheet">
+    <script src="assets/aos-master/aos-master/dist/aos.js"></script>
+  </head>
 <body>
+
+
   <div class="container-fluid header">
     <div class="header container">
         <div class="row">
@@ -79,11 +86,11 @@
     </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></scrip>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <main>
-  <div class="size-carousel">
+  <div  class="size-carousel" >
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -115,165 +122,809 @@
   
   <!-- select-Item -->
   
-  <div  class="container box-select">
-  <div>
-<h2 style="border: 5px;">Điện thoại</h2>  
-<hr style="font-weight: ">
-  </div>
+  <div id="ChangePhone" class="container Box-select ">
   <div class="select-Item">
-    <div class="zoom-img" >
-      <a href="#All-item"><img width="40px" height="40px" src="./logo-phone/all.png" alt=""></a>
+    <div onclick="ChangeList('all')" >
+    <img width="140px" height="80px" src="./assets/img/logoPhone/unnamed.png" alt="">
     </div >
-    <div class="zoom-img" >
-      <a href="#apple"><img src="./logo-phone/apple.webp" alt=""></a>
+    <div onclick="ChangeList('apple')"  >
+    <img width="100%" height="80px" src="./assets/img/logoPhone/iPhone-Symbol.png" alt="">
     </div >
-    <div class="zoom-img" >
-      <a href="#asus"><img src="./logo-phone/asus.webp" alt=""></a>
+    <div onclick="ChangeList('vivo')"  >
+    <img width="120px" height="60px" src="./assets/img/logoPhone/Logo_VIVO_(2).svg.png" alt="">
     </div >
-    <div class="zoom-img" >
-      <a href="#nokia"><img src="./logo-phone/nokia.webp" alt=""></a>
+    <div onclick="ChangeList('nokia')"  >
+    <img width="120px" height="59px" src="./assets/img/logoPhone/de0pqnh-e42c80fb-6773-49e4-b106-e290b336181d.png" alt="">
     </div >
-    <div class="zoom-img" >
-      <a href="#oppo"><img src="./logo-phone/oppo.webp" alt=""></a>
+    <div onclick="ChangeList('oppo')"  >
+    <img width="120px" height="76px" src="./assets/img/logoPhone/oppo.png" alt="">
     </div >
-    <div class="zoom-img" >
-      <a href="#samsung"><img src="./logo-phone/samsung.webp" alt=""></a>
+    <div onclick="ChangeList('samsung')" >
+  <img width="120px" height="50px" src="./assets/img/logoPhone/samsung.png" alt="">
     </div >
-    <div class="zoom-img" >
-      <a href="#xiaomi"><img src="./logo-phone/xiaomi.webp" alt=""></a>
+    <div onclick="ChangeList('xiaomi')" >
+    <img width="120px" height="70px" src="./assets/img/logoPhone/xiao.png" alt="">
     </div >
 
   </div>
+</div>
+<!-- Danh sach san pham -->
+<div class=" container ">
+  <div id="Sort-Item" class="row ">
+    <div  style="border-top-left-radius: 10px;" class="xiaomi col-lg-3 box-item">
+      <div class="phone">
+        <img src="./assets/img/namePhone/Xiaomi/xiaomi-redmi-a1-den-dd-bh.webp" alt="">
+      </div>
+      <div class="name-item">
+        <a style="text-decoration: none;" class="name-item-font" href="">Xiaomi Redmi A1 2GB-32GB</a>
+      </div>
+      <div class="cost">
+        <div class="cost-after_sales">
+        27.990.000 đ
+        </div>
+        <div class="cost-before_sales">
+        <del>30.000.000</del>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="chip-screen">
+          <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Helio A22</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.52 inch</p>
+        </div>
+        <div class="ram">
+          <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 2 GB</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 32GB</p>
+        </div>
+        <div class="sales-bank">
+          <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+          <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+        </div>
+      </div>
+      <div class="btn-item">
+        <button class="btn-buy">MUA NGAY</button>
+        <button class="btn-sosanh">SO SÁNH</button>
+      </div>
+    </div>
+<!-- ------------------------------------------------------------------------- -->
+<div class="apple col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Iphone/iphone-13-pro-dd-bh.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">iPhone 13 Pro 256GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    26.990.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>34.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>Apple A15 Bionic</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.1 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 6 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>256 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------- -->
+<div  class="nokia col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Nokia/nokia-g21-dd-docquyen.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Nokia G21 6GB-128GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    3.990.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>4.590.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Unisoc T606</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.5 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 6 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
 
+<!-- ------------------------------------------------------------------------- -->
+<div style="border-top-right-radius: 10px;" class="samsung col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Samsung/samsung-galaxy-s22-bora-purple.webp" alt="">
   </div>
-<!-- List_Item -->
-<div class="container">
-  <div class="row">
-  <div class="col-lg-3">
-    <ul>
-      <li>
-        <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2022/10/5/638005785995780745_iphone-13-pro-max-dd-bh.jpg" alt="">
-      </li>
-      <li>
-        
-      </li>
-      <li>
-        <h2>Ten san pham</h2>
-      </li>
-      <li>
-        <h3>gia tien</h3>
-      </li>
-      <li>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Samsung Galaxy S22 Bora Purple</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    15.990.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>21.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 8 Gen 1</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.1 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 8 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------- -->
+<div class="vivo col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Vivo/637983398315589960_vivo-y22s-xanh-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Vivo Y22s 8GB-128GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+      5.990.000
+    </div>
+    <div class="cost-before_sales">
+    <del>7.000.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 680</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.55 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 8 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<div  class="xiaomi col-lg-3 box-item">
+      <div class="phone">
+        <img src="./assets/img/namePhone/Xiaomi/xiaomi-redmi-note-11-dd-bh.webp" alt="">
+      </div>
+      <div class="name-item">
+        <a style="text-decoration: none;" class="name-item-font" href="">Xiaomi Redmi Note 11 4GB-128GB</a>
+      </div>
+      <div class="cost">
+        <div class="cost-after_sales">
+        4.590.000 đ
+        </div>
+        <div class="cost-before_sales">
+        <del>4.990.000</del>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="chip-screen">
+          <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 680</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.43 inch</p>
+        </div>
+        <div class="sales-bank">
+          <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+          <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+        </div>
+      </div>
+      <div class="btn-item">
+        <button class="btn-buy">MUA NGAY</button>
+        <button class="btn-sosanh">SO SÁNH</button>
+      </div>
+    </div>
+<!-- ------------------------------------------------------------------------- -->
+<div class="vivo col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Vivo/637707822857432352_00779950-vivo-y15s-trang-xanh-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Vivo Y15s 3GB-32GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+      3.090.000
+    </div>
+    <div class="cost-before_sales">
+    <del>3.490.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Helio P35</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.51 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 3 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 32 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------- -->
+<div class="vivo col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Vivo/vivo-t1x-xanh-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Vivo T1x 4GB-64GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+      4.190.000
+    </div>
+    <div class="cost-before_sales">
+    <del>4.490.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 680</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.58 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 4 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 64 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------- -->
+<div style="border-bottom-left-radius: 10px;" class="vivo col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Vivo/638016881305619480_vivo-y35-den-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Vivo Y35 8GB-128GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+      6.690.000
+    </div>
+    <div class="cost-before_sales">
+    <del>6.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 680</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.58 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 8 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<div  class="xiaomi col-lg-3 box-item">
+      <div class="phone">
+        <img src="./assets/img/namePhone/Xiaomi/xiaomi-redmi-note-11-dd-bh.webp" alt="">
+      </div>
+      <div class="name-item">
+        <a style="text-decoration: none;" class="name-item-font" href="">Xiaomi 11T 8GB-128GB</a>
+      </div>
+      <div class="cost">
+        <div class="cost-after_sales">
+        8.490.000 đ
+        </div>
+        <div class="cost-before_sales">
+        <del>10.990.000</del>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="chip-screen">
+          <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> MediaTek Dimensity 1200U</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.67 inch</p>
+        </div>
+        <div class="ram">
+          <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 8 GB</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+        </div>
+        <div class="sales-bank">
+          <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+          <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+        </div>
+      </div>
+      <div class="btn-item">
+        <button class="btn-buy">MUA NGAY</button>
+        <button class="btn-sosanh">SO SÁNH</button>
+      </div>
+    </div>
+<!-- ------------------------------------------------------------------------- -->
+<div class="samsung col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Samsung/samsung-galaxy-a33.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Samsung Galaxy A33 5G</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    7.290.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>8.000.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Exynos 1280</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.4 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 6 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------- -->
+<div style="border-bottom-right-radius: 10px;" class="oppo col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Oppo/oppo-find-x5-pro-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">OPPO Find X5 Pro 12GB-256GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    25.990.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>32.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 8 Gen 1</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.7 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 12 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 256 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<div class="show-hidden samsung col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Samsung/samsung-galaxy-a73.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Samsung Galaxy A73 5G</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    11.690.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>11.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 778G</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.7 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 8 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------- -->
+<div class="show-hidden nokia col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Nokia/nokia-g11-plus-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Nokia G11 Plus 3GB-32GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    2.890.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>3.390.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Spreadtrum SC9863A</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.52 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 3 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 32 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
 
-      </li>
-      <li>
+<!-- ------------------------------------------------------------------------- -->
+<div class="show-hidden oppo col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Oppo/oppo-a96-8gb-128gb-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">OPPO A96 8GB-128GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    6.490.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>6.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 680</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.59 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 8 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<div class="show-hidden samsung col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Samsung/samsung-galaxy-z-flip4.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Samsung Galaxy Z Flip4 5G 128GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    20.990.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>23.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 8+ Gen 1</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i>Chính: 6.7 inch, Phụ: 1.9 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 8 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<div class="show-hidden apple col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Iphone/iphone-14-pro-max.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">iPhone 14 Pro Max 128GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+  33.990.000 
+    </div>
+    <div class="cost-before_sales">
+    <del>34.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>Apple A16 Bionic</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.7 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>128 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------- -->
+<div class="show-hidden oppo col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Oppo/oppo-reno8-pro-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">OPPO Reno8 Pro 5G 12GB-256GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    18.490.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>18.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Snapdragon 680</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.4 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 8 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 256 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<div class="show-hidden oppo col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Oppo/oppo-a16k-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">OPPO A16K 3GB-32GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    6.490.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>6.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Helio G35</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.52 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 3 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 32 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------- -->
+<div class="show-hidden nokia col-lg-3 box-item">
+  <div class="phone">
+    <img src="./assets/img/namePhone/Nokia/nokia-c30-xanh-dd.webp" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">Nokia C30 3GB-32GB</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    2.690.000 đ
+    </div>
+    <div class="cost-before_sales">
+    <del>2.990.000</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i> Spreadtrum SC9863A</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> 6.82 inch</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> 3 GB</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i> 32 GB</p>
+    </div>
+    <div class="sales-bank">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+      <img width="40px" height="40px" src="https://inbaothure.com/wp-content/uploads/2017/04/logo-ngan-hang-vietcombank.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+    <button class="btn-sosanh">SO SÁNH</button>
+  </div>
+</div>
 
-      </li>
-      <li>
-
-      </li>
-      <li>
-
-      </li>
-    </ul>
-  </div>
-  <div class="col-lg-3"></div>
-  <div class="col-lg-3"></div>
-  <div class="col-lg-3"></div>
-  </div>
 </div>
-</main>
-<footer>
-<div class="container footer">
-<div class="col-2-4">
-  <li class="footer-item">
-    <a href="">Giới thiệu về công ti</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Câu hỏi thường gặp mua hàng</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Chính sách bảo mật</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Quy chế hoạt động</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Kiểm tra hóa đơn điện tử</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Tra cứu thông tin bảo hành</a>
-  </li>
-</div>
-<div class="col-2-4">
-  <li class="footer-item">
-    <a href="">Tin tuyển dụng</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Tin khuyến mãi</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Hướng dẫn mua online</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Hướng dẫn mua trả góp</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Chính sách mua trả góp</a>
-  </li>
-</div>
-<div class="col-2-4">
-  <li class="footer-item">
-    <a href="">Hệ thống cửa hàng</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Hệ thống bảo hành</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Bán hàng doanh nghiệp</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Giới thiệu máy đổi trả</a>
-  </li>
-  <li class="footer-item">
-    <a href="">Chính sách đổi trả</a>
-  </li>
-</div>
-<div class="col-2-4">
-  <div class="font-right phone-1">
-    <li>Tư vấn mua hàng (Miễn phí)</li>
-    <li><a href="" style="color: red; font-size: 20px;">1800 6601 </a> (Nhánh 1)</li>
-    <li>Hỗ trợ kĩ thuật</li>
-    <li><a href="" style="color: red; font-size: 20px;">1800 6601 </a> (Nhánh 2)</li>
-  </div>
- <div class="font-right pay">
-  <li>Hỗ trợ thanh toán</li>
-<div class="icon-bank">
-  <img class="img-bank" src="https://inkythuatso.com/uploads/images/2021/11/mb-bank-logo-inkythuatso-01-10-09-01-10.jpg" alt="">
-  <img class="img-bank" src="https://iweb.tatthanh.com.vn/pic/3/blog/y-nghia-thiet-ke-logo-cua-ngan-hang-vietcombank.jpg" alt="">
-  <img class="img-bank" src="https://play-lh.googleusercontent.com/yHmIm7FYKe_dW2WHTwWizp2p_gt7_ctdpCUevX654E1dsj5c9McWO03k_S6PPLG_DNz7" alt="">
-</div>
-<div class="icon-check">
-  <img class="img-check " style="padding-top: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMq8OhrNXVZGD-EM1KtVsgwCAE-Rw-O-ZGg&usqp=CAU" alt="">
-  <img class="img-check " style="padding-top: 10px;" src="https://webmedia.com.vn/images/2021/09/logo-da-thong-bao-bo-cong-thuong-mau-xanh.png" alt="">
-</div>
- </div>
-</div>
-<div class="font-right col-2-4">
-  <div>
-    <li>Góp ý, khiếu nại dịch vụ (8h00- 22h00)</li>
-    <a href="" style="color: red; font-size: 20px;">1800 6616</a>
-  </div>
-  <div class="Cer">
-    <li>chứng nhận:</li>
-    <img class="img-cer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFxBoZhP2kj2OjMHwAJMS_3zO4uCW1Ph0DM5H4Pu2DbbZ9ERWqzX3lKODcPdTGQh-Pxxk&usqp=CAU" alt="">
-    <img class="img-cer" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX38801357.jpg" alt="">
-    <img class="img-cer" src="https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX40143796.jpg" alt="">
-  </div>
+<div id="changetype">
+  <button onclick="XemThem('show-hidden')" id="btn-show" class="show">Xem thêm</button>
   
+  </div>
 </div>
+
+<script>
+  AOS.init();
+</script>
+
+<footer>
+<div class="container-fluid footer-box" >
+  <div class="footer-word">
+    <li>
+      <a href="">Câu hỏi thường gặp khi mua hàng</a>
+    </li>
+    <li>
+      <a href="">Chính sách bảo mật</a>
+    </li>
+    <li>
+      <a href="">Quy chế hoạt động</a>
+    </li>
+    <li>
+      <a href="">Kiểm tra hóa đơn điện tử</a>
+    </li>
+    <li>
+      <a href="">Tra cứu thông tin bảo hành</a>
+    </li>
+
+  </div>
+
+  <div class="footer-word">
+    <li>
+      <a href="">Tin tuyển dụng</a>
+    </li>
+    <li>
+      <a href="">Tin khuyến mãi</a>
+    </li>
+    <li>
+      <a href="">Hướng dẫn mua online</a>
+    </li>
+    <li>
+      <a href="">Hướng dẫn mua trả góp</a>
+    </li>
+    <li>
+      <a href="">Chính sách mua trả góp</a>
+    </li>
+  </div>
+
+  <div class="footer-word">
+    <li>
+      <a href="">Hệ thống cửa hàng</a>
+    </li>
+    <li>
+      <a href="">Hệ thống bảo hành</a>
+    </li>
+    <li>
+      <a href="">Giới thiệu máy đổi trả</a>
+    </li>
+    <li>
+      <a href="">Chính sách đổi trả</a>
+    </li>
+  </div>
+
+  <div class="footer-word">
+    <p style="margin: 0px">Tư vấn mua hàng (Miễn phí)</p>
+    <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">Số điện thoại (Nhánh 1)</a>
+    <p style="margin: 0px">Hỗ trợ kỹ thuật</p>
+    <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">Số điện thoại (Nhánh 2)</a>
+  </div>
+
+  <div class="footer-word">
+    <p  style="margin: 0px">Góp ý, khiếu nại dịch vụ (8h00 - 22h00)</p>
+    <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">Số điện thoại</a>
+  </div>
 </div>
-   
+<a style="float: right;" href="#"><img width="50px;" height="50px;" src="/assets/img/top1.jpg" alt=""></i></a>
 </footer>
+
 </body>
+<script src="./assets/js/ChangeListItem.js "></script>
 </html>
+
+
+

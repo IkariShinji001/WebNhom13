@@ -1,98 +1,350 @@
 body{
-    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+ background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
 }
-.size-carousel{
-    width: 70%;
-    margin:0 auto;
-   
-    
-
+/* header*/
+header{
+  position: fixed;
 }
-.border{
-    border-color: #ddd;
-    background-color: white;
-    border: 10px solid #ddd;
-    width: 300px;
-    height: 400px;
-    
-}
-.position-ite{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-
-}
-.container{
-    max-width: 1200px;'
-    
-}
-.container-border{
-    border:1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 5px;
-    margin: px 0px;
-}
-.border-img{
-    border-image: url(./happy-halloween2-1182x800.png) 20% round;
-}
-.footer-design{
- display: inline-flex;
-
-}
-.col-2-4{
-    padding: 0 5px;
-    list-style: none;
-   
-
-}
-.footer{
-    display: flex;
-    justify-content: space-around;
-    border-top: 4px;
-    border-top-color: black;
-    margin-top: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container-fluid.header {
+    background-color: rgb(54, 160, 231);
+  }
+  
+  .container-fluid.header.col {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .container-fluid.header.col-3 {
+    display: inline-flex;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .search-box {
+    width: 400px;
+    background-color: black;
+    border-radius: 40px;
+    height: 40px;
+    padding: 1px;
+    margin-bottom: 15px;
+    margin-top: 19px;
+  }
+  
+  .search-in {
+    background: none;
+    border: none;
+    line-height: 37px;
+    margin-left: 30px;
+    outline: none;
+    color: white;
+    width: 310px;
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .search-icon {
+    color: white;
+    text-decoration: none;
     position: absolute;
-    left: 152px;
-    height: 300;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 14px;
+  }
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .container-fluid.header .title {
+    font-family: "Oswald";
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+  }
+  .container-fluid.header .title:hover {
+    color: rgb(20, 20, 20);
+  }
+  
+  .news,
+  .cart,
+  .user-info {
+    display: inline-flex;
+    float: right;
+    padding: 10px 10px 5px 10px;
+  }
+  
+  .news a,
+  .cart a,
+  .user-info a {
+    color: black;
+    font: 30px;
+  }
+  
+  .news i,
+  .cart i,
+  .user-info i {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25%;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+  }
+  
+  .cart a:hover > .cart-in,
+  .news a:hover > .news-in,
+  .user-info a:hover > .user-info-in {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Nav */
+  
+  .container-fluid.nav {
+    background-color: #000;
+    height: 40px;
+  }
+  
+  .nav.container {
+    width: 100%;
+  }
+  
+  .container-fluid.nav .row {
+    align-items: center;
+    width: inherit;
+  }
+  
+  .container-fluid.nav .row .col-4 {
+    display: flex;
+  }
+  
+  .container-fluid.nav .row .col-4 .phone,
+  .container-fluid.nav .row .col-4 .sales,
+  .container-fluid.nav .row .col-4 .laptop {
+    display: flex;
+    width: 30%;
+    align-items: center;
+  }
+  
+  .container-fluid.nav .row .col-4 .phone i,
+  .container-fluid.nav .row .col-4 .laptop i,
+  .container-fluid.nav .row .col-4 .sales i {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .container-fluid.nav .row .col-4 .phone:hover,
+  .container-fluid.nav .row .col-4 .laptop:hover,
+  .container-fluid.nav .row .col-4 .sales:hover {
+    cursor: pointer;
+  }
+  
+  .container-fluid.nav .row .col-4 .phone:hover i,
+  .container-fluid.nav .row .col-4 .laptop:hover i,
+  .container-fluid.nav .row .col-4 .phone:hover span,
+  .container-fluid.nav .row .col-4 .laptop:hover span,
+  .container-fluid.nav .row .col-4 .sales:hover span,
+  .container-fluid.nav .row .col-4 .sales:hover i {
+    color: rgb(160, 159, 159);
+  }
+  
+  .container-fluid.nav .row .col-4 .phone span,
+  .container-fluid.nav .row .col-4 .laptop span,
+  .container-fluid.nav .row .col-4 .sales span {
+    color: white;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+/* Carousesl */
+.size-carousel{
+    width: 1200px;
+    margin: auto;
+    border-radius: 100px;
 }
-.img-bank,.img-check,.img-cer{
-    width: 45px;
-    height: 26px;
-}
-.footer-item{
-    font-size: 16px;
-    margin-bottom: 10px;
-    
-    
-}
-.font-right{
-    font-weight: 500;
-    
-
-}
-.pay{
-    padding-top: 25px;
-}
-.Cer{
-    padding-top: 80px;
-}
+/* Chon loai san pham */
 .select-Item{
     display: flex;
-    justify-content: space-around;
-  
-}
-.select-Item .zoom-img{
-    overflow: hidden;
-    transition: all 0.75s ease;
-}
-.box-select{
-    height: 130px;
-    background-color: white;
-    margin: 20px 0;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 5px;
+    justify-content: space-between;
 
 }
-.select-Item:hover .zoom-img{
-transform:scale(1.2);
+    .Box-select{
+        margin: 40px 0;
+        padding-top: 15px;
+        background-color: white;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+.select-Item div:hover img{
+    transform: scale(1.2);
 }
+.select-Item div img{
+    width: 100%%;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+/* Danh sach san pham */
+.box-item{
+  width: 300px;
+  height: 500px;
+  padding:10px 10px;
+  background-color:#f8f9fa;
+  position: relative;
+  
+  
+  
+}
+.box-item:hover
+{border: 1px solid #ccc;
+  border-radius: 5px;
+
+ 
+}
+#Sort-Item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.phone{
+  background-size: auto;
+  background-color: white;
+  transition: all ease 0.3s;
+  margin-top:2px;
+  
+
+}
+.name-item{
+  margin-top: 20px;
+}
+.name-item-font{
+  font-size:17px;
+  color: #474c51;
+  line-height: normal;
+  font-weight: 700;
+}
+.cost
+{
+  display: flex;
+  justify-content: space-between;
+}
+.cost-after_sales{
+  border-radius: 10px;
+  padding: 0px 10px;
+  background-image: linear-gradient(to left, rgba(255,0,0,0.4), rgba(255,0,0,1));
+  color: #fff;
+  align-items: center;
+  font-weight: 700;
+
+}
+div.box-item:hover .phone{
+  transform: scale(1.1);
+
+}
+.about-item:not(.sales-bank){
+height: auto;
+background-color:#ddd;
+display: flex;
+flex-wrap: wrap;
+}
+.btn-item{
+position: absolute;
+bottom: 0;
+
+}
+.btn-buy,.btn-sosanh{
+  transition: ease-out 0.3s;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 10px;
+
+}
+.btn-sosanh{
+  width: 100px;
+  background-color: rgb(128, 128, 128);
+  box-shadow: inset 0 0 0 0 rgb(72, 3, 3);
+}
+.btn-buy{
+  width: 150px;
+  background-color: rgba(255, 5, 5, 0.995);
+  box-shadow: inset 0 0 0 0 rgb(163, 4, 4);
+}
+.btn-buy:hover{
+  box-shadow: inset 150px 0 0 0 rgb(163, 4, 4);
+  transform: scale(1.1);
+} 
+.btn-sosanh:hover{
+  box-shadow: inset 100px 0 0 0 rgb(72, 3, 3);
+  transform: scale(1.1);
+}
+/* footer */
+footer li{
+  list-style: none;
+  margin: 10px 0px;
+}
+footer li a{
+  color: black;
+}
+.footer-box{
+  display: flex;
+  justify-content:space-around;
+  background-color: #36a0e7;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.footer-word{
+  font-size: 15px;
+  margin-top: 10px;
+  color: black;
+  font-weight: 100;
+}
+#apple,#samsung,#xiaomi,#asus,#oppo,#nokia{
+  display: block;
+}
+
+/* JAVA SCRIPT */
+.sp{
+  display: flex;
+  font-size: 20px;
+  font-family: monaco;
+}
+.show{
+ position: absolute;
+ right:47.5%;
+ padding: 5px 5px;
+ margin: 5px 0px;
+ font-weight: 300;
+ background-color: #fff;
+ border: 5px solid #fff;
+ border-radius: 10px;
+  opacity: 0.5;
+  transition: 0.25s;
+background-color: hsla(292, 87%, 48%, 0.67);
+color: white;
+font-weight: 500;
+
+}
+.show:hover{
+  opacity: 1;
+}
+
