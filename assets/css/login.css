@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-fluid.header {
+  background-color: rgb(54, 160, 231);
+}
+
+.container-fluid.header.col {
+  display: inline-flex;
+  align-items: center;
+}
+
+.container-fluid.header.col-3 {
+  display: inline-flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.search-box {
+  width: 400px;
+  background-color: black;
+  border-radius: 40px;
+  height: 40px;
+  padding: 1px;
+  margin-bottom: 15px;
+  margin-top: 19px;
+}
+
+.search-in {
+  background: none;
+  border: none;
+  line-height: 37px;
+  margin-left: 30px;
+  outline: none;
+  color: white;
+  width: 310px;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.search-icon {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 14px;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.container-fluid.header .title {
+  font-family: "Oswald";
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+.container-fluid.header .title:hover {
+  color: rgb(20, 20, 20);
+}
+
+.news,
+.cart,
+.user-info {
+  display: inline-flex;
+  float: right;
+  padding: 10px 10px 5px 10px;
+}
+
+.news a,
+.cart a,
+.user-info a {
+  color: black;
+  font: 30px;
+}
+
+.news i,
+.cart i,
+.user-info i {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 25%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.cart a:hover > .cart-in,
+.news a:hover > .news-in,
+.user-info a:hover > .user-info-in {
+  background-color: black;
+  color: white;
+}
+
+/* Nav */
+
+.container-fluid.nav {
+  background-color: #000;
+  height: 40px;
+}
+
+.nav.container {
+  width: 100%;
+}
+
+.container-fluid.nav .row {
+  align-items: center;
+  width: inherit;
+}
+
+.container-fluid.nav .row .col-4 {
+  display: flex;
+}
+
+.container-fluid.nav .row .col-4 .phone,
+.container-fluid.nav .row .col-4 .sales,
+.container-fluid.nav .row .col-4 .laptop {
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+
+.container-fluid.nav .row .col-4 .phone i,
+.container-fluid.nav .row .col-4 .laptop i,
+.container-fluid.nav .row .col-4 .sales i {
+  color: white;
+  font-size: 20px;
+}
+
+.container-fluid.nav .row .col-4 .phone:hover,
+.container-fluid.nav .row .col-4 .laptop:hover,
+.container-fluid.nav .row .col-4 .sales:hover {
+  cursor: pointer;
+}
+
+.container-fluid.nav .row .col-4 .phone:hover i,
+.container-fluid.nav .row .col-4 .laptop:hover i,
+.container-fluid.nav .row .col-4 .phone:hover span,
+.container-fluid.nav .row .col-4 .laptop:hover span,
+.container-fluid.nav .row .col-4 .sales:hover span,
+.container-fluid.nav .row .col-4 .sales:hover i {
+  color: rgb(160, 159, 159);
+}
+
+.container-fluid.nav .row .col-4 .phone span,
+.container-fluid.nav .row .col-4 .laptop span,
+.container-fluid.nav .row .col-4 .sales span {
+  color: white;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.container-fluid.form {
+  background-color: #f8f9fa;
+}
+
+.container-form {
+  width: 90%;
+  margin: auto;
+}
+
+.form-content {
+  padding-top: 80px;
+  width: 1000px !important;
+}
+
+.form-login {
+  box-shadow: 10px 20px 34px -15px rgb(0 0 0 / 24%);
+}
+
+.header-form {
+  margin-top: 40px;
+}
+
+.header-form i {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  color: rgb(154, 154, 154);
+}
+
+.header-form i.fa-facebook:hover {
+  color: rgb(25, 25, 210);
+}
+
+.header-form i.fa-google:hover {
+  color: rgb(233, 64, 13);
+}
+
+.main-form > label {
+  margin: 25px 0 10px 0;
+}
+
+.main-form > input {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 8px;
+  border-radius: 5px;
+  border: #ccc 1px solid;
+  outline: #e3b04b;
+}
+
+.main-form input:focus {
+  border: 1px solid #e3b04b !important;
+}
+
+.main-form .btn-login {
+  margin-top: 30px;
+  padding: 12px 0;
+}
+
+.main-form a {
+  text-decoration: none !important;
+  color: rgba(239, 10, 10, 0.859) !important;
+}
+.remember {
+  font-size: 40px;
+}

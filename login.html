@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/69b4b078b4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/toast.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/responsive-product.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid header">
+        <div class="header container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="search-box">
+                        <input type="text" class="search-in" placeholder="Type to search" name="">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col" style="margin-left: 50px;">
+                    <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+                    <a href="#">
+                        <p class="title">DPN TECHNOLOTGIES</p>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <div class="cart">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping cart-in"></i>
+                            Giỏ hàng
+                        </a>
+                    </div>
+
+                    <div class="user-info">
+                        <a href="#">
+                            <i class="fa-solid fa-user user-info-in"></i>
+                            Tài khoản của tôi
+                        </a>
+                    </div>
+
+                    <div class="news">
+                        <a href="#">
+                            <i class="fa-solid fa-newspaper news-in"></i>
+                            Thông tin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid nav">
+        <div class="nav container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="phone">
+                        <i class="fa-solid fa-mobile"></i>
+                        <span>Điện thoại</span>
+                    </div>
+
+                    <div class="laptop">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>Laptop</span>
+                    </div>
+
+                    <div class="sales">
+                        <i class="fa-solid fa-percent"></i>
+                        <span>Khuyến mãi</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid form">
+        <div class="form-content container-md d-flex">
+            <div class="row">
+                <div class="card-img-login col-md-6">
+                    <img src="./assets/img/SanPham/login-img.jpg" alt="" class="w-100">
+                </div>
+                <div class="form-login col-md-6">
+                    <div class="container-form">
+                        <form name="login" method="post">
+                            <div class="header-form d-flex justify-content-between">
+                                <div class="title-login">
+                                    <h2>Đăng nhập</h2>
+                                </div>
+                                <div class="others-login d-flex justify-content-end w-50">
+                                    <div class="fb-login">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </div>
+                                    <div class="gg-login">
+                                        <i class="fa-brands fa-google"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-form">
+                                <label class="d-block" for="username">TÊN ĐĂNG NHẬP:</label>
+                                <input type="text" id="username" name="username" placeholder="Tên đăng nhập">
+                                <label class="d-block" for="password">TÊN ĐĂNG NHẬP:</label>
+                                <input type="password" id="password" name="password" placeholder="Mật khẩu">
+                                <button type="submit" id="submit" class="btn-login btn btn-primary w-100">ĐĂNG
+                                    NHẬP</button>
+                                <div class="d-flex mt-3 justify-content-around">
+                                    <div class="remember-container w-50">
+                                        <input type="checkbox" id="remember">
+                                        <label for="">Nhớ đăng nhập</label>
+                                    </div>
+                                    <div class="forget-password-container w-50 text-lg-end">
+                                        <a href="#">Quên mật khẩu</a>
+                                    </div>
+                                </div>
+                                <div class="sign-up text-lg-center mt-3">
+                                    <p>Bạn chưa có tài khoản? <a href="">Đăng kí ngay</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="container toasts">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/login.js"></script>
+
+</html>
