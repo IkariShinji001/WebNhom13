@@ -19,7 +19,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .search-box {
@@ -177,7 +177,7 @@ a {
 }
 
 .form-content {
-  padding-top: 70px;
+  padding-top: 40px;
   width: 1000px !important;
 }
 

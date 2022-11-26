@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/toast.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/signin.css">
     <link rel="stylesheet" href="./assets/css/responsive-product.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -95,15 +95,13 @@
     <div class="container-fluid form">
         <div class="form-content container-md d-flex">
             <div class="row">
-                <div class="card-img-login col-md-6 p-0">
-                    <img src="./assets/img/Login/banner-iphone-14-dat-hang-04-1-1024x1024.webp" alt="" class="w-100">
-                </div>
+
                 <div class="form-login col-md-6">
                     <div class="container-form">
-                        <form name="login" method="post">
+                        <form name="sign-up" method="post">
                             <div class="header-form d-flex justify-content-between">
                                 <div class="title-login">
-                                    <h2>Đăng nhập</h2>
+                                    <h2>Đăng ký</h2>
                                 </div>
                                 <div class="others-login d-flex justify-content-end w-50">
                                     <div class="fb-login">
@@ -120,23 +118,21 @@
                                 <input type="text" id="username" name="username" placeholder="Tên đăng nhập">
                                 <label class="d-block" for="password">MẬT KHẨU:</label>
                                 <input type="password" id="password" name="password" placeholder="Mật khẩu">
+                                <label class="d-block" for="password">NHẬP LẠI MẬT KHẨU:</label>
+                                <input type="password" id="re-password" name="re-password"
+                                    placeholder="Nhập lại mật khẩu">
                                 <button type="submit" id="submit" class="btn-login btn btn-primary w-100">ĐĂNG
-                                    NHẬP</button>
-                                <div class="d-flex mt-3 justify-content-around">
-                                    <div class="remember-container w-50">
-                                        <input type="checkbox" id="remember">
-                                        <label for="">Nhớ đăng nhập</label>
-                                    </div>
-                                    <div class="forget-password-container w-50 text-lg-end">
-                                        <a href="#">Quên mật khẩu</a>
-                                    </div>
-                                </div>
+                                    KÝ</button>
                                 <div class="sign-up text-lg-center mt-3">
-                                    <p>Bạn chưa có tài khoản? <a href="signin.html  ">Đăng kí ngay</a></p>
+                                    <p>Bạn đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
                                 </div>
                             </div>
                         </form>
                     </div>
+                </div>
+                <div class="card-img-login col-md-6 p-0">
+                    <img src="./assets/img/Login/banner-iphone-14-dat-hang-04-1-1024x1024.webp" alt=""
+                        class="w-100 h-100">
                 </div>
             </div>
         </div>
@@ -146,7 +142,6 @@
         </div>
     </div>
 </body>
-<script src="./assets/js/login.js"></script>
-<script src="./assets/js/sigin.js"></script>
+<script src="./assets/js/signup.js"></script>
 
 </html>

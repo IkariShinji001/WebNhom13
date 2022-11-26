@@ -1,7 +1,24 @@
+// Chuyển hướng tới trang Dashboard
 const dashboardLocation = () => {
   window.location = "http://127.0.0.1:5500/DPN/WebNhom13/dashboard.html";
 };
+// Chuyển hướng tới trang sản phẩm
+const productLocation = () => {
+  window.location = "http://127.0.0.1:5500/DPN/WebNhom13/product.html";
+};
 
+var accounts = [
+  {
+    username: "admin",
+    password: "admin",
+  },
+  {
+    username: "B2103492",
+    password: "duylatoi",
+  },
+];
+
+// Thông báo
 const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
   const main = document.querySelector(".container.toasts");
   if (main) {
@@ -29,13 +46,29 @@ const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
   }
 };
 
-var btnSubmit = document.querySelector("#submit");
-
 const validateName = (name) => {
   if (name.length > 4) {
     return true;
   }
   return false;
+};
+
+const validateLogin = (username, password) => {
+  accounts = localStorage.getItem("accounts");
+  accounts = JSON.parse(accounts);
+  const found = accounts.find((AccountUsername) => {
+    return AccountUsername.username == username;
+  });
+
+  if (found == undefined) {
+    return false;
+  }
+
+  if (found.password == password) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const validatePassword = (password) => {
@@ -45,34 +78,31 @@ const validatePassword = (password) => {
   return false;
 };
 
+// Bắt sự kiện onClick khi đăng nhập
+
+var btnSubmit = document.querySelector("#submit");
+
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   var formLogin = document.forms["login"];
   var username = formLogin["username"].value;
   var password = formLogin["password"].value;
-  console.log(password.length);
-  var x = 0;
-  if (!validateName(username)) {
-    toast({
-      title: "Error",
-      msg: "Sai tên đăng nhập hoặc mật khẩu",
-      type: "error",
-      duration: 3000,
-    });
-    x++;
-  }
-
-  if (!validatePassword(password.length)) {
-    toast({
-      title: "Error",
-      msg: "Sai mật khẩu",
-      type: "error",
-      duration: 3000,
-    });
-    x++;
-  }
-
-  if (x === 0) {
+  if (username == "admin" && password == "admin") {
     dashboardLocation();
+  } else {
+    var x = 0;
+    if (validateLogin(username, password) == false) {
+      toast({
+        title: "Error",
+        msg: "Sai tên đăng nhập hoặc mật khẩu",
+        type: "error",
+        duration: 3000,
+      });
+      x++;
+    }
+
+    if (x === 0) {
+      productLocation();
+    }
   }
 });
