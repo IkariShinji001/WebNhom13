@@ -78,10 +78,21 @@ const validatePassword = (password) => {
   return false;
 };
 
-// Bắt sự kiện onClick khi đăng nhập
+// Check xem nếu localStorage chưa được khai báo thì set mảng accounts vào localStorage
+var checkLocalStorage = localStorage.getItem("accounts");
+if (checkLocalStorage == undefined) {
+  localStorage.setItem("accounts", JSON.stringify(accounts));
+}
+
+// Set trạng thái đăng nhập
+if (localStorage.getItem("isLogin") == undefined) {
+  isLogin = 0;
+  localStorage.setItem("isLogin", JSON.stringify(isLogin));
+}
 
 var btnSubmit = document.querySelector("#submit");
 
+// Bắt sự kiện onClick khi đăng nhập
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
   var formLogin = document.forms["login"];
@@ -102,6 +113,8 @@ btnSubmit.addEventListener("click", (e) => {
     }
 
     if (x === 0) {
+      isLogin = 1;
+      localStorage.setItem("isLogin", JSON.stringify(isLogin));
       productLocation();
     }
   }

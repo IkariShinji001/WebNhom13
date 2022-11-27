@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .container-fluid.header {
   background-color: rgb(54, 160, 231);
 }
@@ -169,6 +173,7 @@ a {
 
 .container-fluid.form {
   background-color: #f8f9fa;
+  padding: 0;
 }
 
 .container-form {
@@ -234,3 +239,59 @@ a {
 .remember {
   font-size: 40px;
 }
+
+/* Footer */
+
+footer li {
+  list-style: none;
+  margin: 10px 0px;
+}
+footer li a {
+  color: black;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-around;
+  background-color: #36a0e7;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.footer-word {
+  font-size: 15px;
+  margin-top: 10px;
+  color: black;
+  font-weight: 100;
+}
+#apple,
+#samsung,
+#xiaomi,
+#asus,
+#oppo,
+#nokia {
+  display: block;
+}
+
+/* JAVA SCRIPT */
+/* .sp {
+  display: flex;
+  font-size: 20px;
+  font-family: monaco;
+}
+.show {
+  position: absolute;
+  right: 47.5%;
+  padding: 5px 5px;
+  margin: 5px 0px;
+  font-weight: 300;
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  opacity: 0.5;
+  transition: 0.25s;
+  background-color: hsla(292, 87%, 48%, 0.67);
+  color: white;
+  font-weight: 500;
+}
+.show:hover {
+  opacity: 1;
+} */
