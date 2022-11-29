@@ -106,19 +106,5 @@ return ': '+ dt.length+ '<p class="sp">sản phẩm</p>';
         }
 }
 document.onload=an_DT('show-hidden');
-function XemThem(type)
-{var btn_hidden=document.getElementById('btn-show');
-const xemthem='Xem thêm';
-if(btn_hidden.textContent.toLowerCase().includes(xemthem.toLowerCase()))
-{       hien_DT(type); 
-        btn_hidden.textContent='Ẩn bớt';
-       
-}
-else 
-{an_DT(type);
-        btn_hidden.textContent=xemthem;
-        
-}
 
-}
 
