@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/69b4b078b4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/toast.css">
+    <link rel="stylesheet" href="./assets/css/signin.css">
+    <link rel="stylesheet" href="./assets/css/responsive-product.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid header">
+        <div class="header container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="search-box">
+                        <input type="text" class="search-in" placeholder="Type to search" name="">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col" style="margin-left: 50px;">
+                    <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+                    <a href="#">
+                        <p class="title">DPN TECHNOLOTGIES</p>
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <div class="cart">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping cart-in"></i>
+                            Giỏ hàng
+                        </a>
+                    </div>
+
+                    <div class="user-info">
+                        <a href="#">
+                            <i class="fa-solid fa-user user-info-in"></i>
+                            Tài khoản của tôi
+                        </a>
+                    </div>
+
+                    <div class="news">
+                        <a href="#">
+                            <i class="fa-solid fa-newspaper news-in"></i>
+                            Thông tin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="container-fluid nav">
+        <div class="nav container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="phone">
+                        <i class="fa-solid fa-mobile"></i>
+                        <span>Điện thoại</span>
+                    </div>
+
+                    <div class="laptop">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>Laptop</span>
+                    </div>
+
+                    <div class="sales">
+                        <i class="fa-solid fa-percent"></i>
+                        <span>Khuyến mãi</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid form">
+        <div class="form-content container-md d-flex">
+            <div class="row">
+
+                <div class="form-login col-md-6">
+                    <div class="container-form">
+                        <form name="sign-up" method="post">
+                            <div class="header-form d-flex justify-content-between">
+                                <div class="title-login">
+                                    <h2>Đăng ký</h2>
+                                </div>
+                                <div class="others-login d-flex justify-content-end w-50">
+                                    <div class="fb-login">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </div>
+                                    <div class="gg-login">
+                                        <i class="fa-brands fa-google"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-form">
+                                <label class="d-block" for="username">TÊN ĐĂNG NHẬP:</label>
+                                <input type="text" id="username" name="username" placeholder="Tên đăng nhập">
+                                <label class="d-block" for="password">MẬT KHẨU:</label>
+                                <input type="password" id="password" name="password" placeholder="Mật khẩu">
+                                <label class="d-block" for="password">NHẬP LẠI MẬT KHẨU:</label>
+                                <input type="password" id="re-password" name="re-password"
+                                    placeholder="Nhập lại mật khẩu">
+                                <button type="submit" id="submit" class="btn-login btn btn-primary w-100">ĐĂNG
+                                    KÝ</button>
+                                <div class="sign-up text-lg-center mt-3">
+                                    <p>Bạn đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-img-login col-md-6 p-0">
+                    <img src="./assets/img/Login/banner-iphone-14-dat-hang-04-1-1024x1024.webp" alt=""
+                        class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="container-fluid footer-box">
+                <div class="footer-word">
+                    <li>
+                        <a href="">Câu hỏi thường gặp khi mua hàng</a>
+                    </li>
+                    <li>
+                        <a href="">Chính sách bảo mật</a>
+                    </li>
+                    <li>
+                        <a href="">Quy chế hoạt động</a>
+                    </li>
+                    <li>
+                        <a href="">Kiểm tra hóa đơn điện tử</a>
+                    </li>
+                    <li>
+                        <a href="">Tra cứu thông tin bảo hành</a>
+                    </li>
+
+                </div>
+
+                <div class="footer-word">
+                    <li>
+                        <a href="">Tin tuyển dụng</a>
+                    </li>
+                    <li>
+                        <a href="">Tin khuyến mãi</a>
+                    </li>
+                    <li>
+                        <a href="">Hướng dẫn mua online</a>
+                    </li>
+                    <li>
+                        <a href="">Hướng dẫn mua trả góp</a>
+                    </li>
+                    <li>
+                        <a href="">Chính sách mua trả góp</a>
+                    </li>
+                </div>
+
+                <div class="footer-word">
+                    <li>
+                        <a href="">Hệ thống cửa hàng</a>
+                    </li>
+                    <li>
+                        <a href="">Hệ thống bảo hành</a>
+                    </li>
+                    <li>
+                        <a href="">Giới thiệu máy đổi trả</a>
+                    </li>
+                    <li>
+                        <a href="">Chính sách đổi trả</a>
+                    </li>
+                </div>
+
+                <div class="footer-word">
+                    <p style="margin: 0px">Tư vấn mua hàng (Miễn phí)</p>
+                    <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">069 367 2010(Nhánh
+                        1)</a>
+                    <p style="margin: 0px">Hỗ trợ kỹ thuật</p>
+                    <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">069 367 2011(Nhánh
+                        2)</a>
+                </div>
+
+                <div class="footer-word">
+                    <p style="margin: 0px">Góp ý, khiếu nại dịch vụ (8h00 - 22h00)</p>
+                    <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">0299999992</a>
+                </div>
+            </div>
+            <!-- <a style="float: right;" href="#"><img width="50px;" height="50px;" src="/assets/img/top1.jpg" alt=""></i></a> -->
+        </footer>
+
+
+        <div class="container1">
+            <div class="container toasts">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/signup.js"></script>
+
+</html>
