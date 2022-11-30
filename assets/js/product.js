@@ -172,3 +172,26 @@ const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
     }, duration + 1000);
   }
 };
+
+// Nhận dữ liệu từ bên trang danh sách sản phâm
+
+var getProductUserChoose = localStorage.getItem("nameProduct");
+var getListPhoneData = localStorage.getItem("Phone");
+getListPhoneData = JSON.parse(getListPhoneData);
+const productData = getListPhoneData.find((product) => {
+  return getProductUserChoose == product.name;
+});
+
+var nameTitleProduct = document.querySelector(".name-product");
+var priceSales = document.querySelector(".price-sales");
+var priceNonSales = document.querySelector(".non-sales-price");
+var productScreen = document.querySelector(".screen");
+var productMemory = document.querySelector(".memory");
+var productCpu = document.querySelector(".cpu");
+
+nameTitleProduct.innerHTML = `${productData.name}`;
+priceSales.innerHTML = `${productData.cost_after}`;
+priceNonSales.innerHTML = `${productData.cost_before}`;
+productScreen.innerHTML = `${productData.screen}`;
+productMemory.innerHTML = `${productData.memory}`;
+productCpu.innerHTML = `${productData.cpu}`;
