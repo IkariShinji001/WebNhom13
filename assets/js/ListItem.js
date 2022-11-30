@@ -2,7 +2,7 @@
 var Phone=[
 {
     type:'Samsung',
-    name:'Samsung Galaxy Z Flip4 5G Flex Mode Collection',
+    name:'Samsung Galaxy Z Flip4 5G',
     cost_before:'25.990.000',
     cost_after:'20.990.000',
     cpu:'Snapdragon 8+ Gen 1',
@@ -24,7 +24,7 @@ var Phone=[
 },
 {
     type:'Samsung',
-    name:'Samsung Galaxy S22 Ultra 5G 128GB',
+    name:'Samsung Galaxy S22 Ultra 5G',
     cost_before:'30.990.000',
     cost_after:'23.990.000',
     cpu:'Snapdragon 8 Gen 1',
@@ -68,7 +68,7 @@ var Phone=[
 },
 {
     type:'Oppo',
-    name:'OPPO Reno8 Pro 5G 12GB - 256GB',
+    name:'OPPO Reno8 Pro 5G ',
     cost_before:'18.990.000',
     cost_after:'18.490.000',
     cpu:'MediaTek Dimensity 8100 Max 5G',
@@ -224,7 +224,7 @@ var Phone=[
 function Render(){
 
 var list1=document.getElementById('item');
-for(var i=0;i<Phone.length/2;i++)
+for(var i=0;i<12;i++)
 {
   
   var item=document.createElement('div');
@@ -344,10 +344,58 @@ function Show(type){
 Render();
 // Chọn loại sản phẩm
 function ChangeList(type)
-{Hide();
+{var btn_hidden=document.getElementById('btn-show');
+btn_hidden.style.display='none';
+  Hide();
 if(type=='all') 
 {
-  Render();
+  function All(){
+
+    var list1=document.getElementById('item');
+    for(var i=0;i<Phone.length;i++)
+    {
+      
+      var item=document.createElement('div');
+      item.classList.add("col-lg-3");
+      item.classList.add("box-item");
+      item.innerHTML= `
+      <div class="phone">
+        <img src="${Phone[i].image}" alt="">
+      </div>
+      <div class="name-item">
+        <a style="text-decoration: none;" class="name-item-font" href="">${Phone[i].name}</a>
+      </div>
+      <div class="cost">
+        <div class="cost-after_sales">
+        ${Phone[i].cost_after} đ
+        </div>
+        <div class="cost-before_sales">
+        <del>${Phone[i].cost_before} đ</del>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="chip-screen">
+          <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>${Phone[i].cpu}</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> ${Phone[i].screen}</p>
+        </div>
+        <div class="ram">
+          <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> ${Phone[i].ram}</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>${Phone[i].memory}</p>
+        </div>
+        <div class="sales-bank">
+        <img width="40px" height="40px" src="assets/img/iconBank/mbbank1.jpg" class="rounded-circle" alt="Cinque Terre">
+        <img width="40px" height="40px" src="assets/img/iconBank/zalopay.png" class="rounded-circle" alt="Cinque Terre">
+        <img width="40px" height="40px" src="assets/img/iconBank/bidv.png" class="rounded-circle" alt="Cinque Terre">
+        </div>
+      </div>
+      <div class="btn-item">
+        <button class="btn-buy">MUA NGAY</button>
+      </div>
+    `
+    list1.appendChild(item);
+    }}
+    
+  All();
   border_box();
 }
 else
@@ -370,50 +418,62 @@ function XemThem(type)
 const xemthem='Xem thêm';
 if(btn_hidden.textContent.toLowerCase().includes(xemthem.toLowerCase()))
 {       
-  for(var i=Phone.Lengt/2-1;i<Phone.length;i++)
+ btn_hidden.textContent='Thu gọn';
+ var list1=document.getElementById('item');
+for(var i=12;i<Phone.length;i++)
+{
+  
+  var item=document.createElement('div');
+  item.classList.add("col-lg-3");
+  item.classList.add("box-item");
+  item.innerHTML= `
+  <div class="phone">
+    <img src="${Phone[i].image}" alt="">
+  </div>
+  <div class="name-item">
+    <a style="text-decoration: none;" class="name-item-font" href="">${Phone[i].name}</a>
+  </div>
+  <div class="cost">
+    <div class="cost-after_sales">
+    ${Phone[i].cost_after} đ
+    </div>
+    <div class="cost-before_sales">
+    <del>${Phone[i].cost_before} đ</del>
+    </div>
+  </div>
+  <div class="about-item">
+    <div class="chip-screen">
+      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>${Phone[i].cpu}</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> ${Phone[i].screen}</p>
+    </div>
+    <div class="ram">
+      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> ${Phone[i].ram}</p>
+      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>${Phone[i].memory}</p>
+    </div>
+    <div class="sales-bank">
+    <img width="40px" height="40px" src="assets/img/iconBank/mbbank1.jpg" class="rounded-circle" alt="Cinque Terre">
+    <img width="40px" height="40px" src="assets/img/iconBank/zalopay.png" class="rounded-circle" alt="Cinque Terre">
+    <img width="40px" height="40px" src="assets/img/iconBank/bidv.png" class="rounded-circle" alt="Cinque Terre">
+    </div>
+  </div>
+  <div class="btn-item">
+    <button class="btn-buy">MUA NGAY</button>
+  </div>
+`
+list1.appendChild(item);
+}}
+else
+{
+  btn_hidden.textContent=xemthem;
+  var hide=document.getElementsByClassName('box-item');
+  for (var i=12;i<hide.length;i++)
   {
-    
-    var item=document.createElement('div');
-    item.classList.add("col-lg-3");
-    item.classList.add("box-item");
-    item.innerHTML= `
-    <div class="phone">
-      <img  src="${Phone[i].image}" alt="">
-    </div>
-    <div class="name-item">
-      <a style="text-decoration: none;" class="name-item-font" href="">${Phone[i].name}</a>
-    </div>
-    <div class="cost">
-      <div class="cost-after_sales">
-      ${Phone[i].cost_after}
-      </div>
-      <div class="cost-before_sales">
-      <del>${Phone[i].cost_before}</del>đ
-      </div>
-    </div>
-    <div class="about-item">
-      <div class="chip-screen">
-        <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>${Phone[i].cpu}</p>
-        <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> ${Phone[i].screen}</p>
-      </div>
-      <div class="ram">
-        <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> ${Phone[i].ram}</p>
-        <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>${Phone[i].memory}</p>
-      </div>
-      <div class="sales-bank">
-        <img width="40px" height="40px" src="assets/img/iconBank/mbbank1.jpg" class="rounded-circle" alt="Cinque Terre">
-        <img width="40px" height="40px" src="assets/img/iconBank/zalopay.png" class="rounded-circle" alt="Cinque Terre">
-        <img width="40px" height="40px" src="assets/img/iconBank/bidv.png" class="rounded-circle" alt="Cinque Terre">
-      </div>
-    </div>
-    <div class="btn-item">
-      <button class="btn-buy">MUA NGAY</button>
-    </div>
-  `
-  list1.appendChild(item);}
+    hide[i].style.display='none';
   }
-        btn_hidden.textContent='Ẩn bớt';
-       
+  document.body.scrollTop=0;
+  document.documentElement.scrollTop=0;
+  
 }
-
+ 
+}
 

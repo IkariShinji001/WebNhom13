@@ -210,11 +210,18 @@ header{
 }
 .box-item{
   background-color: #fff;
-  height: 470px;
+  height: 460px;
   width: 25%;
   padding: 12px;
+  border: 1px solid black;
+  vertical-align: top;
+ 
+}
+.box-item:hover{
+ 
+  padding-bottom: 10px;
 
-  
+ 
 }
 .name-item-font{
   font-size: 18px;
@@ -264,9 +271,7 @@ background: linear-gradient(90deg, rgba(237,6,46,1) 67%, rgba(244,143,154,1) 86%
   display: flex;
   justify-content: center;
 }
-.box-item:hover{
- 
-}
+
 div.box-item:hover .btn-buy
 {
   display: block;
@@ -285,7 +290,6 @@ transform: scale(1.1);
 
 }
 .btn-item{
-  position: relative;
 }
 /* footer */
 footer li{
