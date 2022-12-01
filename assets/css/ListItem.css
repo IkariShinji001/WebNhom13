@@ -303,7 +303,7 @@ footer li a{
   display: flex;
   justify-content:space-around;
   background-color: #36a0e7;
-  margin-top: 50px;
+  margin-top: 10px;
   flex-wrap: wrap;
 }
 .footer-word{
@@ -321,8 +321,6 @@ footer li a{
   font-family: monaco;
 }
 .show{
- position: absolute;
- right:47.5%;
  padding: 5px 5px;
  margin: 5px 0px;
  font-weight: 300;
@@ -331,12 +329,20 @@ footer li a{
  border-radius: 10px;
   opacity: 0.5;
   transition: 0.25s;
-background-color: hsla(292, 87%, 48%, 0.67);
-color: white;
-font-weight: 500;
+width: 140px;
+font-size: 15px;
+margin-top: 10px;
+box-shadow: inset 0 0 0 0  rgb(65, 219, 224);
+transition: all 0.5s ease;
+
 
 }
 .show:hover{
   opacity: 1;
+  transform: scale(1.05);
+  box-shadow: inset 200px 0 0 0 rgb(65, 219, 224);
+  border: 5px solid  rgb(65, 219, 224);
+  
+ 
 }
 
