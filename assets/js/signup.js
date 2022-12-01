@@ -1,9 +1,9 @@
 const productLocation = () => {
-  window.location = "http://127.0.0.1:5500/DPN/WebNhom13/product.html";
+  window.location = "product.html";
 };
 
 const loginLocation = () => {
-  window.location = "http://127.0.0.1:5500/DPN/WebNhom13/login.html";
+  window.location = "login.html";
 };
 
 var accounts = [

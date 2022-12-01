@@ -1,5 +1,3 @@
-// Initial Animation on Scroll Libery
-AOS.init();
 // Send question open model
 
 var openSendQuestionBtn = document.querySelector(".btn-send-question");
@@ -181,6 +179,10 @@ getListPhoneData = JSON.parse(getListPhoneData);
 const productData = getListPhoneData.find((product) => {
   return getProductUserChoose == product.name;
 });
+
+var titleFav = document.querySelector(".title-fav");
+
+titleFav.innerHTML = getProductUserChoose;
 
 var nameTitleProduct = document.querySelector(".name-product");
 var priceSales = document.querySelector(".price-sales");

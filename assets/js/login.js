@@ -1,10 +1,6 @@
 // Chuyển hướng tới trang Dashboard
 const dashboardLocation = () => {
-  window.location = "http://127.0.0.1:5500/DPN/WebNhom13/dashboard.html";
-};
-// Chuyển hướng tới trang sản phẩm
-const productLocation = () => {
-  window.location = "http://127.0.0.1:5500/DPN/WebNhom13/product.html";
+  window.location = "dashboard.html";
 };
 
 var accounts = [
@@ -44,13 +40,6 @@ const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
       main.removeChild(myToast);
     }, duration + 1000);
   }
-};
-
-const validateName = (name) => {
-  if (name.length > 4) {
-    return true;
-  }
-  return false;
 };
 
 const validateLogin = (username, password) => {
