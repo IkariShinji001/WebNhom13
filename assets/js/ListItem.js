@@ -344,7 +344,7 @@ function Show(type) {
 }
 
 Render();
-
+// Lấy tên sản phẩm
 var products = document.querySelectorAll(".products");
 products.forEach((product) => {
   product.addEventListener("click", () => {

@@ -1,5 +1,3 @@
-// Initial Animation on Scroll Libery
-AOS.init();
 // Send question open model
 
 var openSendQuestionBtn = document.querySelector(".btn-send-question");

@@ -1,10 +1,10 @@
 // Chuyển hướng tới trang Dashboard
 const dashboardLocation = () => {
-  window.location = "http://127.0.0.1:5500/DPN/WebNhom13/dashboard.html";
+  window.location = "dashboard.html";
 };
 // Chuyển hướng tới trang sản phẩm
 const productLocation = () => {
-  window.location = "http://127.0.0.1:5500/DPN/WebNhom13/product.html";
+  window.location = "product.html";
 };
 
 var accounts = [
