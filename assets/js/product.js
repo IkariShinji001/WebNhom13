@@ -180,6 +180,10 @@ const productData = getListPhoneData.find((product) => {
   return getProductUserChoose == product.name;
 });
 
+var titleFav = document.querySelector(".title-fav");
+
+titleFav.innerHTML = getProductUserChoose;
+
 var nameTitleProduct = document.querySelector(".name-product");
 var priceSales = document.querySelector(".price-sales");
 var priceNonSales = document.querySelector(".non-sales-price");

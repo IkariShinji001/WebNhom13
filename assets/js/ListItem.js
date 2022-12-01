@@ -257,7 +257,7 @@ function Render() {
     <img class="img-item" src="${Phone[i].image}" alt="">
   </div>
   <div class="name-item">
-    <a style="text-decoration: none;" class="name-item-font" href="">${Phone[i].name}</a>
+    <a style="text-decoration: none;" class="name-item-font" href="product.html">${Phone[i].name}</a>
   </div>
   <div class="cost">
     <div class="cost-after_sales">
@@ -309,7 +309,7 @@ function Show(type) {
       <img class="img-item" src="${Phone[i].image}" alt="">
     </div>
     <div class class="name-item">
-      <a style="text-decoration: none;" class="name-item-font" href="">${Phone[i].name}</a>
+      <a style="text-decoration: none;" class="name-item-font" href="product.html">${Phone[i].name}</a>
     </div>
     <div class="cost">
       <div class="cost-after_sales">

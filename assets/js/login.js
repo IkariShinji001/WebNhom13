@@ -2,10 +2,6 @@
 const dashboardLocation = () => {
   window.location = "dashboard.html";
 };
-// Chuyển hướng tới trang sản phẩm
-const productLocation = () => {
-  window.location = "product.html";
-};
 
 var accounts = [
   {
@@ -44,13 +40,6 @@ const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
       main.removeChild(myToast);
     }, duration + 1000);
   }
-};
-
-const validateName = (name) => {
-  if (name.length > 4) {
-    return true;
-  }
-  return false;
 };
 
 const validateLogin = (username, password) => {
