@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@900&family=Oswald:wght@600&family=Quicksand:wght@300&family=Roboto:wght@100;300;400;500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}  
+/*header*/
+
+header .search-box{
+    width: 400px;
+    background-color: black;
+    border-radius: 40px;
+    height:40px;
+    padding:1px;
+  }
+
+header .search-in{
+    background: none;
+    border: none;
+    line-height: 37px;
+    margin-left:30px;
+    outline:none;
+    color:white;
+    width: 310px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+header .search-icon{
+    color:white;
+    text-decoration: none;
+  }
+
+header .logo{
+    width: 50px;
+    height: 50px;
+  }
+
+  header .logo:hover{
+    transform: scale(1.05);
+}
+
+header .title{
+  font-family: 'Oswald';
+  font-size: 35px;
+  color:rgb(255, 255, 255); 
+  margin-left:10px;
+}
+
+  header .title:hover{
+  color:rgb(20, 20, 20)
+}
+
+header .news,
+header .cart,
+header .user-info{
+  display: inline-flex;
+  float: right;
+  padding: 10px 10px 5px 10px;
+} 
+
+  header .news a,
+  header .cart a,
+  header .user-info a{
+      color: black;
+      font: 30px;
+      text-decoration: none;
+  }
+
+  header .news i,
+  header .cart i,
+  header .user-info i{
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 25%;
+      width: 40px;
+      height: 40px;
+      margin:0 auto;
+  }
+
+  header .cart a:hover > .cart-in,
+  header .news a:hover > .news-in,
+  header .user-info a:hover > .user-info-in{
+      background-color: black;
+      color:white;
+  }
+
+header .cart .cart-number{
+    background: red;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right:1.6vw;
+    top:-3px;
+    border-radius: 100%;
+    text-align: center;
+    font-size:14px;
+  }
+
+/*navbar*/
+nav {
+  background-color: #000;
+  height: 40px;
+  position: fixed;
+  margin-top: 79px;
+  z-index: 9999;
+}
+
+nav .phone,
+nav .sales,
+nav .laptop {
+  color:white;
+}
+
+nav .phone i,
+nav .laptop i,
+nav .sales i {
+  color: white;
+  font-size: 20px;
+}
+
+nav .phone:hover,
+nav .laptop:hover,
+nav .sales:hover {
+  cursor: pointer;
+}
+
+nav .phone:hover i,
+nav .laptop:hover i,
+nav .phone:hover span,
+nav .laptop:hover span,
+nav .sales:hover span,
+nav .sales:hover i {
+  color: rgb(160, 159, 159);
+}
+
+nav .phone span,
+nav .laptop span,
+nav .sales span {
+  color: white;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
