@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/shopping-cart.css">
+    <script src="https://kit.fontawesome.com/8ae11d514b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/toast.css">
+    <link href='https://css.gg/css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+        <title>Giỏ hàng</title>
+            <link rel="icon" href="./assets/img/Logo.png.png">
+</head>
+<body>
+    <!--header-->
+    <header class="container-fluid header ">
+      <div class="header container">
+          <div class="row">
+              <div class="col-4">
+                  <div class="search-box">
+                      <input type="text" class="search-in" placeholder="Type to search" name="">
+                      <a href="#">
+                          <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
+                      </a>
+                  </div> 
+
+              </div>       
+
+              <div class="col" style="margin-left: 50px;">
+                  <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+                  <a href="#"><p class="title">DPN TECHNOLOTGIES</p></a>
+              </div>
+
+              <div class="col-4">
+                  <div class="cart">
+                      <a href="./shopping-cart.html">
+                          <i class="fa-solid fa-cart-shopping cart-in"></i>
+                          Giỏ hàng
+                      </a>
+                      <div class="cart-number"><span>0</span></div>
+                  </div>
+                  
+                  <div class="user-info">
+                      <a href="#">
+                          <i class="fa-solid fa-user user-info-in"></i>
+                          Tài khoản của tôi
+                      </a>
+                  </div>
+
+                  <div class="news">
+                      <a href="#">
+                          <i class="fa-solid fa-newspaper news-in"></i>
+                          Thông tin
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  
+
+  <div class="container-fluid nav">
+      <div class="nav container">
+          <div class="row">
+              <div class="col-4">
+                  <div class="phone">
+                      <i class="fa-solid fa-mobile"></i>
+                      <span>Điện thoại</span>
+                  </div>
+
+                  <div class="laptop">
+                      <i class="fa-solid fa-laptop"></i>
+                      <span>Laptop</span>
+                  </div>
+
+                  <div class="sales">
+                      <i class="fa-solid fa-percent"></i>
+                      <span>Khuyến mãi</span>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    <!--cart-->
+
+    <main class="container">
+        <h1 class="row">
+            <div class="col text-center" style="padding: 20px; font-family: 'Alexandria', sans-serif;">GIỎ HÀNG</div>
+        </h1>
+        <div class="row">
+            <div id="data" class="col-12"> 
+            <table id="tb" class="table">
+                <tr class="text-center">
+                    
+                    <th width="400px">SẢN PHẨM</th>
+                    <th width="200px">GIÁ</th>
+                    <th width="150px">SỐ LƯỢNG</th>
+                    <th width="200px">TỔNG TIỀN</th>
+                    <th width="50px" ></th>
+                </tr>
+            </table> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <div class="search-box" style="display:block; margin-left:20px; margin-top:10px;"> 
+                    <input type="text" class="search-in" placeholder="Nhập mã giảm giá" name=""> 
+                    <a href="#"> <i class="fa-solid fa-arrow-right search-icon"></i></i></a> 
+                </div>
+            </div>
+            <div class="col-5">
+                <div id="sum">
+                    <div style="font-size:18px;"><b>Tổng tiền:&nbsp&nbsp&nbsp</b><span id="s"></span>&nbsp&nbsp&nbsp&nbsp</div>
+                    <div style="font-size:18px;"><b>Thuế (VAT):&nbsp&nbsp&nbsp </b><span id="vat"></span>&nbsp&nbsp&nbsp</div>
+                    <div style="font-size:18px;"><b>Tổng đơn hàng:&nbsp&nbsp&nbsp</b> <span id="total"></span>&nbsp&nbsp&nbsp</div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-3" style="padding:10px">
+                <button class="btn btn-primary btn-checking"  data-bs-toggle="modal" data-bs-target="#check-out">Đặt hàng</button>
+            </div>
+        </div>
+    </main>
+
+    <!--modal-->
+
+    <div class="modal fade" id="check-out" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header" >
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Cập nhật thông tin đặt hàng</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr class="spacing">
+                    <td width="300px">Họ tên:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập họ và tên" id="user-name" style="width:600px">
+                    </td>
+                </tr>
+                <tr class="spacing">
+                    <td width="300px">Số điện thoại:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập số điện thoại" id="user-number" style="width:600px">
+                    </td>
+                </tr>
+                <tr class="spacing">
+                    <td width="300px">Email:</td>
+                    <td>
+                        <input type="text" placeholder="Nhập email" id="user-email" style="width:600px">
+                    </td>
+                </tr>
+                <tr class="spacing">
+                    <td width="300px">Địa chỉ:*</td>
+                    <td>
+                        <textarea placeholder="Nhập địa chỉ" id="cf" required minlength="10" style="width:600px"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="300px">Phương thức thanh toán:*</td>
+                    <td>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <img src="./assets/img/cart/pngtree-cod-cash-on-delivery-fast-png-image_3382624.jpg" alt="" width="40px">
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <img src="/assets/img/iconBank/zalopay.png" width="40px">
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <img src="./assets/img/iconBank/mbbank1.jpg" width="40px" height="40px">
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <img src="./assets/img/iconBank/bidv.png" width="40px">
+                        </label>
+                    </td>
+                </tr>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
+              <button type="button" class="btn btn-primary" onclick="valid()">Lưu thay đổi</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- Toast -->
+
+    <div class="container1">
+        <div class="container toasts">
+        </div>
+    </div>
+
+
+    <script src="./assets/js/shopping-cart.js"></script>
+    <script src="./assets/js/add-to-cart.js"></script>
+    <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
