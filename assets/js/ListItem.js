@@ -498,6 +498,7 @@ function Hide() {
 }
 function Show(type) {
   var list1 = document.getElementById("item");
+  list1.style.backgroundColor='#fff';
   for (var i = 0; i < Phone.length; i++) {
     if (Phone[i].type == type) {
       var item = document.createElement("div");
@@ -561,6 +562,7 @@ function ChangeList(type) {
   if (type == "all") {
     function All() {
       var list1 = document.getElementById("item");
+      list1.style.backgroundColor='#fff';
       for (var i = 0; i < Phone.length; i++) {
         var item = document.createElement("div");
         item.classList.add("col-lg-3");
@@ -605,7 +607,10 @@ function ChangeList(type) {
 
     All();
     border_box();
-  } else Show(type);
+  } else 
+  {Show(type);
+   
+  }
 }
 function border_box() {
   var hide = document.getElementsByClassName("box-item");

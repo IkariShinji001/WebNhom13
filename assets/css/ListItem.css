@@ -209,6 +209,10 @@ a {
 .listItem {
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: #fff;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 .box-item {
   background-color: #fff;
@@ -216,11 +220,14 @@ a {
   width: 25%;
   padding: 12px;
   vertical-align: top;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 .box-item:hover {
   padding-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+ border-radius: 10px;
+ 
 }
 .name-item-font {
   font-size: 18px;
@@ -251,6 +258,8 @@ a {
   font-size: 15px;
 }
 .about-item {
+  border-radius: 10px;
+  background-color: rgba(227, 215, 215, 0.955);
   display: flex;
   flex-wrap: wrap;
 }
@@ -298,7 +307,9 @@ footer li {
 footer li a {
   color: black;
 }
-
+.footer-phone{
+color: red;
+}
 footer {
   margin-top: 80px;
 }
@@ -322,7 +333,6 @@ footer {
   font-size: 20px;
   font-family: monaco;
 }
-<<<<<<< HEAD
 .show{
  padding: 5px 5px;
  margin: 5px 0px;
@@ -339,29 +349,163 @@ box-shadow: inset 0 0 0 0  rgb(65, 219, 224);
 transition: all 0.5s ease;
 
 
-=======
-.show {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 30px;
-  margin: 5px 0px;
-  font-weight: 300;
-  background-color: #fff;
-  border: 5px solid #fff;
-  border-radius: 10px;
-  opacity: 0.7;
-  transition: 0.25s;
-  background-color: rgb(212, 36, 36);
-  color: white;
-  font-weight: 500;
->>>>>>> f65c7bc6fe4431f0f88f0d10fe040982db45b324
 }
 .show:hover {
   opacity: 1;
   transform: scale(1.05);
   box-shadow: inset 200px 0 0 0 rgb(65, 219, 224);
   border: 5px solid  rgb(65, 219, 224);
+  color: #fff;
+  font-weight: 700;
   
  
+}
+/* reponsive */
+/* Danh cho Mobile */
+@media only screen and (max-width: 739px)
+{
+  .listItem {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  .box-item{
+    width: 50%;
+    height: 100%;
+  }
+  .box-item img{
+    width: 80%;
+  }
+  .name-item-font{
+    font-size: 0.625em;
+  }
+  .cost-after_sales {
+    font-size:  0.625em;
+    padding: 0.3125em;
+    width: 50%;
+  }
+  .cost-before_sales{
+    font-size:  0.625em;
+  }
+  .cost{
+    flex-direction: column;
+  }
+  .about-item{
+    font-size:0.625em ;
+  }
+  .btn-item{
+    display: none;
+  }
+  .sales-bank img{
+    width: 20%;
+    height: 3.125em;
+  }
+  .show{
+    background-color: red;
+    border: none;
+    opacity: 1;
+    color: #fff;
+  }
+  /* footer */
+  footer li {
+
+    list-style: none;
+    margin: 10px 0px;
+  }
+  footer li a {
+    color: black;
+  }
+  .footer-phone{
+  color: red;
+  }
+  footer {
+    margin-top: 20px;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    background-color: #36a0e7;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .footer-word {
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+    font-weight: 100;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1024px)  {
+  .box-item{
+    width: 33%;
+    height: 100%;
+  }
+  .box-item img{
+    width: 70%;
+  }
+  .name-item-font{
+    font-size: 0.625em;
+  }
+  .cost-after_sales {
+    font-size:  0.625em;
+    padding: 0.3125em;
+    width: 70%;
+  }
+  .cost-before_sales{
+    font-size:  0.625em;
+  }
+  .cost{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .about-item{
+    font-size:0.625em ;
+  }
+  .btn-item{
+    display: none;
+  }
+  .sales-bank img{
+    width: 20%;
+    height: 3.125em;
+  }
+  .show{
+    background-color: red;
+    border: none;
+    opacity: 1;
+    color: #fff;
+  }
+  /* footer */
+  footer li {
+
+    list-style: none;
+    margin: 10px 0px;
+  }
+  footer li a {
+    color: black;
+  }
+  .footer-phone{
+  color: red;
+  }
+  footer {
+    margin-top: 80px;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    background-color: #36a0e7;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .footer-word {
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+    font-weight: 100;
+  }
 }
