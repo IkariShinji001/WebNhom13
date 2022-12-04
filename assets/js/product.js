@@ -69,15 +69,21 @@ sendQuestionBtn.addEventListener("click", (e) => {
   }
 });
 
+const avatars = [
+  "./assets/img/SanPham/ảnh-avatar-đẹp-cô-gái-đeo-kính.jpg",
+  "./assets/img/SanPham/avatarconan.jfif",
+  "./assets/img/SanPham/anh-dai-dien-dep.jpg",
+  "./assets/img/SanPham/anh-avatar-hoat-hinh-de-thuong.jpg",
+];
+
 const createQuestion = (name, question) => {
-  console.log(name);
-  console.log(question);
+  let randomAvatarIndex = Math.floor(Math.random() * 4); // Lấy index ngẫu nhiên trong mảng
   let main = document.querySelector(".container.user-question");
   let div = document.createElement("div");
   div.classList.add("row");
   div.innerHTML = `<div class="col">
   <div class="avatar">
-      <img src="./assets/img/SanPham/a85c1da4e1a65181cc0d56694a72093b.jpg" alt="">
+      <img src="${avatars[randomAvatarIndex]}" alt="">
   </div>
   </div>
   <div class="col-11">
@@ -117,29 +123,6 @@ const validatePhone = (phone) => {
   }
   return false;
 };
-
-/// Memories option
-
-var memoriesOption = document.querySelectorAll(".options");
-
-memoriesOption.forEach((option) => {
-  option.addEventListener("click", () => {
-    memoriesOption.forEach((option) => {
-      if (!option.checked) {
-        var divParent = option.parentNode.parentNode;
-        divParent.classList.remove("active");
-      }
-    });
-    if (option.checked) {
-      var divParent = option.parentNode.parentNode;
-      if (divParent.className == "active") {
-        divParent.classList.remove("active");
-      } else {
-        divParent.classList.add("active");
-      }
-    }
-  });
-});
 
 // Toast
 
@@ -185,15 +168,87 @@ var titleFav = document.querySelector(".title-fav");
 titleFav.innerHTML = getProductUserChoose;
 
 var nameTitleProduct = document.querySelector(".name-product");
+var img1 = document.querySelector(".img1");
+var img2 = document.querySelector(".img2");
+var img3 = document.querySelector(".img3");
+var hlTitle = document.querySelector(".hl-title");
+var hlTitle2 = document.querySelector(".hl-title2");
+var aboutProduct = document.querySelector(".about-product");
+var imgBanner = document.querySelector(".img-banner");
 var priceSales = document.querySelector(".price-sales");
+var memories = document.querySelectorAll(".opt-memory");
 var priceNonSales = document.querySelector(".non-sales-price");
 var productScreen = document.querySelector(".screen");
 var productMemory = document.querySelector(".memory");
 var productCpu = document.querySelector(".cpu");
+var pinCapacity = document.querySelector(".pinCapacity");
+var os = document.querySelector(".os");
 
 nameTitleProduct.innerHTML = `${productData.name}`;
+img1.src = productData.image;
+img2.src = productData.image2;
+img3.src = productData.image3;
+imgBanner.src = productData.imageBanner;
+hlTitle.innerHTML = `Đặc điểm nổi bật của ${productData.name}`;
+hlTitle2.innerHTML = `Đánh giá về ${productData.name}`;
+aboutProduct.innerHTML = productData.About;
 priceSales.innerHTML = `${productData.cost_after}`;
 priceNonSales.innerHTML = `${productData.cost_before}`;
 productScreen.innerHTML = `${productData.screen}`;
 productMemory.innerHTML = `${productData.memory}`;
 productCpu.innerHTML = `${productData.cpu}`;
+pinCapacity.innerHTML = `${productData.pinCapacity}`;
+os.innerHTML = `${productData.os}`;
+
+memories.forEach((Opt) => {
+  if (Opt.textContent == productData.memory) {
+    Opt.previousElementSibling.click();
+    Opt.parentElement.parentElement.classList.add("active");
+    Opt.nextElementSibling.textContent = productData.cost_after + "đ";
+  }
+});
+
+// Memories option
+
+var memoriesOption = document.querySelectorAll(".options");
+
+memoriesOption.forEach((option) => {
+  option.addEventListener("click", () => {
+    memoriesOption.forEach((option) => {
+      if (!option.checked) {
+        var divParent = option.parentNode.parentNode;
+        divParent.classList.remove("active");
+      }
+    });
+    if (option.checked) {
+      var divParent = option.parentNode.parentNode;
+      if (divParent.className == "active") {
+        divParent.classList.remove("active");
+      } else {
+        divParent.classList.add("active");
+      }
+    }
+  });
+});
+
+// add-cart
+
+function addCart(code) {
+  if (typeof localStorage[code] == "undefined") {
+    window.localStorage.setItem(code, 1);
+  } else {
+    current = parseInt(window.localStorage.getItem(code));
+    window.localStorage.setItem(code, current + 1);
+  }
+}
+
+var addCartBtn = document.querySelector(".add-cart");
+addCartBtn.addEventListener("click", () => {
+  addCart(productData.id);
+  toast({
+    title: "Success",
+    msg: `Đã thêm  <strong> ${productData.name}</strong> vào giỏ hàng!`,
+    type: "success",
+    duration: 3000,
+  });
+});
