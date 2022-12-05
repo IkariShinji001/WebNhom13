@@ -316,13 +316,15 @@ window.onload = function showCart() {
       }
 
       row.innerHTML = `
-                    <td >
+                    <td class="buy-product">
                         <div class="img-container">
                             <img src="${
                               phoneList[parseInt(keyName)].image
                             }" alt="" class="img">
                         </div>
-                        <p>${phoneList[parseInt(keyName)].name}</p>
+                        <p class="name-phone">${
+                          phoneList[parseInt(keyName)].name
+                        }</p>
                     </td>
                     <td class="text-center" style="padding-top:25px;">
                         <span>${formatter.format(
@@ -353,8 +355,20 @@ window.onload = function showCart() {
                         </button>
                     </td>
                     `;
+      table.append(row);
     }
   }
+  var imgs = document.querySelectorAll(".img");
+  var names = data.querySelectorAll(".name-phone");
+  var buyProduct = [];
+  for (var i = 0; i < names.length; i++) {
+    buyProduct.push({ img: imgs[i].src, name: names[i].textContent });
+  }
+
+  if (localStorage.getItem("buyProducts") == undefined) {
+    localStorage.setItem("buyProducts", JSON.stringify(buyProduct));
+  }
+  console.log(buyProduct);
 };
 
 function loadcartNumbers() {
