@@ -4,6 +4,23 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+/* Language */
+.language{
+  background-color: #000;
+  width: 5%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  align-items: center;
+}
+.language a{
+  color: #fff;
+  padding: 5px 10px;
+}
+.language a.active{
+  background-color: red;
+}
 
 a {
   text-decoration: none !important;
