@@ -458,7 +458,27 @@ function loadcartNumbersremove() {
 }
 
 function removeAll() {
-  localStorage.clear();
+  localStorage.removeItem("01");
+  localStorage.removeItem("02");
+  localStorage.removeItem("03");
+  localStorage.removeItem("04");
+  localStorage.removeItem("05");
+  localStorage.removeItem("06");
+  localStorage.removeItem("06");
+  localStorage.removeItem("07");
+  localStorage.removeItem("08");
+  localStorage.removeItem("09");
+  localStorage.removeItem("10");
+  localStorage.removeItem("11");
+  localStorage.removeItem("12");
+  localStorage.removeItem("13");
+  localStorage.removeItem("14");
+  localStorage.removeItem("15");
+  localStorage.removeItem("16");
+  localStorage.removeItem("17");
+  localStorage.removeItem("18");
+  localStorage.removeItem("19");
+  localStorage.removeItem("20");
 }
 
 //
@@ -489,7 +509,7 @@ function valid() {
   var userName = document.getElementById("user-name");
   var userPhone = document.getElementById("user-number");
   var userMail = document.getElementById("user-email");
-  console.log(userName.value, userPhone, userMail);
+  var address = document.querySelector(".address");
   var x = 0;
   console.log(x);
   if (!validateName(userName.value)) {
@@ -525,6 +545,15 @@ function valid() {
   if (x == 0) {
     let checkout = document.querySelector("#cf").value;
     if (checkout) {
+      var userInfo = [];
+      userInfo.push({
+        userName: userName.value,
+        userPhone: userPhone.value,
+        userMail: userMail.value,
+        address: address.value,
+      });
+      localStorage.setItem("userInfo", JSON.stringify(userInfo));
+
       window.location = "confrim.html";
       removeAll();
     } else {

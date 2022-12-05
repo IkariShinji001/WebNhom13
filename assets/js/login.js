@@ -103,8 +103,12 @@ btnSubmit.addEventListener("click", (e) => {
 
     if (x === 0) {
       isLogin = 1;
+      localStorage.setItem(
+        "accountLogin",
+        JSON.stringify({ username, password })
+      );
       localStorage.setItem("isLogin", JSON.stringify(isLogin));
-      productLocation();
+      window.location = "ListItem.html";
     }
   }
 });
