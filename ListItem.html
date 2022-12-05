@@ -1,91 +1,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sach</title>
-    <link rel="stylesheet" href="assets/css/ListItem.css">
-    <link rel="stylesheet" href="assets/aos-master/aos-master/dist/aos.css">
-    <script src=""></script>
-    <link rel="stylesheet" href="assets/bootstrap-5.2.2-dist/css/bootstrap.css">
-    <script src="assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh sach</title>
+  <link rel="stylesheet" href="assets/css/ListItem.css">
+  <link href="/assets/aos-master/aos-master/dist/aos.css" rel="stylesheet">
+  <script src="assets/aos-master/aos-master/dist/aos.js"></script>
+  <link rel="stylesheet" href="assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+  <script src="assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
+</head>
 
-   
-  </head>
+
 <body>
+  <div class="container-fluid" style="background-color: rgb(54, 160, 231);"> 
+    <div class="container" style="background-color: rgb(54, 160, 231);">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="search-box">
+                <input type="text" class="search-in" placeholder="Type to search" name="">
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </a>
+            </div> 
+            <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+                <a href="#" class="text-decoration-none"><p class="title">DPN TECHNOLOTGIES</p></a>
+            </div>
+    
+            <div class="col-md-4 text-end">
+                <div class="cart">
+                    <a href="./shopping-cart.html">
+                        <i class="fa-solid fa-cart-shopping cart-in"></i>
+                        Giỏ hàng
+                    </a>
+                    <div class="cart-number"><span>0</span></div>
+                </div>
+                
+                <div class="user-info">
+                    <a href="#">
+                        <i class="fa-solid fa-user user-info-in"></i>
+                        Tài khoản của tôi
+                    </a>
+                </div>
 
-
-  <div class="container-fluid header">
-    <div class="header container">
-      <div class="row">
-        <div class="col-4">
-          <div class="search-box">
-            <input type="text" class="search-in" placeholder="Type to search" name="">
-            <a href="#">
-              <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
-            </a>
-          </div>
-
-        </div>
-
-        <div class="col" style="margin-left: 50px;">
-          <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
-          <a href="#">
-            <p class="title">DPN TECHNOLOTGIES</p>
-          </a>
-        </div>
-
-        <div class="col-4">
-          <div class="cart">
-            <a href="#">
-              <i class="fa-solid fa-cart-shopping cart-in"></i>
-              Giỏ hàng
-            </a>
-          </div>
-
-          <div class="user-info">
-            <a href="#">
-              <i class="fa-solid fa-user user-info-in"></i>
-              Tài khoản của tôi
-            </a>
-          </div>
-
-          <div class="news">
-            <a href="#">
-              <i class="fa-solid fa-newspaper news-in"></i>
-              Thông tin
-            </a>
-          </div>
-        </div>
+                <div class="news">
+                    <a href="#">
+                        <i class="fa-solid fa-newspaper news-in"></i>
+                        Thông tin
+                    </a>
+                </div>
+            </div>
+        </header>
       </div>
     </div>
-  </div>
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eighth navbar example" style="top:-90px; background-color: black;">
+        <div class="container">
+            <button class="navbar-toggler" style="background-color:white; margin-top:-8px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:black"></span>
+            </button>
 
-  <div class="container-fluid nav">
-    <div class="nav container">
-      <div class="row">
-        <div class="col-4">
-          <div class="phone">
-            <a style="text-decoration: none;" href="ListItem.html"> <i class="fa-solid fa-mobile"></i>
-              <span>Điện thoại</span></a>
+          <div class="collapse navbar-collapse" id="navbarsExample07" style="background-color:black; height:10px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item phone">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fa-solid fa-mobile"></i>
+                    <span>Điện thoại</span>
+                </a>
+              </li>
+              <li class="nav-item laptop">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Laptop</span>
+                </a>
+              </li>
+              <li class="nav-item sales">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>Khuyến mãi</span>
+                </a>
+              </li>
+            </ul>
           </div>
-
-          <div class="laptop">
-            <i class="fa-solid fa-laptop"></i>
-            <span>Laptop</span>
-          </div>
-
-          <div class="sales">
-            <i class="fa-solid fa-percent"></i>
-            <span>Khuyến mãi</span>
-          </div>
-
         </div>
-      </div>
-    </div>
-  </div>
+    </nav>
   <!-- carousel -->
   <div style="margin-top: 20px;" class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -134,19 +133,19 @@
         <img src="logo-phone/vivo-logo-220-220x48-3.png" alt="">
       </div>
       <div class="slider-item" onclick="ChangeList('Nokia')">
-        <img  src="logo-phone/Nokia42-b_21.jpg"
-          alt="">
+        <img src="logo-phone/Nokia42-b_21.jpg" alt="">
       </div>
       <div class="slider-item" onclick="ChangeList('Oppo')">
-        <img  src="logo-phone/OPPO42-b_5.jpg" alt="">
+        <img src="logo-phone/OPPO42-b_5.jpg" alt="">
       </div>
       <div class="slider-item" onclick="ChangeList('Samsung')">
-        <img  src="logo-phone/samsungnew-220x48-1.png" alt="">
+        <img src="logo-phone/samsungnew-220x48-1.png" alt="">
       </div>
       <div class="slider-item" onclick="ChangeList('Xiaomi')">
-        <img  src="logo-phone/xiaomi.webp" alt="">
+        <img src="logo-phone/xiaomi.webp" alt="">
       </div>
 
+<<<<<<< HEAD
   </div>
 </div>
 <!-- Danh sach san pham -->
@@ -155,9 +154,19 @@
 <!-- Nút xem thêm -->
     <div style="display: flex;justify-content: center;" id="changetype">
        <button onclick="XemThem('show-hidden')" id="btn-show" class="show">Xem thêm</button>
+=======
+>>>>>>> faef5268dbb68d06d99bf02e638ee5251e584fe0
     </div>
   </div>
-  
+  <!-- Danh sach san pham -->
+  <div id="Sort-Item" class=" container ">
+    <div id="item" class="listItem "></div>
+    <!-- Nút xem thêm -->
+    <div id="changetype">
+      <button onclick="XemThem('show-hidden')" id="btn-show" class="show">Xem thêm</button>
+    </div>
+  </div>
+
   <script>
     AOS.init();
   </script>
@@ -218,16 +227,16 @@
 
       <div class="footer-word">
         <p style="margin: 0px">Tư vấn mua hàng (Miễn phí)</p>
-        <a class="footer-phone"  href="tel:">Số điện thoại (Nhánh 1)</a>
+        <a class="footer-phone" href="tel:">Số điện thoại (Nhánh 1)</a>
         <p style="margin: 0px">Hỗ trợ kỹ thuật</p>
-        <a class="footer-phone"  href="tel:">Số điện thoại (Nhánh 2)</a>
+        <a class="footer-phone" href="tel:">Số điện thoại (Nhánh 2)</a>
         <p style="margin: 0px">Góp ý, khiếu nại dịch vụ (8h00 - 22h00)</p>
-        <a class="footer-phone"  href="tel:">Số điện thoại</a>
-      
-        
+        <a class="footer-phone" href="tel:">Số điện thoại</a>
+
+
       </div>
 
-      
+
     </div>
     <a style="float: right;" href="#"><img width="50px;" height="50px;" src="/assets/img/top1.jpg" alt=""></i></a>
   </footer>
