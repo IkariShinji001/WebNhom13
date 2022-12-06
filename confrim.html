@@ -1,117 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
-    <script src="https://kit.fontawesome.com/8ae11d514b.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href='https://css.gg/css' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    
-        <title>Giỏ hàng</title>
-            <link rel="icon" href="./assets/img/Logo.png.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+  <script src="https://kit.fontawesome.com/8ae11d514b.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href='https://css.gg/css' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <title>Giỏ hàng</title>
+  <link rel="icon" href="./assets/img/Logo.png.png">
 </head>
+
 <body>
-    <style>
-        * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
 
-/* header */
+    /* header */
 
-header{
-  background-color: rgb(54, 160, 231);
-  z-index: 9999;
-  display:block;
-  
-}
+    header {
+      background-color: rgb(54, 160, 231);
+      z-index: 9999;
+      display: block;
 
-.container-fluid .header .col-3{
-  display:inline-flex;
-}
+    }
 
-a{
-  text-decoration: none;
-}
+    .container-fluid .header .col-3 {
+      display: inline-flex;
+    }
 
-.container-fluid .header .col-4 .search-box{
-  width: 400px;
-  background-color: black;
-  border-radius: 40px;
-  height:40px;
-  padding:1px;
-  margin-bottom: 15px;
-  margin-top:19px;
-}
+    a {
+      text-decoration: none;
+    }
 
-.container-fluid .header .col-4 .search-in{
-  background: none;
-  border: none;
-  line-height: 37px;
-  margin-left:30px;
-  outline:none;
-  color:white;
-  width: 310px;
-  font-size: 14px;
-  font-family: 'Quicksand', sans-serif;
-}
+    .container-fluid .header .col-4 .search-box {
+      width: 400px;
+      background-color: black;
+      border-radius: 40px;
+      height: 40px;
+      padding: 1px;
+      margin-bottom: 15px;
+      margin-top: 19px;
+    }
 
-.container-fluid .header .col-4 .search-icon{
-  color:white;
-  text-decoration: none;
-  position: absolute;
-  
-}
+    .container-fluid .header .col-4 .search-in {
+      background: none;
+      border: none;
+      line-height: 37px;
+      margin-left: 30px;
+      outline: none;
+      color: white;
+      width: 310px;
+      font-size: 14px;
+      font-family: 'Quicksand', sans-serif;
+    }
 
-.container-fluid .header .col .logo{
-  width: 50px;
-  height: 50px;
-  margin-top:14px;
-}
-    .container-fluid .header .col .logo:hover{
+    .container-fluid .header .col-4 .search-icon {
+      color: white;
+      text-decoration: none;
+      position: absolute;
+
+    }
+
+    .container-fluid .header .col .logo {
+      width: 50px;
+      height: 50px;
+      margin-top: 14px;
+    }
+
+    .container-fluid .header .col .logo:hover {
       transform: scale(1.05);
-  }
+    }
 
-.container-fluid .header .col .title{
-  font-family: 'Oswald';
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 5px;
-  display: inline-block;
-  font-size: 35px;
-  color:rgb(255, 255, 255); 
-}
-    .container-fluid .header .col .title:hover{
-      color:rgb(20, 20, 20)
-  }
+    .container-fluid .header .col .title {
+      font-family: 'Oswald';
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 5px;
+      display: inline-block;
+      font-size: 35px;
+      color: rgb(255, 255, 255);
+    }
 
-.container-fluid .header .col-4 .news,
-.container-fluid .header .col-4 .cart,
-.container-fluid .header .col-4 .user-info{
-  display: inline-flex;
-  float: right;
-  padding: 10px 10px 5px 10px;
-} 
+    .container-fluid .header .col .title:hover {
+      color: rgb(20, 20, 20)
+    }
 
-  .container-fluid .header .col-4 .news a,
-  .container-fluid .header .col-4 .cart a,
-  .container-fluid .header .col-4 .user-info a{
+    .container-fluid .header .col-4 .news,
+    .container-fluid .header .col-4 .cart,
+    .container-fluid .header .col-4 .user-info {
+      display: inline-flex;
+      float: right;
+      padding: 10px 10px 5px 10px;
+    }
+
+    .container-fluid .header .col-4 .news a,
+    .container-fluid .header .col-4 .cart a,
+    .container-fluid .header .col-4 .user-info a {
       color: black;
       font: 30px;
-  }
+    }
 
-  .container-fluid .header .col-4 .news i,
-  .container-fluid .header .col-4 .cart i,
-  .container-fluid .header .col-4 .user-info i{
+    .container-fluid .header .col-4 .news i,
+    .container-fluid .header .col-4 .cart i,
+    .container-fluid .header .col-4 .user-info i {
       color: black;
       display: flex;
       align-items: center;
@@ -120,185 +124,187 @@ a{
       border-radius: 25%;
       width: 40px;
       height: 40px;
-      margin:0 auto;
-  }
+      margin: 0 auto;
+    }
 
-  .container-fluid .header .col-4 .cart a:hover > .cart-in,
-  .container-fluid .header .col-4 .news a:hover > .news-in,
-  .container-fluid .header .col-4 .user-info a:hover > .user-info-in{
+    .container-fluid .header .col-4 .cart a:hover>.cart-in,
+    .container-fluid .header .col-4 .news a:hover>.news-in,
+    .container-fluid .header .col-4 .user-info a:hover>.user-info-in {
       background-color: black;
-      color:white;
-  }
+      color: white;
+    }
 
-header .cart .cart-number{
-  background: red;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  right:1.6vw;
-  top:-3px;
-  border-radius: 100%;
-  text-align: center;
-  font-size:14px;
-}
+    header .cart .cart-number {
+      background: red;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      right: 1.6vw;
+      top: -3px;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
 
-/* Nav */
+    /* Nav */
 
-.container-fluid.nav {
-  background-color: #000;
-  height: 40px;
-  z-index: 9999;
-}
+    .container-fluid.nav {
+      background-color: #000;
+      height: 40px;
+      z-index: 9999;
+    }
 
-.nav .container {
-  width: 100%;
-}
+    .nav .container {
+      width: 100%;
+    }
 
-.container-fluid.nav .row {
-  align-items: center;
-  width: inherit;
-}
+    .container-fluid.nav .row {
+      align-items: center;
+      width: inherit;
+    }
 
-.container-fluid.nav .row .col-4 {
-  display: flex;
-}
+    .container-fluid.nav .row .col-4 {
+      display: flex;
+    }
 
-.container-fluid.nav .row .col-4 .phone,
-.container-fluid.nav .row .col-4 .sales,
-.container-fluid.nav .row .col-4 .laptop {
-  display: flex;
-  width: 30%;
-  align-items: center;
-}
+    .container-fluid.nav .row .col-4 .phone,
+    .container-fluid.nav .row .col-4 .sales,
+    .container-fluid.nav .row .col-4 .laptop {
+      display: flex;
+      width: 30%;
+      align-items: center;
+    }
 
-.container-fluid.nav .row .col-4 .phone i,
-.container-fluid.nav .row .col-4 .laptop i,
-.container-fluid.nav .row .col-4 .sales i {
-  color: white;
-  font-size: 20px;
-}
+    .container-fluid.nav .row .col-4 .phone i,
+    .container-fluid.nav .row .col-4 .laptop i,
+    .container-fluid.nav .row .col-4 .sales i {
+      color: white;
+      font-size: 20px;
+    }
 
-.container-fluid.nav .row .col-4 .phone:hover,
-.container-fluid.nav .row .col-4 .laptop:hover,
-.container-fluid.nav .row .col-4 .sales:hover {
-  cursor: pointer;
-}
+    .container-fluid.nav .row .col-4 .phone:hover,
+    .container-fluid.nav .row .col-4 .laptop:hover,
+    .container-fluid.nav .row .col-4 .sales:hover {
+      cursor: pointer;
+    }
 
-.container-fluid.nav .row .col-4 .phone:hover i,
-.container-fluid.nav .row .col-4 .laptop:hover i,
-.container-fluid.nav .row .col-4 .phone:hover span,
-.container-fluid.nav .row .col-4 .laptop:hover span,
-.container-fluid.nav .row .col-4 .sales:hover span,
-.container-fluid.nav .row .col-4 .sales:hover i {
-  color: rgb(160, 159, 159);
-}
+    .container-fluid.nav .row .col-4 .phone:hover i,
+    .container-fluid.nav .row .col-4 .laptop:hover i,
+    .container-fluid.nav .row .col-4 .phone:hover span,
+    .container-fluid.nav .row .col-4 .laptop:hover span,
+    .container-fluid.nav .row .col-4 .sales:hover span,
+    .container-fluid.nav .row .col-4 .sales:hover i {
+      color: rgb(160, 159, 159);
+    }
 
-.container-fluid.nav .row .col-4 .phone span,
-.container-fluid.nav .row .col-4 .laptop span,
-.container-fluid.nav .row .col-4 .sales span {
-  color: white;
-  margin-left: 5px;
-  text-transform: uppercase;
-  font-size: 15px;
-}
+    .container-fluid.nav .row .col-4 .phone span,
+    .container-fluid.nav .row .col-4 .laptop span,
+    .container-fluid.nav .row .col-4 .sales span {
+      color: white;
+      margin-left: 5px;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
 
-.center{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    margin-top:10%;
-}
+    .center {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 10%;
+    }
+  </style>
 
-    </style>
-
-    <!--header-->
-    <header class="container-fluid header ">
-      <div class="header container">
-          <div class="row">
-              <div class="col-4">
-                  <div class="search-box">
-                      <input type="text" class="search-in" placeholder="Type to search" name="">
-                      <a href="#">
-                          <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
-                      </a>
-                  </div> 
-
-              </div>       
-
-              <div class="col" style="margin-left: 50px;">
-                  <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
-                  <a href="#"><p class="title">DPN TECHNOLOTGIES</p></a>
-              </div>
-
-              <div class="col-4">
-                  <div class="cart">
-                      <a href="./shopping-cart.html">
-                          <i class="fa-solid fa-cart-shopping cart-in"></i>
-                          Giỏ hàng
-                      </a>
-                      <div class="cart-number"><span>0</span></div>
-                  </div>
-                  
-                  <div class="user-info">
-                      <a href="#">
-                          <i class="fa-solid fa-user user-info-in"></i>
-                          Tài khoản của tôi
-                      </a>
-                  </div>
-
-                  <div class="news">
-                      <a href="#">
-                          <i class="fa-solid fa-newspaper news-in"></i>
-                          Thông tin
-                      </a>
-                  </div>
-              </div>
+  <!--header-->
+  <header class="container-fluid header ">
+    <div class="header container">
+      <div class="row">
+        <div class="col-4">
+          <div class="search-box">
+            <input type="text" class="search-in" placeholder="Type to search" name="">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
+            </a>
           </div>
+
+        </div>
+
+        <div class="col" style="margin-left: 50px;">
+          <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+          <a href="#">
+            <p class="title">DPN TECHNOLOTGIES</p>
+          </a>
+        </div>
+
+        <div class="col-4">
+          <div class="cart">
+            <a href="./shopping-cart.html">
+              <i class="fa-solid fa-cart-shopping cart-in"></i>
+              Giỏ hàng
+            </a>
+            <div class="cart-number"><span>0</span></div>
+          </div>
+
+          <div class="user-info">
+            <a href="#">
+              <i class="fa-solid fa-user user-info-in"></i>
+              Tài khoản của tôi
+            </a>
+          </div>
+
+          <div class="news">
+            <a href="#">
+              <i class="fa-solid fa-newspaper news-in"></i>
+              Thông tin
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
   </header>
-  
+
 
   <div class="container-fluid nav">
-      <div class="nav container">
-          <div class="row">
-              <div class="col-4">
-                  <div class="phone">
-                      <i class="fa-solid fa-mobile"></i>
-                      <span>Điện thoại</span>
-                  </div>
-
-                  <div class="laptop">
-                      <i class="fa-solid fa-laptop"></i>
-                      <span>Laptop</span>
-                  </div>
-
-                  <div class="sales">
-                      <i class="fa-solid fa-percent"></i>
-                      <span>Khuyến mãi</span>
-                  </div>
-
-              </div>
+    <div class="nav container">
+      <div class="row">
+        <div class="col-4">
+          <div class="phone">
+            <i class="fa-solid fa-mobile"></i>
+            <span>Điện thoại</span>
           </div>
-      </div>
-  </div>
-  
-    <!--confrim-->
-    <main class="container" >
-        <div class="row">
-            <div class="text-center center">
-                <i class="fa-solid fa-circle-check" style="font-size:120px; color:rgb(54, 160, 231); padding-bottom: 10px;"></i>
-                <h2>Đặt hàng thành công!</h2>
-                <i style="font-size:15px;">Trở về <a href="#">trang chủ</a></i>
-            </div>
+
+          <div class="laptop">
+            <i class="fa-solid fa-laptop"></i>
+            <span>Laptop</span>
+          </div>
+
+          <div class="sales">
+            <i class="fa-solid fa-percent"></i>
+            <span>Khuyến mãi</span>
+          </div>
+
         </div>
-    </main>
+      </div>
+    </div>
+  </div>
+
+  <!--confrim-->
+  <main class="container">
+    <div class="row">
+      <div class="text-center center">
+        <i class="fa-solid fa-circle-check" style="font-size:120px; color:rgb(54, 160, 231); padding-bottom: 10px;"></i>
+        <h2>Đặt hàng thành công!</h2>
+        <i style="font-size:15px;">Trở về <a href="#">trang chủ</a></i>
+      </div>
+    </div>
+  </main>
 
 
-    <script src="./assets/js/add-to-cart.js"></script>
-    <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <script src="./assets/js/add-to-cart.js"></script>
+  <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
