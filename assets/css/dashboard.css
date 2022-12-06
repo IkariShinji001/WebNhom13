@@ -7,178 +7,186 @@
 
 /* Dashboard */
 
-/*sidebar*/
-aside.sidebar {
-  background: rgb(255, 255, 255);
-  height: 100vw;
-  padding: 0;
-  vertical-align: top;
-  width: 280px;
-  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
-  position: fixed;
-  top: 119px;
-  margin-left: -10px;
+body{
+  background-color: rgb(249, 249, 249);
 }
 
-aside.sidebar .sidebar-in {
+a{
+  text-decoration: none;
+}
+
+/*sidebar*/
+
+aside.sidebar {
+background: rgb(255, 255, 255);
+height: 100%;
+padding: 0;
+vertical-align: top;
+width: 280px;
+box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+margin-left: -12px;
+z-index: 999999 !important;
+}
+
+aside.sidebar .sidebar-in{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-aside div .user-pic {
+aside div .user-pic{
   width: 50px;
-  height: 50px;
+  height:50px;
   border-radius: 50%;
   display: inline-flex;
   margin: 20px 10px 20px 30px;
 }
 
-aside div .name {
-  display: inline-flex;
-  position: absolute;
-  margin-top: 25px;
-}
+  aside div .name{
+    display: inline-flex;
+    position: absolute;
+    margin-top:25px;
+  }
 
-aside div .email {
-  display: inline-flex;
-  position: absolute;
-  font-size: 11px;
-  margin-top: 50px;
-}
+  aside div .email{
+    display: inline-flex;
+    position: absolute;
+    font-size: 11px;
+    margin-top:50px;
+  }
 
-aside .menu-icon {
-  margin-right: 20px;
+aside .menu-icon{
+  margin-right:20px;
   font-size: 15px;
-  color: black;
-  margin-left: 20px;
+  color:black;
+  margin-left:20px;
 }
 
-aside .menu-icon-active {
-  margin-right: 20px;
-  font-size: 15px;
-  color: rgb(54, 160, 231);
-  margin-left: 20px;
+    aside .menu-icon-active{
+      margin-right:20px;
+      font-size: 15px;
+      color: rgb(54, 160, 231);
+      margin-left:20px;
+    }
+
+aside .tab-name{
+  color:black;
 }
 
-aside .tab-name {
-  color: black;
-}
+    aside .tab-name-active{
+      color: rgb(54, 160, 231);
+      font-weight:600;
+    }
 
-aside .tab-name-active {
-  color: rgb(54, 160, 231);
-  font-weight: 600;
-}
+    aside .tab-name:hover{
+      font-weight: 600;
+      cursor: pointer;
+    }
 
-aside .tab-name:hover {
-  font-weight: 600;
-  cursor: pointer;
-}
-
-aside .tab-name:hover > .tab-name-child {
+aside .tab-name:hover > .tab-name-child{
   opacity: 1;
 }
 
-aside .tab-name-child {
+aside .tab-name-child{
   opacity: 0;
   font-weight: 400;
-  font-size: 15px;
+  font-size:15px;
   padding: 10px 0 20px 65px;
 }
 
-aside .tab-name-label {
-  color: black;
+aside .tab-name-label{
+  color:black;
 }
 
-aside .tab-name-label:hover {
-  color: rgb(54, 160, 231);
-}
+  aside .tab-name-label:hover{
+    color:rgb(54, 160, 231);
+  }
 
-aside .tab-active {
+aside .tab-active{
   background-color: rgba(0, 0, 0, 0.101);
 }
 
-aside .aside-item {
-  width: 100%;
+aside .aside-item{
+  width:100%;
   padding: 10px;
 }
 
 /*main content*/
 .main-panel {
-  margin-left: 265px;
-  width: 83%;
-  height: auto;
-  padding-top: 70px;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(249, 249, 249);
+width: 98%;
+margin-left: 30px;
+display: flex;
+flex-direction: column;
+background-color: rgb(249, 249, 249);
 }
 
 .content-wrapper {
-  background: rgb(249, 249, 249);
-  padding-bottom: 20px;
-  width: 90%;
-  margin: 0 auto;
+background: rgb(249, 249, 249);
+padding-bottom: 20px;
+margin: 0 auto;
 }
 
-.main-panel .content-wrapper .row .col-6 .page-header {
-  font-weight: 600;
-  font-size: 35px;
-  margin-top: 80px;
-  margin-bottom: 20px;
+.main-panel .content-wrapper .row .col-6 .page-header{
+font-weight: 600;
+font-size: 35px;
+margin-top:20px;
+margin-bottom: 20px;
 }
 
 .main-panel .content-wrapper .row .card {
-  border: 1px solid #edf2fa;
-  box-shadow: 0 1px 20px 0 rgb(236 242 251 / 68%);
-  margin-bottom: 30px;
+border: 1px solid #edf2fa;
+box-shadow: 0 1px 20px 0 rgb(236 242 251 / 68%);
+margin-bottom:30px;
 }
 
-.main-panel .content-wrapper .row .col-4 .card .card-items .icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 7px;
-  background: rgb(54, 160, 231);
-  text-align: center;
-  margin-right: 24px;
+.main-panel .content-wrapper .row .col-4 .card .card-items .icon{
+width: 56px;
+height: 56px;
+border-radius: 7px;
+background: rgb(54, 160, 231);
+text-align: center;
+margin-right: 24px;
 }
-.main-panel .content-wrapper .row .col-4 .card .card-items .icon i {
+.main-panel .content-wrapper .row .col-4 .card .card-items .icon i{
   color: #ffffff;
   font-size: 20px;
   margin-top: 18px;
   display: inline-block;
 }
 
-.main-panel .content-wrapper .row .col-4 .card .card-items {
-  display: flex;
-  padding: 30px 50px 30px 30px;
+.main-panel .content-wrapper .row .col-4 .card .card-items{
+display: flex;
+padding:30px 50px 30px 30px;
 }
 
-.main-panel .content-wrapper .row .col-4 .card .card-items .label {
-  font-weight: 300;
-  font-size: 20px;
+.main-panel .content-wrapper .row .col-4 .card .card-items .label{
+font-weight: 300;
+font-size: 20px;
 }
 
-.main-panel .content-wrapper .row .col .card .table {
-  width: 100%;
-  color: #212529;
+.main-panel .content-wrapper .row .col .card .table{
+
+width: 100%;
+color: #212529;
+
 }
 
 .main-panel .content-wrapper .row .col .card table th,
-.main-panel .content-wrapper .row .col .card table td {
-  border-top: 0;
-  border-bottom-width: 1px;
-  padding-left: 25px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 24.5px;
-  vertical-align: bottom;
-  text-align: inherit;
-  display: table-cell;
+.main-panel .content-wrapper .row .col .card table td  {
+border-top: 0;
+border-bottom-width: 1px;
+padding-left: 25px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-right:24.5px;
+vertical-align: bottom;
+text-align: inherit;
+display: table-cell;
 }
 
-.main-panel .content-wrapper .row .col .card table th {
-  color: rgb(54, 160, 231);
-  background: #fafbfd;
-  font-weight: 500;
+.main-panel .content-wrapper .row .col .card table th{
+color: rgb(54, 160, 231);
+background: #fafbfd;
+font-weight: 500;
+
 }
