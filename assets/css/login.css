@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 /* Language */
-.language{
+.language {
   background-color: #000;
   width: 5%;
   height: 30px;
@@ -14,11 +14,11 @@
   margin-top: 10px;
   align-items: center;
 }
-.language a{
+.language a {
   color: #fff;
   padding: 5px 10px;
 }
-.language a.active{
+.language a.active {
   background-color: red;
 }
 
@@ -37,7 +37,6 @@ a {
 }
 
 .form-content {
-  padding-top: 70px;
   width: 1000px !important;
 }
 
