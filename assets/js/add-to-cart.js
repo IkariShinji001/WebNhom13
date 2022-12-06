@@ -253,10 +253,15 @@ const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
 function addCart(code) {
   if (typeof localStorage[code] == "undefined") {
     window.localStorage.setItem(code, 1);
+    current2 = parseInt(window.localStorage.getItem("cartNumbers"));
+    window.localStorage.setItem("cartNumbers", current2 + 1);
   } else {
     current = parseInt(window.localStorage.getItem(code));
+    current2 = parseInt(window.localStorage.getItem("cartNumbers"));
     window.localStorage.setItem(code, current + 1);
+    window.localStorage.setItem("cartNumbers", current2 + 1);
   }
+  cartNumbers();
 }
 
 let carts = document.querySelectorAll(".add-cart");
@@ -385,9 +390,9 @@ function cartNumbers(phoneList) {
   productNumbers = parseInt(productNumbers);
 
   if (productNumbers) {
-    localStorage.setItem("cartNumbers", productNumbers + 1);
+    localStorage.setItem("cartNumbers", productNumbers);
     document.querySelector(".cart-number span").textContent =
-      productNumbers + 1;
+      productNumbers;
   } else {
     localStorage.setItem("cartNumbers", 1);
     document.querySelector(".cart-number span").textContent = 1;
@@ -438,7 +443,7 @@ function removeCart(code) {
     productNumbers = parseInt(productNumbers);
     localStorage.setItem(
       "cartNumbers",
-      productNumbers - parseInt(window.localStorage.getItem(code))
+      productNumbers - parseInt(window.localStorage.getItem(code))  
     );
     document.querySelector(".cart-number span").textContent =
       productNumbers - parseInt(window.localStorage.getItem(code));
@@ -479,6 +484,7 @@ function removeAll() {
   localStorage.removeItem("18");
   localStorage.removeItem("19");
   localStorage.removeItem("20");
+  localStorage.removeItem("cartNumbers");
 }
 
 //
