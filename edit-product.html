@@ -15,81 +15,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://css.gg/css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/header.css">
 
     <title>Trang quản lý</title>
     <link rel="icon" href="./assets/img/Logo.png.png">
 </head>
 
 <body>
-    <header class="container-fluid header ">
-        <div class="header container">
-            <div class="row">
-                <div class="col-4">
+    <header>
+        <div class="container-fluid" style="background-color: rgb(54, 160, 231);">
+            <div class="container" style="background-color: rgb(54, 160, 231);">
+                <header
+                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
                     <div class="search-box">
                         <input type="text" class="search-in" placeholder="Type to search" name="">
                         <a href="#">
-                            <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </a>
+                    </div>
+                    <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+                        <a href="#" class="text-decoration-none">
+                            <p class="title">DPN TECHNOLOGIES</p>
                         </a>
                     </div>
 
-                </div>
+                    <div class="col-md-4 text-end">
+                        <div class="cart">
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping cart-in"></i>
+                                Giỏ hàng
+                            </a>
+                            <div class="cart-number"><span>0</span></div>
+                        </div>
 
-                <div class="col" style="margin-left: 50px;">
-                    <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
-                    <a href="#">
-                        <p class="title">DPN TECHNOLOGIES</p>
-                    </a>
-                </div>
+                        <div class="user-info">
+                            <a href="#" class="user">
+                                <i class="fa-solid fa-user user-info-in"></i>
+                                Tài khoản của tôi
+                            </a>
+                        </div>
 
-                <div class="col-4">
-                    <div class="cart">
-                        <a href="#">
-                            <i class="fa-solid fa-cart-shopping cart-in"></i>
-                            Giỏ hàng
-                        </a>
+                        <div class="news">
+                            <a href="#">
+                                <i class="fa-solid fa-newspaper news-in"></i>
+                                Thông tin
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="user-info">
-                        <a href="#" class="user">
-                            <i class="fa-solid fa-user user-info-in"></i>
-                            Tài khoản của tôi
-                        </a>
-                    </div>
-
-                    <div class="news">
-                        <a href="#">
-                            <i class="fa-solid fa-newspaper news-in"></i>
-                            Thông tin
-                        </a>
-                    </div>
-                </div>
+                </header>
             </div>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eighth navbar example"
+            style="top:-90px; background-color: black;">
+            <div class="container">
+                <button class="navbar-toggler" style="background-color:white; margin-top:-8px;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color:black"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07" style="background-color:black;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item phone">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-solid fa-mobile"></i>
+                                <span>Điện thoại</span>
+                            </a>
+                        </li>
+                        <li class="nav-item laptop">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-solid fa-laptop"></i>
+                                <span>Laptop</span>
+                            </a>
+                        </li>
+                        <li class="nav-item sales">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-solid fa-percent"></i>
+                                <span>Khuyến mãi</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <div class="container-fluid nav">
-        <div class="nav container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="phone">
-                        <i class="fa-solid fa-mobile"></i>
-                        <span>Điện thoại</span>
-                    </div>
-
-                    <div class="laptop">
-                        <i class="fa-solid fa-laptop"></i>
-                        <span>Laptop</span>
-                    </div>
-
-                    <div class="sales">
-                        <i class="fa-solid fa-percent"></i>
-                        <span>Khuyến mãi</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--edit-->
     <div class="container-fluid">

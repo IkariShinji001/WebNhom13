@@ -7,6 +7,9 @@
 
 /* header */
 
+a {
+  text-decoration: none !important;
+}
 /* Dashboard */
 
 /*sidebar*/
