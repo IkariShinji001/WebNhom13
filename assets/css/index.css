@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@900&family=Oswald:wght@600&family=Quicksand:wght@300&family=Roboto:wght@100;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }  
+  body{
+    background-image: url(/WebNhom13/assets/img/Trangchu/background.webp);
+  }
+  /*header*/
+  
+  header .search-box{
+      width: 400px;
+      background-color: black;
+      border-radius: 40px;
+      height:40px;
+      padding:1px;
+    }
+  
+  header .search-in{
+      background: none;
+      border: none;
+      line-height: 37px;
+      margin-left:30px;
+      outline:none;
+      color:white;
+      width: 310px;
+      font-size: 14px;
+      font-family: 'Quicksand', sans-serif;
+    }
+  
+  header .search-icon{
+      color:white;
+      text-decoration: none;
+    }
+  
+  header .logo{
+      width: 50px;
+      height: 50px;
+    }
+  
+    header .logo:hover{
+      transform: scale(1.05);
+  }
+  
+  header .title{
+    font-family: 'Oswald';
+    font-size: 35px;
+    color:rgb(255, 255, 255); 
+    margin-left:10px;
+  }
+  
+    header .title:hover{
+    color:rgb(20, 20, 20)
+  }
+  
+  header .news,
+  header .cart,
+  header .user-info{
+    display: inline-flex;
+    float: right;
+    padding: 10px 10px 5px 10px;
+  } 
+  
+    header .news a,
+    header .cart a,
+    header .user-info a{
+        color: black;
+        font: 30px;
+        text-decoration: none;
+    }
+  
+    header .news i,
+    header .cart i,
+    header .user-info i{
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 25%;
+        width: 40px;
+        height: 40px;
+        margin:0 auto;
+    }
+  
+    header .cart a:hover > .cart-in,
+    header .news a:hover > .news-in,
+    header .user-info a:hover > .user-info-in{
+        background-color: black;
+        color:white;
+    }
+  
+  header .cart .cart-number{
+      background: red;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      right:1.6vw;
+      top:-3px;
+      border-radius: 100%;
+      text-align: center;
+      font-size:14px;
+    }
+  
+  /*navbar*/
+  nav {
+    background-color: #000;
+    height: 40px;
+    position: fixed;
+    margin-top: 79px;
+    z-index: 9999;
+  }
+  
+  nav .phone,
+  nav .sales,
+  nav .laptop {
+    color:white;
+  }
+  
+  nav .phone i,
+  nav .laptop i,
+  nav .sales i {
+    color: white;
+    font-size: 20px;
+  }
+  
+  nav .phone:hover,
+  nav .laptop:hover,
+  nav .sales:hover {
+    cursor: pointer;
+  }
+  
+  nav .phone:hover i,
+  nav .laptop:hover i,
+  nav .phone:hover span,
+  nav .laptop:hover span,
+  nav .sales:hover span,
+  nav .sales:hover i {
+    color: rgb(160, 159, 159);
+  }
+  
+  nav .phone span,
+  nav .laptop span,
+  nav .sales span {
+    color: white;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  
+  /* Carousesl */
+  .size-carousel {
+    width: 1200px;
+    margin: auto;
+    border-radius: 100px;
+  }
+  /* Sản phẩm */
+  .box-item {
+    background-color: #fff;
+    height: 460px;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .swiper-slide .box-item{
+    width: 100%;
+  }
+  .box-item:hover {
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+   border-radius: 10px;
+   
+  }
+  .name-item-font {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+  }
+  .name-item-font:hover {
+    color: blue;
+    cursor: pointer;
+  }
+  .cost {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cost-after_sales {
+    border-radius: 10px;
+    background: rgb(237, 6, 46);
+    background: linear-gradient(
+      90deg,
+      rgba(237, 6, 46, 1) 67%,
+      rgba(244, 143, 154, 1) 86%
+    );
+    padding: 5px 15px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .cost-before_sales {
+    font-size: 15px;
+  }
+  .about-item {
+    border-radius: 10px;
+    background-color: rgba(227, 215, 215, 0.955);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btn-buy {
+    border-radius: 5px;
+    padding: 5px 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(212, 36, 36);
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+    display: none;
+  }
+  .phone {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    transition: all .3s ease;
+  }
+  .btn-item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  div.box-item:hover .btn-buy {
+    display: block;
+  }
+  div.box-item:hover .phone {
+    transform: scale(1.1);
+  }
+  div#item .phone {
+    transition: all ease-out 0.3s;
+    margin-bottom: 15px;
+    margin-top: 12px;
+  }
+  .btn-buy:hover {
+    transform: scale(1.1);
+  }
+/* Khuyến Mãi Hot */
+.sale-hot{
+  margin: 15px 0px;
+}
+.swiper-wrapper{
+  background-color: #fff;
+  height: 100%;
+}
+.swiper{
+width: 100%;
+height: 100%;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+background-color: #fff;
+}
+.swiper-slide{
+  border: 1px solid #fff;
+  transition: all .1s ease;
+}
+.sale-hot-title{
+background-color: rgba(175, 6, 6, 0.858);
+padding: 10px 0px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+color: #fff;
+}
+/* Điện thoại tiêu biểu */
+.some-phone-item{
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.some-phone-title{
+  background-color: green;
+  padding: 10px 0px;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.
+  /* footer */
+  footer li {
+    list-style: none;
+    margin: 10px 0px;
+  }
+  footer li a {
+    color: black;
+  }
+  .footer-phone{
+  color: red;
+  }
+  footer {
+    margin-top: 80px;
+  }
+  .footer-box {
+    display: flex;
+    justify-content: space-around;
+    background-color: #36a0e7;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .footer-word {
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+    font-weight: 100;
+  }
