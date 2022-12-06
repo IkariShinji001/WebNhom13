@@ -5,15 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/edit-user.css">
-    <script src="https://kit.fontawesome.com/8ae11d514b.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/css/toast.css">
     <link href='https://css.gg/css' rel='stylesheet'>
 
     <title>Trang quản lý</title>
@@ -21,131 +17,131 @@
 </head>
 
 <body>
-    <header class="container-fluid header ">
-        <div class="header container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="search-box">
-                        <input type="text" class="search-in" placeholder="Type to search" name="">
-                        <a href="#">
-                            <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="col" style="margin-left: 50px;">
-                    <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+    <div class="container-fluid" style="background-color: rgb(54, 160, 231);"> 
+        <div class="container" style="background-color: rgb(54, 160, 231);">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <div class="search-box">
+                    <input type="text" class="search-in" placeholder="Type to search" name="">
                     <a href="#">
-                        <p class="title">DPN TECHNOLOGIES</p>
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     </a>
+                </div> 
+                <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <a href="#"><img src="./assets/img/Logo.png.png" alt="logo" class="logo"> </a>
+                    <a href="#" class="text-decoration-none"><p class="title">DPN TECHNOLOTGIES</p></a>
                 </div>
-
-                <div class="col-4">
+        
+                <div class="col-md-4 text-end">
                     <div class="cart">
-                        <a href="#">
+                        <a href="./shopping-cart.html">
                             <i class="fa-solid fa-cart-shopping cart-in"></i>
                             Giỏ hàng
                         </a>
+                        <div class="cart-number"><span>0</span></div>
                     </div>
-
+                    
                     <div class="user-info">
-                        <a href="#" class="user">
+                        <a href="#">
                             <i class="fa-solid fa-user user-info-in"></i>
                             Tài khoản của tôi
                         </a>
                     </div>
-
+    
                     <div class="news">
-                        <a href="#">
+                        <a href="#" class="user">
                             <i class="fa-solid fa-newspaper news-in"></i>
                             Thông tin
                         </a>
                     </div>
                 </div>
-            </div>
+            </header>
+          </div>
         </div>
-    </header>
-
-    <div class="container-fluid nav">
-        <div class="nav container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="phone">
+        <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eighth navbar example" style="top:-90px; background-color: black;">
+            <div class="container">
+                <button class="navbar-toggler" style="background-color:white; margin-top:-8px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color:black"></span>
+                </button>
+    
+              <div class="collapse navbar-collapse" id="navbarsExample07" style="background-color:black;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item phone">
+                    <a class="nav-link active" aria-current="page" href="#">
                         <i class="fa-solid fa-mobile"></i>
                         <span>Điện thoại</span>
-                    </div>
-
-                    <div class="laptop">
+                    </a>
+                  </li>
+                  <li class="nav-item laptop">
+                    <a class="nav-link active" aria-current="page" href="#">
                         <i class="fa-solid fa-laptop"></i>
                         <span>Laptop</span>
-                    </div>
-
-                    <div class="sales">
+                    </a>
+                  </li>
+                  <li class="nav-item sales">
+                    <a class="nav-link active" aria-current="page" href="#">
                         <i class="fa-solid fa-percent"></i>
                         <span>Khuyến mãi</span>
-                    </div>
-
-                </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </div>
+        </nav>
 
     <!--edit-->
-    <div class="container-fluid">
-        <!--sidebar-->
-        <div class="col-4">
-            <aside class="sidebar">
-                <div class="sidebar-in">
-                    <div>
-                        <img src="./assets/img/dashboard, edit/user-pic.png" class="user-pic" alt="profile-pic">
-                        <p class="name"><b>DPN Technologies</b></p>
-                        <p class="email">dpntechnologies@gmail.com</p>
+    <div class="container-fluid" style="margin-top:-90px;">
+        <div class="row">
+    <!--sidebar-->
+            <div class="col-2">
+                <aside class="sidebar">
+                    <div class="sidebar-in">
+                        <div>
+                            <img src="./assets/img/dashboard, edit/user-pic.png" class="user-pic" alt="profile-pic">
+                            <p class="name"><b>DPN Technologies</b></p>
+                            <p class="email">dpntechnologies@gmail.com</p>
 
-                    </div>
-                    <div class="aside-item" style="padding-bottom:5px;">
-                        <a href="./dashboard.html">
-                            <i class="fa-solid fa-laptop menu-icon"></i>
-                            <span class="tab-name">Dashboard</span>
-                        </a>
-                    </div>
+                        </div>
+                        <div class="aside-item" style="padding-bottom:5px;">
+                            <a href="./dashboard.html">
+                                <i class="fa-solid fa-laptop menu-icon"></i>
+                                <span class="tab-name">Dashboard</span>
+                            </a>
+                        </div>
 
-                    <div class="aside-item tab-active">
-
-                        <i class="fa-solid fa-pen-to-square menu-icon-active" style="font-size: 19px;"></i>
-                        <span class="tab-name-active ">Quản lý</span>
+                        <div class="aside-item tab-active">
+                                
+                                    <i class="fa-solid fa-pen-to-square menu-icon-active" style="font-size: 19px;"></i>
+                                    <span class="tab-name-active ">Quản lý</span>
+                        </div>
+                                        <ul class="tab-name-child" style="list-style-type: circle;">
+                                            <li><a href="./edit-user.html" class="tab-name-label tab-name-active " style="font-weight:400;">Quản lý người dùng</a></li>
+                                            <li><a href="./edit-product.html" class="tab-name-label">Quản lý sản phẩm</a></li>
+                                        </ul>           
                     </div>
-                    <ul class="tab-name-child" style="list-style-type: circle;">
-                        <li><a href="./edit-user.html" class="tab-name-label tab-name-active "
-                                style="font-weight:400;">Quản lý người dùng</a></li>
-                        <li><a href="./edit-product.html" class="tab-name-label">Quản lý sản phẩm</a></li>
-                    </ul>
-                </div>
-            </aside>
-        </div>
+                </aside>
+            </div>
         <!--main content-->
-        <div class="col-12">
+        <div class="col-10">
             <div class="main-panel">
                 <div class="content-wrapper ">
                     <div class="card">
 
-                        <div class="row align-self-end" style="margin-top:80px;">
-                            <div class="col">
-                                <button style="border: none; background:none;" type="button" class="btn btn-primary"
-                                    data-bs-toggle="modal" data-bs-target="#add">
-                                    <div class="add-hover">
-                                        <i class="fa-solid fa-square-plus icon-add"></i>
-                                        <div class="add-hover-box">
-                                            <p class="add-hover-text">Thêm người dùng</p>
-                                        </div>
-                                        <div class="add-hover-triangle"></div>
+                        <div class="row align-self-end" style="margin-top:20px;">
+                            <div class="col"> 
+                                <button style="border: none; background:none;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add">
+                                <div class="add-hover">
+                                    <i class="fa-solid fa-square-plus icon-add"></i>
+                                    <div class="add-hover-box">
+                                        <p class="add-hover-text">Thêm người dùng</p>
                                     </div>
+                                    <div class="add-hover-triangle"></div>
+                                </div>
                                 </button>
                             </div>
-
-                            <div class="search-box col-3">
-                                <input type="text" class="search-in" placeholder="Type to search" name="">
-                                <a href="#"> <i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+                            
+                            <div class="search-box col-3"> 
+                                <input type="text" class="search-in" placeholder="Type to search" name=""> 
+                                <a href="#"> <i class="fa-solid fa-magnifying-glass search-icon"></i></a> 
                             </div>
                         </div>
 
@@ -155,101 +151,87 @@
                             </div>
 
                             <div class="col align-self-center">
-                                <table class="table" data-aos="fade-down">
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Họ tên</th>
-                                        <th>Username</th>
-                                        <th>Password</th>
-                                        <th>Số điện thoại</th>
-                                        <th>Email</th>
-                                        <th colspan="2">Thao tác</th>
-                                    </tr>
-                                    <tr>
-                                        <td style="color:#808080">327</td>
-                                        <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                        <td>nhaphuong</td>
-                                        <td>matkhau123</td>
-                                        <td>0936 785 623</td>
-                                        <td>haphuong1995@gmail.com</td>
-                                        <td><button style="background-color: #4CAF50;" type="button"
-                                                class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Sửa</button></td>
-                                        <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="color:#808080">327</td>
-                                        <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                        <td>nhaphuong</td>
-                                        <td>matkhau123</td>
-                                        <td>0936 785 623</td>
-                                        <td>haphuong1995@gmail.com</td>
-                                        <td><button style="background-color: #4CAF50;" type="button"
-                                                class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Sửa</button></td>
-                                        <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="color:#808080">327</td>
-                                        <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                        <td>nhaphuong</td>
-                                        <td>matkhau123</td>
-                                        <td>0936 785 623</td>
-                                        <td>haphuong1995@gmail.com</td>
-                                        <td><button style="background-color: #4CAF50;" type="button"
-                                                class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Sửa</button></td>
-                                        <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="color:#808080">327</td>
-                                        <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                        <td>nhaphuong</td>
-                                        <td>matkhau123</td>
-                                        <td>0936 785 623</td>
-                                        <td>haphuong1995@gmail.com</td>
-                                        <td><button style="background-color: #4CAF50;" type="button"
-                                                class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Sửa</button></td>
-                                        <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="color:#808080">327</td>
-                                        <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                        <td>nhaphuong</td>
-                                        <td>matkhau123</td>
-                                        <td>0936 785 623</td>
-                                        <td>haphuong1995@gmail.com</td>
-                                        <td><button style="background-color: #4CAF50;" type="button"
-                                                class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Sửa</button></td>
-                                        <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="color:#808080">327</td>
-                                        <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                        <td>nhaphuong</td>
-                                        <td>matkhau123</td>
-                                        <td>0936 785 623</td>
-                                        <td>haphuong1995@gmail.com</td>
-                                        <td><button style="background-color: #4CAF50;" type="button"
-                                                class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Sửa</button></td>
-                                        <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="color:#808080">327</td>
-                                        <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                        <td>nhaphuong</td>
-                                        <td>matkhau123</td>
-                                        <td>0936 785 623</td>
-                                        <td>haphuong1995@gmail.com</td>
-                                        <td><button style="background-color: #4CAF50;" type="button"
-                                                class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Sửa</button></td>
-                                        <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                    </tr>
-                                </table>
+                            <table class="table" data-aos="fade-down">
+                                <tr>
+                                    <th >ID</th>
+                                    <th>Họ tên</th>
+                                    <th>Username</th>
+                                    <th>Password</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Email</th>
+                                    <th colspan="2">Thao tác</th>
+                                </tr>
+                                <tr>
+                                    <td style="color:#808080">327</td>
+                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                    <td>nhaphuong</td>
+                                    <td>matkhau123</td>
+                                    <td>0936 785 623</td>
+                                    <td>haphuong1995@gmail.com</td>
+                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#808080">327</td>
+                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                    <td>nhaphuong</td>
+                                    <td>matkhau123</td>
+                                    <td>0936 785 623</td>
+                                    <td>haphuong1995@gmail.com</td>
+                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#808080">327</td>
+                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                    <td>nhaphuong</td>
+                                    <td>matkhau123</td>
+                                    <td>0936 785 623</td>
+                                    <td>haphuong1995@gmail.com</td>
+                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#808080">327</td>
+                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                    <td>nhaphuong</td>
+                                    <td>matkhau123</td>
+                                    <td>0936 785 623</td>
+                                    <td>haphuong1995@gmail.com</td>
+                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#808080">327</td>
+                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                    <td>nhaphuong</td>
+                                    <td>matkhau123</td>
+                                    <td>0936 785 623</td>
+                                    <td>haphuong1995@gmail.com</td>
+                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#808080">327</td>
+                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                    <td>nhaphuong</td>
+                                    <td>matkhau123</td>
+                                    <td>0936 785 623</td>
+                                    <td>haphuong1995@gmail.com</td>
+                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#808080">327</td>
+                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
+                                    <td>nhaphuong</td>
+                                    <td>matkhau123</td>
+                                    <td>0936 785 623</td>
+                                    <td>haphuong1995@gmail.com</td>
+                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                </tr>
+                            </table>
                             </div>
                         </div>
                     </div>
@@ -257,107 +239,106 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sửa thông tin</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td width="150px">Họ tên:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập họ và tên" style="width:600px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="150px">Số điện thoại:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập số điện thoại" style="width:600px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="150px">Email:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập email" style="width:600px">
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
-                    <button type="button" class="btn btn-primary">Lưu thay đổi</button>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <!---->
-    <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Thêm người dùng</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <tr>
-                            <td width="150px">ID:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập email" style="width:600px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="150px">Họ tên:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập họ và tên" style="width:600px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="150px">Username:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập email" style="width:600px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="150px">Password:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập email" style="width:600px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="150px">Số điện thoại:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập số điện thoại" style="width:600px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="150px">Email:*</td>
-                            <td>
-                                <input type="text" placeholder="Nhập email" style="width:600px">
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
-                    <button type="button" class="btn btn-primary">Lưu người dùng</button>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header" >
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Sửa thông tin</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                    <td width="150px">Họ tên:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập họ và tên" style="width:600px">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150px">Số điện thoại:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập số điện thoại" style="width:600px">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150px">Email:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập email" style="width:600px">
+                    </td>
+                </tr>
+                
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
+              <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+
+      <!---->
+      <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header" >
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Thêm người dùng</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table>
+                <tr>
+                    <td width="150px">ID:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập email" style="width:600px">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150px">Họ tên:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập họ và tên" style="width:600px">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150px">Username:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập email" style="width:600px">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150px">Password:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập email" style="width:600px">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150px">Số điện thoại:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập số điện thoại" style="width:600px">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="150px">Email:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập email" style="width:600px">
+                    </td>
+                </tr>
+                
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
+              <button type="button" class="btn btn-primary">Lưu người dùng</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+      <script src="./node_modules/aos/dist/aos.js"></script>
     <script src="./assets/js/user.js"></script>
     <script>
         AOS.init();
