@@ -132,8 +132,6 @@ div#item .phone {
 .btn-buy:hover {
   transform: scale(1.1);
 }
-.btn-item {
-}
 /* footer */
 footer li {
   list-style: none;
@@ -168,6 +166,10 @@ footer {
   font-size: 20px;
   font-family: monaco;
 }
+#changetype{
+  display: flex;
+  justify-content: center;
+}
 .show{
  padding: 5px 5px;
  margin: 5px 0px;
@@ -182,8 +184,6 @@ font-size: 15px;
 margin-top: 10px;
 box-shadow: inset 0 0 0 0  rgb(65, 219, 224);
 transition: all 0.5s ease;
-
-
 }
 .show:hover {
   opacity: 1;
@@ -276,6 +276,9 @@ transition: all 0.5s ease;
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1024px)  {
+  .listItem{
+    height: 100%;
+  }
   .box-item{
     width: 33%;
     height: 100%;

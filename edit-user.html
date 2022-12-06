@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/css/toast.css">
+    <link href="./assets/css/header.css" rel="stylesheet">
     <link href='https://css.gg/css' rel='stylesheet'>
 
     <title>Trang quản lý</title>
@@ -41,7 +42,7 @@
                     </div>
                     
                     <div class="user-info">
-                        <a href="#">
+                        <a href="#" class="user">
                             <i class="fa-solid fa-user user-info-in"></i>
                             Tài khoản của tôi
                         </a>
@@ -57,7 +58,7 @@
             </header>
           </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eighth navbar example" style="top:-90px; background-color: black;">
+        <nav class="navbar navbar-expand-lg navbar-light" aria-label="Eighth navbar example" style="top:-90px; background-color: black; z-index: 999;">
             <div class="container">
                 <button class="navbar-toggler" style="background-color:white; margin-top:-8px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" style="color:black"></span>
@@ -89,9 +90,37 @@
         </nav>
 
     <!--edit-->
+    <main>
     <div class="container-fluid" style="margin-top:-90px;">
         <div class="row">
     <!--sidebar-->
+    <div class="navbar navbar-expand-lg navbar-light hide" aria-label="sidebar" style="top:-90px; background-color: rgb(232, 232, 232); ">
+        <div class="container">
+            <button class="navbar-toggler" style="background-color:white; margin-top:-8px;" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:black"></span>
+            </button>
+
+          <div class="collapse navbar-collapse" id="sidebar" style="background-color:black;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item phone">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <span><a href="./dashboard.html" style="text-decoration: none; color: white">Dashboard</a></span>
+                </a>
+              </li>
+              <li class="nav-item laptop">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <span><a href="./edit-product.html" style="text-decoration: none; color: white">Quản lý sản phẩm</a></span>
+                </a>
+              </li>
+              <li class="nav-item sales">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <span><a href="./edit-user.html" style="text-decoration: none; color: white">Quản lý người dùng</a></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
             <div class="col-2">
                 <aside class="sidebar">
                     <div class="sidebar-in">
@@ -121,14 +150,14 @@
                 </aside>
             </div>
         <!--main content-->
-        <div class="col-10">
+        <div class="col-xl-10">
             <div class="main-panel">
                 <div class="content-wrapper ">
                     <div class="card">
 
                         <div class="row align-self-end" style="margin-top:20px;">
                             <div class="col"> 
-                                <button style="border: none; background:none;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add">
+                                <button  style="border: none; background:none;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add">
                                 <div class="add-hover">
                                     <i class="fa-solid fa-square-plus icon-add"></i>
                                     <div class="add-hover-box">
@@ -151,7 +180,7 @@
                             </div>
 
                             <div class="col align-self-center">
-                            <table class="table" data-aos="fade-down">
+                            <table class="table" data-aos="fade-down" id="add-user">
                                 <tr>
                                     <th >ID</th>
                                     <th>Họ tên</th>
@@ -162,75 +191,36 @@
                                     <th colspan="2">Thao tác</th>
                                 </tr>
                                 <tr>
-                                    <td style="color:#808080">327</td>
-                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                    <td>nhaphuong</td>
+                                    <td style="color:#808080" id="id1">327</td>
+                                    <td style="font-weight:500" id="name1">Trần Thanh Duy</td>
+                                    <td>ttduy</td>
                                     <td>matkhau123</td>
-                                    <td>0936 785 623</td>
-                                    <td>haphuong1995@gmail.com</td>
-                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
-                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                    <td id="number1">0936 785 623</td>
+                                    <td id="mail1">ttduy@gmail.com</td>
+                                    <td><button onclick="pushCode(1);" style="background-color: #4CAF50;" type="button" class="btn btn-primary edit" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;" onclick="deleteRow(this);">Xóa</button></td>
                                 </tr>
                                 <tr>
-                                    <td style="color:#808080">327</td>
-                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                    <td>nhaphuong</td>
+                                    <td style="color:#808080" id="id2">328</td>
+                                    <td style="font-weight:500" id="name2">Phạm Văn Nhí</td>
+                                    <td>pvnhi</td>
                                     <td>matkhau123</td>
-                                    <td>0936 785 623</td>
-                                    <td>haphuong1995@gmail.com</td>
-                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
-                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                    <td id="number2">0936 785 623</td>
+                                    <td id="mail2">pvnhi@gmail.com</td>
+                                    <td><button onclick="pushCode(2);" style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;" onclick="deleteRow(this);">Xóa</button></td>
                                 </tr>
                                 <tr>
-                                    <td style="color:#808080">327</td>
-                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                    <td>nhaphuong</td>
+                                    <td style="color:#808080" id="id3">329</td>
+                                    <td style="font-weight:500" id="name3">Nguyễn Trần Châu Hải Phụng</td>
+                                    <td>ntchphung</td>
                                     <td>matkhau123</td>
-                                    <td>0936 785 623</td>
-                                    <td>haphuong1995@gmail.com</td>
-                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
-                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
+                                    <td id="number3">0936 785 623</td>
+                                    <td id="mail3">ntchphung@gmail.com</td>
+                                    <td><button onclick="pushCode(3);" style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
+                                    <td><button style="background-color: #ff0000;" onclick="deleteRow(this);">Xóa</button></td>
                                 </tr>
-                                <tr>
-                                    <td style="color:#808080">327</td>
-                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                    <td>nhaphuong</td>
-                                    <td>matkhau123</td>
-                                    <td>0936 785 623</td>
-                                    <td>haphuong1995@gmail.com</td>
-                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
-                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                </tr>
-                                <tr>
-                                    <td style="color:#808080">327</td>
-                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                    <td>nhaphuong</td>
-                                    <td>matkhau123</td>
-                                    <td>0936 785 623</td>
-                                    <td>haphuong1995@gmail.com</td>
-                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
-                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                </tr>
-                                <tr>
-                                    <td style="color:#808080">327</td>
-                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                    <td>nhaphuong</td>
-                                    <td>matkhau123</td>
-                                    <td>0936 785 623</td>
-                                    <td>haphuong1995@gmail.com</td>
-                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
-                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                </tr>
-                                <tr>
-                                    <td style="color:#808080">327</td>
-                                    <td style="font-weight:500">Nguyễn Hà Phương</td>
-                                    <td>nhaphuong</td>
-                                    <td>matkhau123</td>
-                                    <td>0936 785 623</td>
-                                    <td>haphuong1995@gmail.com</td>
-                                    <td><button style="background-color: #4CAF50;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sửa</button></td>
-                                    <td><button style="background-color: #ff0000;">Xóa</button></td>
-                                </tr>
+                                
                             </table>
                             </div>
                         </div>
@@ -240,7 +230,7 @@
         </div>
     </div>
     </div>
-    
+</main>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
@@ -251,29 +241,36 @@
             <div class="modal-body">
               <table>
                 <tr>
+                    <td width="150px">ID:*</td>
+                    <td>
+                        <input type="text" placeholder="Nhập ID" style="width:600px" id="id">
+                    </td>
+                </tr>
+                <tr>
                     <td width="150px">Họ tên:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập họ và tên" style="width:600px">
+                        <input type="text" placeholder="Nhập họ và tên" style="width:600px" id="name">
                     </td>
                 </tr>
                 <tr>
                     <td width="150px">Số điện thoại:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập số điện thoại" style="width:600px">
+                        <input type="text" placeholder="Nhập số điện thoại" style="width:100%" id="phonenumber">
                     </td>
                 </tr>
                 <tr>
                     <td width="150px">Email:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập email" style="width:600px">
+                        <input type="text" placeholder="Nhập email" style="width:600px" id="mail">
                     </td>
                 </tr>
+                
                 
               </table>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
-              <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+              <button type="button" class="btn btn-primary" onclick="valid();">Lưu thay đổi</button>
             </div>
           </div>
         </div>
@@ -290,39 +287,39 @@
             <div class="modal-body">
               <table>
                 <tr>
-                    <td width="150px">ID:*</td>
+                    <td width="150px" >ID:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập email" style="width:600px">
+                        <input type="text" placeholder="Nhập ID" style="width:600px" id="addid">
                     </td>
                 </tr>
                 <tr>
                     <td width="150px">Họ tên:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập họ và tên" style="width:600px">
+                        <input type="text" placeholder="Nhập họ và tên" style="width:600px" id="addname">
                     </td>
                 </tr>
                 <tr>
                     <td width="150px">Username:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập email" style="width:600px">
+                        <input type="text" placeholder="Nhập username" style="width:600px" id="addusername">
                     </td>
                 </tr>
                 <tr>
                     <td width="150px">Password:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập email" style="width:600px">
+                        <input type="text" placeholder="Nhập password" style="width:600px" id="addpass">
                     </td>
                 </tr>
                 <tr>
                     <td width="150px">Số điện thoại:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập số điện thoại" style="width:600px">
+                        <input type="text" placeholder="Nhập số điện thoại" style="width:600px" id="addphonenumber">
                     </td>
                 </tr>
                 <tr>
                     <td width="150px">Email:*</td>
                     <td>
-                        <input type="text" placeholder="Nhập email" style="width:600px">
+                        <input type="text" placeholder="Nhập email" style="width:600px" id="addmail">
                     </td>
                 </tr>
                 
@@ -330,18 +327,36 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
-              <button type="button" class="btn btn-primary">Lưu người dùng</button>
+              <button onclick="addUser();" type="button" class="btn btn-primary">Lưu người dùng</button>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Toast -->
+
+    <div class="container1">
+        <div class="container toasts">
+        </div>
+    </div>
 
       <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
       <script src="./node_modules/aos/dist/aos.js"></script>
     <script src="./assets/js/user.js"></script>
+    <script src="./assets/js/edit-user.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function loadcartNumbers() {
+        let productNumbers = localStorage.getItem("cartNumbers");
+
+        if (productNumbers) {
+        document.querySelector(".cart-number span").textContent = productNumbers;
+        }
+        }
+
+        loadcartNumbers();
     </script>
 </body>
 
