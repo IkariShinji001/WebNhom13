@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Danh sach</title>
   <link rel="stylesheet" href="assets/css/ListItem.css">
-  <link href="/assets/aos-master/aos-master/dist/aos.css" rel="stylesheet">
-  <script src="assets/aos-master/aos-master/dist/aos.js"></script>
+  <link href="./node_modules/aos/dist/aos.css" rel="stylesheet">
+  <script src="./node_modules/aos/dist/aos.js"></script>
   <link rel="stylesheet" href="assets/bootstrap-5.2.2-dist/css/bootstrap.css">
   <script src="assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
   <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
@@ -131,7 +131,7 @@
   </div>
   <!-- select-Item -->
 
-  <div id="ChangePhone" class="container Box-select ">
+  <div id="ChangePhone" data-aos="fade-right" class="container Box-select ">
     <div class="select-Item">
       <div class="slider-item" onclick="ChangeList('all')">
         <img width="50px" height="60px" src="./assets/img/logoPhone/unnamed.png" alt="">
@@ -159,7 +159,7 @@
   </div>
   <!-- Danh sach san pham -->
   <div id="Sort-Item" class=" container ">
-    <div id="item" class="listItem "></div>
+    <div id="item" data-aos="fade-up" class="listItem "></div>
     <!-- Nút xem thêm -->
     <div id="changetype">
       <button onclick="XemThem('show-hidden')" id="btn-show" class="show">Xem thêm</button>
@@ -169,6 +169,7 @@
   <script>
     AOS.init();
   </script>
+  <div  class="container"><img style="border-radius: 10px;" src="assets/img/banner/CleanShot-2021-08-18-at-12.30.45@2x-scaled.jpg" width="100%" alt=""></div>
 
   <footer>
     <div class="container-fluid footer-box">
