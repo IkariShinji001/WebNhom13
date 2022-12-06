@@ -11,7 +11,7 @@
 }
 
 .container.toasts .toast1 {
-  z-index: 1500;
+  z-index: 1500000;
   width: 360px;
   height: 80px;
   display: flex;

@@ -237,9 +237,9 @@ function addCart(code) {
   if (typeof localStorage[code] == "undefined") {
     window.localStorage.setItem(code, 1);
     current2 = parseInt(window.localStorage.getItem("cartNumbers"));
-    if (current2){
-    window.localStorage.setItem("cartNumbers", current2 + 1);}
-    else window.localStorage.setItem("cartNumbers", 1);
+    if (current2) {
+      window.localStorage.setItem("cartNumbers", current2 + 1);
+    } else window.localStorage.setItem("cartNumbers", 1);
   } else {
     current = parseInt(window.localStorage.getItem(code));
     current2 = parseInt(window.localStorage.getItem("cartNumbers"));
@@ -248,6 +248,19 @@ function addCart(code) {
   }
   cartNumbers();
 }
+var buyBtn = document.querySelector(".buy-btn");
+buyBtn.addEventListener("click", () => {
+  addCart(productData.id);
+  toast({
+    title: "Success",
+    msg: `Đã thêm  <strong> ${productData.name}</strong> vào giỏ hàng!`,
+    type: "success",
+    duration: 3000,
+  });
+  setTimeout(() => {
+    window.location = "shopping-cart.html";
+  }, 1000);
+});
 
 var addCartBtn = document.querySelector(".add-cart");
 addCartBtn.addEventListener("click", () => {
@@ -275,8 +288,7 @@ function cartNumbers() {
 
   if (productNumbers) {
     localStorage.setItem("cartNumbers", productNumbers);
-    document.querySelector(".cart-number span").textContent =
-      productNumbers;
+    document.querySelector(".cart-number span").textContent = productNumbers;
   } else {
     localStorage.setItem("cartNumbers", 1);
     document.querySelector(".cart-number span").textContent = 1;

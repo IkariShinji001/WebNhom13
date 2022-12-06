@@ -45,4 +45,8 @@
   .anothers-product {
     display: none;
   }
+
+  .product.container {
+    margin-top: 100px;
+  }
 }

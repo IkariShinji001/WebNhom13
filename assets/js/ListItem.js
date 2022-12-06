@@ -482,12 +482,39 @@ function Render() {
     </div>
   </div>
   <div class="btn-item">
-    <button class="btn-buy">MUA NGAY</button>
+  <button class="btn-buy add-cart">MUA NGAY</button>
   </div>
   </a>
 `;
     list1.appendChild(item);
   }
+  var products = document.querySelectorAll(".products");
+  products.forEach((product) => {
+    product.addEventListener("click", () => {
+      var parentDiv = product.parentElement;
+      var nameProduct = parentDiv.querySelector(".name-item-font").textContent;
+      localStorage.setItem("nameProduct", nameProduct);
+    });
+  });
+
+  var addCartBtns = document.querySelectorAll(".add-cart");
+
+  addCartBtns.forEach((addCartBtn) => {
+    addCartBtn.addEventListener("click", () => {
+      var div = addCartBtn.parentElement.parentElement;
+      var name = div.querySelector(".name-item-font").textContent;
+      var found = Phone.find((phone) => {
+        return phone.name == name;
+      });
+      addCart(found.id);
+      toast({
+        title: "Success",
+        msg: `Đã thêm  <strong> ${found.name}</strong> vào giỏ hàng!`,
+        type: "success",
+        duration: 3000,
+      });
+    });
+  });
 }
 
 function Hide() {
@@ -505,74 +532,12 @@ function Show(type) {
       item.classList.add("col-lg-3");
       item.classList.add("box-item");
       item.innerHTML = `
-    <div class="phone">
-      <img class="img-item" src="${Phone[i].image}" alt="">
-    </div>
-    <div class class="name-item">
-      <a style="text-decoration: none;" class="name-item-font" href="product.html">${Phone[i].name}</a>
-    </div>
-    <div class="cost">
-      <div class="cost-after_sales">
-      ${Phone[i].cost_after}
-      </div>
-      <div class="cost-before_sales">
-      <del>${Phone[i].cost_before}</del>đ
-      </div>
-    </div>
-    <div class="about-item">
-      <div class="chip-screen">
-        <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>${Phone[i].cpu}</p>
-        <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> ${Phone[i].screen}</p>
-      </div>
-      <div class="ram">
-        <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> ${Phone[i].ram}</p>
-        <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>${Phone[i].memory}</p>
-      </div>
-      <div class="sales-bank">
-        <img width="40px" height="40px" src="assets/img/iconBank/mbbank1.jpg" class="rounded-circle" alt="Cinque Terre">
-        <img width="40px" height="40px" src="assets/img/iconBank/zalopay.png" class="rounded-circle" alt="Cinque Terre">
-        <img width="40px" height="40px" src="assets/img/iconBank/bidv.png" class="rounded-circle" alt="Cinque Terre">
-      </div>
-    </div>
-    <div class="btn-item">
-      <button class="btn-buy">MUA NGAY</button>
-    </div>
-  `;
-      list1.appendChild(item);
-    }
-  }
-}
-
-Render();
-// Lấy tên sản phẩm
-var products = document.querySelectorAll(".products");
-products.forEach((product) => {
-  product.addEventListener("click", () => {
-    var parentDiv = product.parentElement;
-    var nameProduct = parentDiv.querySelector(".name-item-font").textContent;
-    localStorage.setItem("nameProduct", nameProduct);
-  });
-});
-
-// Chọn loại sản phẩm
-function ChangeList(type) {
-  var btn_hidden = document.getElementById("btn-show");
-  btn_hidden.style.display = "none";
-  Hide();
-  if (type == "all") {
-    function All() {
-      var list1 = document.getElementById("item");
-      list1.style.backgroundColor = "#fff";
-      for (var i = 0; i < Phone.length; i++) {
-        var item = document.createElement("div");
-        item.classList.add("col-lg-3");
-        item.classList.add("box-item");
-        item.innerHTML = `
+      <a class="products" href="product.html">
       <div class="phone">
-        <img src="${Phone[i].image}" alt="">
+        <img class="img-item" src="${Phone[i].image}" alt="">
       </div>
       <div class="name-item">
-        <a style="text-decoration: none;" class="name-item-font" href="">${Phone[i].name}</a>
+        <a style="text-decoration: none;" class="name-item-font" href="product.html">${Phone[i].name}</a>
       </div>
       <div class="cost">
         <div class="cost-after_sales">
@@ -598,11 +563,85 @@ function ChangeList(type) {
         </div>
       </div>
       <div class="btn-item">
-        <button class="btn-buy">MUA NGAY</button>
+      <button class="btn-buy add-cart">MUA NGAY</button>
       </div>
+      </a>
+  `;
+      list1.appendChild(item);
+    }
+    var products = document.querySelectorAll(".products");
+    products.forEach((product) => {
+      product.addEventListener("click", () => {
+        var parentDiv = product.parentElement;
+        var nameProduct =
+          parentDiv.querySelector(".name-item-font").textContent;
+        localStorage.setItem("nameProduct", nameProduct);
+      });
+    });
+  }
+}
+
+Render();
+// Chọn loại sản phẩm
+function ChangeList(type) {
+  var btn_hidden = document.getElementById("btn-show");
+  btn_hidden.style.display = "none";
+  Hide();
+  if (type == "all") {
+    function All() {
+      var list1 = document.getElementById("item");
+      list1.style.backgroundColor = "#fff";
+      for (var i = 0; i < Phone.length; i++) {
+        var item = document.createElement("div");
+        item.classList.add("col-lg-3");
+        item.classList.add("box-item");
+        item.innerHTML = `
+        <a class="products" href="product.html">
+        <div class="phone">
+          <img class="img-item" src="${Phone[i].image}" alt="">
+        </div>
+        <div class="name-item">
+          <a style="text-decoration: none;" class="name-item-font" href="product.html">${Phone[i].name}</a>
+        </div>
+        <div class="cost">
+          <div class="cost-after_sales">
+          ${Phone[i].cost_after} đ
+          </div>
+          <div class="cost-before_sales">
+          <del>${Phone[i].cost_before} đ</del>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="chip-screen">
+            <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>${Phone[i].cpu}</p>
+            <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> ${Phone[i].screen}</p>
+          </div>
+          <div class="ram">
+            <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> ${Phone[i].ram}</p>
+            <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>${Phone[i].memory}</p>
+          </div>
+          <div class="sales-bank">
+          <img width="40px" height="40px" src="assets/img/iconBank/mbbank1.jpg" class="rounded-circle" alt="Cinque Terre">
+          <img width="40px" height="40px" src="assets/img/iconBank/zalopay.png" class="rounded-circle" alt="Cinque Terre">
+          <img width="40px" height="40px" src="assets/img/iconBank/bidv.png" class="rounded-circle" alt="Cinque Terre">
+          </div>
+        </div>
+        <div class="btn-item">
+        <button class="btn-buy add-cart">MUA NGAY</button>
+        </div>
+        </a>
     `;
         list1.appendChild(item);
       }
+      var products = document.querySelectorAll(".products");
+      products.forEach((product) => {
+        product.addEventListener("click", () => {
+          var parentDiv = product.parentElement;
+          var nameProduct =
+            parentDiv.querySelector(".name-item-font").textContent;
+          localStorage.setItem("nameProduct", nameProduct);
+        });
+      });
     }
 
     All();
@@ -615,10 +654,9 @@ function border_box() {
   var hide = document.getElementsByClassName("box-item");
   hide[0].style.borderTopLeftRadius = "10px";
   hide[3].style.borderTopRightRadius = "10px";
-  hide[16].style.borderBottomLeftRadius = "10px";
-  hide[19].style.borderBottomRightRadius = "10px";
 }
 border_box();
+
 function XemThem(type) {
   var btn_hidden = document.getElementById("btn-show");
   const xemthem = "Xem thêm";
@@ -630,40 +668,51 @@ function XemThem(type) {
       item.classList.add("col-lg-3");
       item.classList.add("box-item");
       item.innerHTML = `
-  <div class="phone">
-    <img src="${Phone[i].image}" alt="">
-  </div>
-  <div class="name-item">
-    <a style="text-decoration: none;" class="name-item-font" href="">${Phone[i].name}</a>
-  </div>
-  <div class="cost">
-    <div class="cost-after_sales">
-    ${Phone[i].cost_after} đ
-    </div>
-    <div class="cost-before_sales">
-    <del>${Phone[i].cost_before} đ</del>
-    </div>
-  </div>
-  <div class="about-item">
-    <div class="chip-screen">
-      <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>${Phone[i].cpu}</p>
-      <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> ${Phone[i].screen}</p>
-    </div>
-    <div class="ram">
-      <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> ${Phone[i].ram}</p>
-      <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>${Phone[i].memory}</p>
-    </div>
-    <div class="sales-bank">
-    <img width="40px" height="40px" src="assets/img/iconBank/mbbank1.jpg" class="rounded-circle" alt="Cinque Terre">
-    <img width="40px" height="40px" src="assets/img/iconBank/zalopay.png" class="rounded-circle" alt="Cinque Terre">
-    <img width="40px" height="40px" src="assets/img/iconBank/bidv.png" class="rounded-circle" alt="Cinque Terre">
-    </div>
-  </div>
-  <div class="btn-item">
-    <button class="btn-buy">MUA NGAY</button>
-  </div>
+      <a class="products" href="product.html">
+      <div class="phone">
+        <img class="img-item" src="${Phone[i].image}" alt="">
+      </div>
+      <div class="name-item">
+        <a style="text-decoration: none;" class="name-item-font" href="product.html">${Phone[i].name}</a>
+      </div>
+      <div class="cost">
+        <div class="cost-after_sales">
+        ${Phone[i].cost_after} đ
+        </div>
+        <div class="cost-before_sales">
+        <del>${Phone[i].cost_before} đ</del>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="chip-screen">
+          <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>${Phone[i].cpu}</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> ${Phone[i].screen}</p>
+        </div>
+        <div class="ram">
+          <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> ${Phone[i].ram}</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>${Phone[i].memory}</p>
+        </div>
+        <div class="sales-bank">
+        <img width="40px" height="40px" src="assets/img/iconBank/mbbank1.jpg" class="rounded-circle" alt="Cinque Terre">
+        <img width="40px" height="40px" src="assets/img/iconBank/zalopay.png" class="rounded-circle" alt="Cinque Terre">
+        <img width="40px" height="40px" src="assets/img/iconBank/bidv.png" class="rounded-circle" alt="Cinque Terre">
+        </div>
+      </div>
+      <div class="btn-item">
+        <button class="btn-buy add-cart">MUA NGAY</button>
+      </div>
+      </a>
 `;
       list1.appendChild(item);
+      var products = document.querySelectorAll(".products");
+      products.forEach((product) => {
+        product.addEventListener("click", () => {
+          var parentDiv = product.parentElement;
+          var nameProduct =
+            parentDiv.querySelector(".name-item-font").textContent;
+          localStorage.setItem("nameProduct", nameProduct);
+        });
+      });
     }
   } else {
     btn_hidden.textContent = xemthem;
@@ -674,4 +723,89 @@ function XemThem(type) {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  var addCartBtns = document.querySelectorAll(".add-cart");
+  console.log(addCartBtns);
+  addCartBtns.forEach((addCartBtn) => {
+    addCartBtn.addEventListener("click", () => {
+      var div = addCartBtn.parentElement.parentElement;
+      var name = div.querySelector(".name-item-font").textContent;
+      var found = Phone.find((phone) => {
+        return phone.name == name;
+      });
+      addCart(found.id);
+      toast({
+        title: "Success",
+        msg: `Đã thêm  <strong> ${found.name}</strong> vào giỏ hàng!`,
+        type: "success",
+        duration: 3000,
+      });
+    });
+  });
+}
+
+const toast = ({ title = "", msg = "", type, duration = 3000 }) => {
+  const main = document.querySelector(".container.toasts");
+  if (main) {
+    const myToast = document.createElement("div");
+    const icons = {
+      success: "fas fa-check-circle",
+      error: "fas fa-exclamation-circle",
+    };
+
+    const icon = icons[type];
+    myToast.classList.add("toast1", `toast--${type}`);
+    myToast.innerHTML = ` 
+    <div class="toast__icon">
+      <i class="${icon}"></i>
+    </div>
+    <div class="toast__body">
+      <h4 class="toast__title">${title}</h4>
+      <p class="toast__msg">${msg}</p>
+  </div>`;
+    main.append(myToast);
+
+    setTimeout(() => {
+      main.removeChild(myToast);
+    }, duration + 1000);
+  }
+};
+
+var products = document.querySelectorAll(".products");
+products.forEach((product) => {
+  product.addEventListener("click", () => {
+    var parentDiv = product.parentElement;
+    var nameProduct = parentDiv.querySelector(".name-item-font").textContent;
+    localStorage.setItem("nameProduct", nameProduct);
+  });
+});
+
+function cartNumbers(phoneList) {
+  let productNumbers = localStorage.getItem("cartNumbers");
+
+  productNumbers = parseInt(productNumbers);
+
+  if (productNumbers) {
+    localStorage.setItem("cartNumbers", productNumbers);
+    document.querySelector(".cart-number span").textContent = productNumbers;
+  } else {
+    localStorage.setItem("cartNumbers", 1);
+    document.querySelector(".cart-number span").textContent = 1;
+  }
+}
+
+function addCart(code) {
+  if (typeof localStorage[code] == "undefined") {
+    window.localStorage.setItem(code, 1);
+    current2 = parseInt(window.localStorage.getItem("cartNumbers"));
+    if (current2) {
+      window.localStorage.setItem("cartNumbers", current2 + 1);
+    } else window.localStorage.setItem("cartNumbers", 1);
+  } else {
+    current = parseInt(window.localStorage.getItem(code));
+    current2 = parseInt(window.localStorage.getItem("cartNumbers"));
+    window.localStorage.setItem(code, current + 1);
+    window.localStorage.setItem("cartNumbers", current2 + 1);
+  }
+  cartNumbers();
 }
