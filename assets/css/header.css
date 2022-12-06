@@ -107,7 +107,6 @@ nav {
   height: 40px;
   position: fixed;
   margin-top: 79px;
-  z-index: 9999;
 }
 
 nav .phone,
