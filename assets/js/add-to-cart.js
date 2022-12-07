@@ -369,11 +369,7 @@ window.onload = function showCart() {
   for (var i = 0; i < names.length; i++) {
     buyProduct.push({ img: imgs[i].src, name: names[i].textContent });
   }
-
-  if (localStorage.getItem("buyProducts") == undefined) {
-    localStorage.setItem("buyProducts", JSON.stringify(buyProduct));
-  }
-  console.log(buyProduct);
+  localStorage.setItem("buyProducts", JSON.stringify(buyProduct));
 };
 
 function loadcartNumbers() {
@@ -391,8 +387,7 @@ function cartNumbers(phoneList) {
 
   if (productNumbers) {
     localStorage.setItem("cartNumbers", productNumbers);
-    document.querySelector(".cart-number span").textContent =
-      productNumbers;
+    document.querySelector(".cart-number span").textContent = productNumbers;
   } else {
     localStorage.setItem("cartNumbers", 1);
     document.querySelector(".cart-number span").textContent = 1;
@@ -443,7 +438,7 @@ function removeCart(code) {
     productNumbers = parseInt(productNumbers);
     localStorage.setItem(
       "cartNumbers",
-      productNumbers - parseInt(window.localStorage.getItem(code))  
+      productNumbers - parseInt(window.localStorage.getItem(code))
     );
     document.querySelector(".cart-number span").textContent =
       productNumbers - parseInt(window.localStorage.getItem(code));
@@ -559,7 +554,6 @@ function valid() {
         address: address.value,
       });
       localStorage.setItem("userInfo", JSON.stringify(userInfo));
-
       window.location = "confrim.html";
       removeAll();
     } else {
