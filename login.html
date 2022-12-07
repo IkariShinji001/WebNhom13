@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/label.js"></script>
 </head>
 
 <body>
@@ -45,7 +48,7 @@
                         <div class="cart">
                             <a href="#">
                                 <i class="fa-solid fa-cart-shopping cart-in"></i>
-                                Giỏ hàng
+                                <span id="CART" class="multilang"></span> 
                             </a>
                             <div class="cart-number"><span>0</span></div>
                         </div>
@@ -53,14 +56,14 @@
                         <div class="user-info">
                             <a href="#" class="user">
                                 <i class="fa-solid fa-user user-info-in"></i>
-                                Tài khoản của tôi
+                                <span id="MY_ACCOUNT" class="multilang">Tài khoản của tôi </span> 
                             </a>
                         </div>
 
                         <div class="news">
                             <a href="#">
                                 <i class="fa-solid fa-newspaper news-in"></i>
-                                Thông tin
+                                <span id="MY_INFO" class="multilang">Thông Tin</span> 
                             </a>
                         </div>
                     </div>
@@ -81,7 +84,7 @@
                         <li class="nav-item phone">
                             <a class="nav-link active" aria-current="page" href="index.html">
                                 <i class="fa-solid fa-mobile"></i>
-                                <span>Điện thoại</span>
+                                <span id="MOBILE_PHONE" class="multilang">Điện Thoại</span> 
                             </a>
                         </li>
                         <li class="nav-item laptop">
@@ -93,12 +96,20 @@
                         <li class="nav-item sales">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <i class="fa-solid fa-percent"></i>
-                                <span>Khuyến mãi</span>
+                                <span id="SALE" class="multilang">Khuyến Mãi</span> 
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <span id="language">
+                <a href="#" onclick="setLang('VN')">
+                  <img width="30px" src="assets/img/icon_language/Flag_of_Vietnam.svg.webp" alt="">
+                </a>
+                <a href="#" onclick="setLang('US')">
+                  <img width="30px" src="assets/img/icon_language/Grand-Union-Flag-January-1-1776.webp" alt="">
+                </a>
+            </span>
         </nav>
     </header>
 
@@ -115,7 +126,7 @@
                         <form name="login" method="post">
                             <div class="header-form d-flex justify-content-between">
                                 <div class="Title title-login">
-                                    <h2>Đăng nhập</h2>
+                                    <h2><span id="LOGIN_HEADER" class="multilang">Đăng nhập</span></h2>
                                 </div>
                                 <div class="others-login d-flex justify-content-end w-50">
                                     <div class="fb-login">
@@ -128,23 +139,22 @@
                             </div>
 
                             <div class="main-form">
-                                <label class="d-block" for="username">TÊN ĐĂNG NHẬP:</label>
-                                <input type="text" id="username" name="username" placeholder="Tên đăng nhập">
-                                <label class="d-block" for="password">MẬT KHẨU:</label>
+                                <label class="d-block" for="username"><span id="USERNAME" class="multilang">TÊN ĐĂNG NHẬP:</span></label>
+                                <input type="text" id="username" name="username" class="user" placeholder="Tên đăng nhập">
+                                <label class="d-block" for="password"><span id="PASSWORD" class="multilang pass">MẬT KHẨU:</span></label>
                                 <input type="password" id="password" name="password" placeholder="Mật khẩu">
-                                <button type="submit" id="submit" class="btn-login btn btn-primary w-100">ĐĂNG
-                                    NHẬP</button>
+                                <button type="submit" id="submit" class="btn-login btn btn-primary w-100"><span id="LOGIN" class="multilang">ĐĂNG NHẬP</span></button>
                                 <div class="d-flex mt-3 justify-content-around">
                                     <div class="remember-container w-50">
                                         <input type="checkbox" id="remember">
-                                        <label for="">Nhớ đăng nhập</label>
+                                        <label for=""><span id="REMEMBER_LOGIN" class="multilang">Nhớ đăng nhập</span></label>
                                     </div>
                                     <div class="forget-password-container w-50 text-lg-end">
-                                        <a href="#">Quên mật khẩu</a>
+                                        <a href="#"><span id="FORGOT_PASSWORD" class="multilang">Quên mật khẩu?</span></a>
                                     </div>
                                 </div>
                                 <div class="sign-up text-lg-center mt-3">
-                                    <p>Bạn chưa có tài khoản? <a href="signup.html">Đăng kí ngay</a></p>
+                                    <p><span id="QUES2" class="multilang">Bạn chưa có tài khoản? </span> <a href="signup.html"><span id="REGISTER_NOW" class="multilang">Đăng Ký Ngay</span></a></p>
                                 </div>
                             </div>
                         </form>

@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <header>
     <div class="container-fluid" style="background-color: rgb(54, 160, 231);">
         <div class="container" style="background-color: rgb(54, 160, 231);">
             <header
@@ -94,10 +95,39 @@
             </div>
         </div>
     </nav>
+    </header>
     <!--edit-->
+    <main>
     <div class="container-fluid" style="margin-top:-90px">
         <div class="row">
             <!--sidebar-->
+            <div class="navbar navbar-expand-lg navbar-light hide" aria-label="sidebar" style="top:-90px; background-color: rgb(232, 232, 232); ">
+                <div class="container">
+                    <button class="navbar-toggler" style="background-color:white; margin-top:-8px;" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="color:black"></span>
+                    </button>
+        
+                  <div class="collapse navbar-collapse" id="sidebar" style="background-color:black;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item phone">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <span><a href="./dashboard.html" style="text-decoration: none; color: white">Dashboard</a></span>
+                        </a>
+                      </li>
+                      <li class="nav-item laptop">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <span><a href="./edit-product.html" style="text-decoration: none; color: white">Quản lý sản phẩm</a></span>
+                        </a>
+                      </li>
+                      <li class="nav-item sales">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <span><a href="./edit-user.html" style="text-decoration: none; color: white">Quản lý người dùng</a></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
             <div class="col-2">
                 <aside class="sidebar">
                     <div class="sidebar-in">
@@ -129,12 +159,12 @@
                 </aside>
             </div>
             <!--main content-->
-            <div class="col-10">
+            <div class="col-xl-10">
                 <div class="main-panel">
                     <div class="content-wrapper ">
                         <div class="card">
 
-                            <div class="row align-self-end" style="margin-top:80px;">
+                            <div class="row align-self-end" style="margin-top:20px;">
                                 <div class="col">
                                     <button style="border: none; background:none;" type="button" class="btn btn-primary"
                                         data-bs-toggle="modal" data-bs-target="#add">
@@ -146,7 +176,7 @@
                                     </button>
                                 </div>
 
-                                <div class="search-box col-3">
+                                <div class="search-box col-3" >
                                     <input type="text" class="search-in" placeholder="Type to search" name="">
                                     <a href="#"> <i class="fa-solid fa-magnifying-glass search-icon"></i></a>
                                 </div>
@@ -158,7 +188,7 @@
                                 </div>
 
                                 <div class="col align-self-center">
-                                    <table class="table" data-aos="fade-down">
+                                    <table class="table" data-aos="fade-down" id="add-product">
                                         <tr>
                                             <th>ID</th>
                                             <th>Tên sản phẩm</th>
@@ -176,7 +206,81 @@
                 </div>
             </div>
         </div>
+</main>
 
+   <!-- Footer -->
+
+   <footer>
+    <div class="container-fluid footer-box">
+        <div class="footer-word">
+            <li>
+                <a href="">Câu hỏi thường gặp khi mua hàng</a>
+            </li>
+            <li>
+                <a href="">Chính sách bảo mật</a>
+            </li>
+            <li>
+                <a href="">Quy chế hoạt động</a>
+            </li>
+            <li>
+                <a href="">Kiểm tra hóa đơn điện tử</a>
+            </li>
+            <li>
+                <a href="">Tra cứu thông tin bảo hành</a>
+            </li>
+
+        </div>
+
+        <div class="footer-word">
+            <li>
+                <a href="">Tin tuyển dụng</a>
+            </li>
+            <li>
+                <a href="">Tin khuyến mãi</a>
+            </li>
+            <li>
+                <a href="">Hướng dẫn mua online</a>
+            </li>
+            <li>
+                <a href="">Hướng dẫn mua trả góp</a>
+            </li>
+            <li>
+                <a href="">Chính sách mua trả góp</a>
+            </li>
+        </div>
+
+        <div class="footer-word">
+            <li>
+                <a href="">Hệ thống cửa hàng</a>
+            </li>
+            <li>
+                <a href="">Hệ thống bảo hành</a>
+            </li>
+            <li>
+                <a href="">Giới thiệu máy đổi trả</a>
+            </li>
+            <li>
+                <a href="">Chính sách đổi trả</a>
+            </li>
+        </div>
+
+        <div class="footer-word">
+            <p style="margin: 0px">Tư vấn mua hàng (Miễn phí)</p>
+            <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">069 367 2010(Nhánh
+                1)</a>
+            <p style="margin: 0px">Hỗ trợ kỹ thuật</p>
+            <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">069 367 2011(Nhánh
+                2)</a>
+        </div>
+
+        <div class="footer-word">
+            <p style="margin: 0px">Góp ý, khiếu nại dịch vụ (8h00 - 22h00)</p>
+            <a style="color: rgb(159, 12, 12);font-size: 20px; font-weight:700;" href="tel:">0299999992</a>
+        </div>
+    </div>
+</footer>
+
+<!---->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
@@ -189,31 +293,31 @@
                             <tr>
                                 <td width="150px">ID:*</td>
                                 <td>
-                                    <input type="text" placeholder="Nhập ID" style="width:600px">
+                                    <input type="text" placeholder="Nhập ID" style="width:600px" id="id">
                                 </td>
                             </tr>
                             <tr>
                                 <td width="150px">Tên sản phẩm:*</td>
                                 <td>
-                                    <input type="text" placeholder="Nhập tên sản phẩm" style="width:600px">
+                                    <input type="text" placeholder="Nhập tên sản phẩm" style="width:600px" id="name">
                                 </td>
                             </tr>
                             <tr>
                                 <td width="150px">Phân loại:*</td>
                                 <td>
-                                    <input type="text" placeholder="Nhập phân loại" style="width:600px">
+                                    <input type="text" placeholder="Nhập phân loại" style="width:600px" id="cata">
                                 </td>
                             </tr>
                             <tr>
                                 <td width="150px">Số lượng:*</td>
                                 <td>
-                                    <input type="text" placeholder="Nhập số lượng" style="width:600px">
+                                    <input type="text" placeholder="Nhập số lượng" style="width:600px" id="number">
                                 </td>
                             </tr>
                             <tr>
                                 <td width="150px">Giá tiền:*</td>
                                 <td>
-                                    <input type="text" placeholder="Nhập giá tiền" style="width:600px">
+                                    <input type="text" placeholder="Nhập giá tiền" style="width:600px" id="price">
                                 </td>
                             </tr>
 
@@ -221,7 +325,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
-                        <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+                        <button type="button" class="btn btn-primary" onclick="valid()">Lưu thay đổi</button>
                     </div>
                 </div>
             </div>
@@ -241,31 +345,31 @@
                         <tr>
                             <td width="150px">ID:*</td>
                             <td>
-                                <input type="text" placeholder="Nhập email" style="width:600px">
+                                <input type="text" placeholder="Nhập ID" style="width:600px" id="addid">
                             </td>
                         </tr>
                         <tr>
                             <td width="150px">Tên sản phẩm:*</td>
                             <td>
-                                <input type="text" placeholder="Nhập họ và tên" style="width:600px">
+                                <input type="text" placeholder="Nhập họ và tên" style="width:600px" id="addname">
                             </td>
                         </tr>
                         <tr>
                             <td width="150px">Phân loại:*</td>
                             <td>
-                                <input type="text" placeholder="Nhập email" style="width:600px">
+                                <input type="text" placeholder="Nhập phân loại" style="width:600px" id="addcata">
                             </td>
                         </tr>
                         <tr>
                             <td width="150px">Số lượng:*</td>
                             <td>
-                                <input type="text" placeholder="Nhập email" style="width:600px">
+                                <input type="text" placeholder="Nhập số lượng" style="width:600px" id="addnumber">
                             </td>
                         </tr>
                         <tr>
                             <td width="150px">Giá tiền:*</td>
                             <td>
-                                <input type="text" placeholder="Nhập số điện thoại" style="width:600px">
+                                <input type="text" placeholder="Nhập số điện thoại" style="width:600px" id="addprice">
                             </td>
                         </tr>
 
@@ -273,11 +377,18 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy thay đổi</button>
-                    <button type="button" class="btn btn-primary">Lưu sản phẩm</button>
+                    <button type="button" class="btn btn-primary" onclick="add();">Lưu sản phẩm</button>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
+    <!-- Toast -->
+
+    <div class="container1">
+        <div class="container toasts">
+        </div>
     </div>
 
     <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
@@ -287,13 +398,17 @@
     <script>
         AOS.init();
     </script>
-</body>
-<script>
-    function loadcartNumbers() {
+    <script>
+        function loadcartNumbers() {
         let productNumbers = localStorage.getItem("cartNumbers");
-        if (productNumbers) { document.querySelector(".cart-number span").textContent = productNumbers; }
-    }
-    loadcartNumbers();    
-</script>
+
+        if (productNumbers) {
+        document.querySelector(".cart-number span").textContent = productNumbers;
+        }
+        }
+
+        loadcartNumbers();
+    </script>
+</body>
 
 </html>

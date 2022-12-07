@@ -19,7 +19,11 @@
     <link rel="stylesheet" href="./assets/css/responsive-product.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    
 </head>
 
 <body>
@@ -45,7 +49,7 @@
                         <div class="cart">
                             <a href="#">
                                 <i class="fa-solid fa-cart-shopping cart-in"></i>
-                                Giỏ hàng
+                                <span id="CART" class="multilang"></span> 
                             </a>
                             <div class="cart-number"><span>0</span></div>
                         </div>
@@ -53,14 +57,14 @@
                         <div class="user-info">
                             <a href="#" class="user">
                                 <i class="fa-solid fa-user user-info-in"></i>
-                                Tài khoản của tôi
+                                <span id="MY_ACCOUNT" class="multilang">Tài khoản của tôi </span> 
                             </a>
                         </div>
 
                         <div class="news">
                             <a href="#">
                                 <i class="fa-solid fa-newspaper news-in"></i>
-                                Thông tin
+                                <span id="MY_INFO" class="multilang">Thông Tin</span> 
                             </a>
                         </div>
                     </div>
@@ -81,7 +85,7 @@
                         <li class="nav-item phone">
                             <a class="nav-link active" aria-current="page" href="index.html">
                                 <i class="fa-solid fa-mobile"></i>
-                                <span>Điện thoại</span>
+                                <span id="MOBILE_PHONE" class="multilang">Điện Thoại</span> 
                             </a>
                         </li>
                         <li class="nav-item laptop">
@@ -93,16 +97,22 @@
                         <li class="nav-item sales">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <i class="fa-solid fa-percent"></i>
-                                <span>Khuyến mãi</span>
+                                <span id="SALE" class="multilang">Khuyến Mãi</span> 
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <span id="language">
+                <a href="#" onclick="setLang('VN')">
+                  <img width="30px" src="assets/img/icon_language/Flag_of_Vietnam.svg.webp" alt="">
+                </a>
+                <a href="#" onclick="setLang('US')">
+                  <img width="30px" src="assets/img/icon_language/Grand-Union-Flag-January-1-1776.webp" alt="">
+                </a>
+            </span>
         </nav>
     </header>
-
-
     <div class="container-fluid form">
         <div class="form-content container-md d-flex">
             <div class="row">
@@ -112,7 +122,7 @@
                         <form name="sign-up" method="post">
                             <div class="header-form d-flex justify-content-between">
                                 <div class="title-login">
-                                    <h2>Đăng ký</h2>
+                                    <h2><span id="REGISTER_HEADER" class="multilang">Đăng Ký</span></h2>
                                 </div>
                                 <div class="others-login d-flex justify-content-end w-50">
                                     <div class="fb-login">
@@ -125,17 +135,16 @@
                             </div>
 
                             <div class="main-form">
-                                <label class="d-block" for="username">TÊN ĐĂNG NHẬP:</label>
+                                <label class="d-block" for="username"> <span id="USERNAME" class="multilang">TÊN ĐĂNG NHẬP:</span></label>
                                 <input type="text" id="username" name="username" placeholder="Tên đăng nhập">
-                                <label class="d-block" for="password">MẬT KHẨU:</label>
+                                <label class="d-block" for="password"> <span id="PASSWORD" class="multilang">MẬT KHẨU: </span></label>
                                 <input type="password" id="password" name="password" placeholder="Mật khẩu">
-                                <label class="d-block" for="password">NHẬP LẠI MẬT KHẨU:</label>
+                                <label class="d-block" for="password"> <span id="PASSWORD_AGAIN" class="multilang">NHẬP LẠI MẬT KHẨU:</span></label>
                                 <input type="password" id="re-password" name="re-password"
                                     placeholder="Nhập lại mật khẩu">
-                                <button type="submit" id="submit" class="btn-login btn btn-primary w-100">ĐĂNG
-                                    KÝ</button>
+                                <button type="submit" id="submit" class="btn-login btn btn-primary w-100"> <span id="REGISTER" class="multilang">ĐĂNG KÝ</span></button>
                                 <div class="sign-up text-lg-center mt-3">
-                                    <p>Bạn đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
+                                    <p><span id="QUES1" class="multilang">Bạn đã có tài khoản? </span><a href="login.html"> <span id="LOGIN_NOW" class="multilang">Đăng Nhập Ngay</span></a></p>
                                 </div>
                             </div>
                         </form>
@@ -230,6 +239,8 @@
 </body>
 <script src="./assets/js/signup.js"></script>
 <script src="./assets/js/user.js"></script>
+<script src="./assets/js/label.js"></script>
+<script src="./assets/js/language.js"></script>
 <script>
     function loadcartNumbers() {
         let productNumbers = localStorage.getItem("cartNumbers");
