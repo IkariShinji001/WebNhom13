@@ -2,7 +2,7 @@ var btnSignOut = document.querySelector(".btn-signout");
 
 btnSignOut.addEventListener("click", () => {
   localStorage.setItem("isLogin", 0);
-  window.location = "ListItem.html";
+  window.location = "index.html";
 });
 
 var orderProduct = document.querySelector(".order-product");

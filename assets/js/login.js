@@ -108,7 +108,7 @@ btnSubmit.addEventListener("click", (e) => {
         JSON.stringify({ username, password })
       );
       localStorage.setItem("isLogin", JSON.stringify(isLogin));
-      window.location = "ListItem.html";
+      window.location = "index.html";
     }
   }
 });

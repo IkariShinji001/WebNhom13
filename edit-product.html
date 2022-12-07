@@ -288,5 +288,12 @@
         AOS.init();
     </script>
 </body>
+<script>
+    function loadcartNumbers() {
+        let productNumbers = localStorage.getItem("cartNumbers");
+        if (productNumbers) { document.querySelector(".cart-number span").textContent = productNumbers; }
+    }
+    loadcartNumbers();    
+</script>
 
 </html>

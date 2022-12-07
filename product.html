@@ -79,7 +79,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample07" style="background-color:black;">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item phone">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link active" aria-current="page" href="index.html">
                                 <i class="fa-solid fa-mobile"></i>
                                 <span>Điện thoại</span>
                             </a>
@@ -703,6 +703,13 @@
 <script src="./assets/js/user.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    function loadcartNumbers() {
+        let productNumbers = localStorage.getItem("cartNumbers");
+        if (productNumbers) { document.querySelector(".cart-number span").textContent = productNumbers; }
+    }
+    loadcartNumbers();    
 </script>
 
 </html>
