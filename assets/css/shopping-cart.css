@@ -40,7 +40,6 @@ main.container .table th {
 main.container table .img-container {
   width: 70px;
   height: 70px;
-  background-color: #dadee1;
   justify-content: center;
   float: left;
   margin-right: 20px;
