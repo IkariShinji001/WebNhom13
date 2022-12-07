@@ -1,7 +1,6 @@
 function setLang(code) {
   window.localStorage.setItem("lang", code);
 }
-
 function getLang() {
   if (typeof localStorage.getItem("lang") === null) {
     window.localStorage.setItem("lang", "VN");
@@ -22,13 +21,11 @@ var vn = document.querySelector(".vn");
 var us = document.querySelector(".us");
 var userNameInput = document.querySelector("#username");
 var pwInput = document.querySelector("#password");
-var rePWInput = document.querySelector("#re-password");
 
 vn.addEventListener("click", () => {
   setLang("VN");
   userNameInput.placeholder = "Tên đăng nhập";
   pwInput.placeholder = "Mật khẩu";
-  rePWInput.placeholder = "Nhập lại mật khẩu";
   myFunction();
 });
 
@@ -36,6 +33,5 @@ us.addEventListener("click", () => {
   setLang("US");
   userNameInput.placeholder = "Username";
   pwInput.placeholder = "Password";
-  rePWInput.placeholder = "Confirm your password";
   myFunction();
 });
