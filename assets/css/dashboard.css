@@ -1,32 +1,61 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+
+@media screen and (max-width: 1000px) {
+
+  main.col-10{
+    width: 100%;
+  }
+
+  .main-panel {
+    position: absolute;
+    top: 400px;
+  }
+
+  table{
+    table-layout:fixed;
+    width: 100%;
+  }
+
+  aside{
+    opacity: 0;
+  }
+
+  div .navbar{
+    opacity: 1;
+    margin-top: 95px;
+    z-index: 100;
+  }
+
+  footer{
+    opacity: 0;
+  }
 }
 
 /* Dashboard */
 
 body{
-  background-color: rgb(249, 249, 249);
+  background: rgb(249, 249, 249);
 }
 
-a{
+body a{
   text-decoration: none;
 }
 
 /*sidebar*/
 
-aside.sidebar {
-background: rgb(255, 255, 255);
-height: 100%;
-padding: 0;
-vertical-align: top;
-width: 280px;
-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
-margin-left: -12px;
-z-index: 999999 !important;
+.hide{
+  opacity: 0;
 }
+
+aside.sidebar {
+  background: rgb(255, 255, 255);
+  height: 110%;
+  padding: 0;
+  vertical-align: top;
+  width: 280px;
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  margin-left: -12px;
+  margin-top: -55px;
+  }
 
 aside.sidebar .sidebar-in{
   display: flex;
@@ -113,12 +142,13 @@ aside .aside-item{
 
 /*main content*/
 .main-panel {
-width: 98%;
-margin-left: 30px;
-display: flex;
-flex-direction: column;
-background-color: rgb(249, 249, 249);
-}
+  width: 98%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: none;
+  margin-top: -55px;
+  }
 
 .content-wrapper {
 background: rgb(249, 249, 249);
@@ -139,7 +169,7 @@ box-shadow: 0 1px 20px 0 rgb(236 242 251 / 68%);
 margin-bottom:30px;
 }
 
-.main-panel .content-wrapper .row .col-4 .card .card-items .icon{
+.main-panel .content-wrapper .row .col-lg-4 .card .card-items .icon{
 width: 56px;
 height: 56px;
 border-radius: 7px;
@@ -147,19 +177,19 @@ background: rgb(54, 160, 231);
 text-align: center;
 margin-right: 24px;
 }
-.main-panel .content-wrapper .row .col-4 .card .card-items .icon i{
+.main-panel .content-wrapper .row .col-lg-4 .card .card-items .icon i{
   color: #ffffff;
   font-size: 20px;
   margin-top: 18px;
   display: inline-block;
 }
 
-.main-panel .content-wrapper .row .col-4 .card .card-items{
+.main-panel .content-wrapper .row .col-lg-4 .card .card-items{
 display: flex;
 padding:30px 50px 30px 30px;
 }
 
-.main-panel .content-wrapper .row .col-4 .card .card-items .label{
+.main-panel .content-wrapper .row .col-lg-4 .card .card-items .label{
 font-weight: 300;
 font-size: 20px;
 }
@@ -189,4 +219,36 @@ color: rgb(54, 160, 231);
 background: #fafbfd;
 font-weight: 500;
 
+}
+/* Footer */
+
+footer li {
+  list-style: none;
+  margin: 10px 0px;
+}
+footer li a {
+  color: black;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-around;
+  background-color: #36a0e7;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-bottom:-100px;
+  z-index: 99999999;
+}
+.footer-word {
+  font-size: 15px;
+  margin-top: 10px;
+  color: black;
+  font-weight: 100;
+}
+#apple,
+#samsung,
+#xiaomi,
+#asus,
+#oppo,
+#nokia {
+  display: block;
 }
