@@ -23,7 +23,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/jquery.js"></script>
-    
+
 </head>
 
 <body>
@@ -49,7 +49,7 @@
                         <div class="cart">
                             <a href="#">
                                 <i class="fa-solid fa-cart-shopping cart-in"></i>
-                                <span id="CART" class="multilang"></span> 
+                                <span id="CART" class="multilang"></span>
                             </a>
                             <div class="cart-number"><span>0</span></div>
                         </div>
@@ -57,14 +57,14 @@
                         <div class="user-info">
                             <a href="#" class="user">
                                 <i class="fa-solid fa-user user-info-in"></i>
-                                <span id="MY_ACCOUNT" class="multilang">Tài khoản của tôi </span> 
+                                <span id="MY_ACCOUNT" class="multilang">Tài khoản của tôi </span>
                             </a>
                         </div>
 
                         <div class="news">
                             <a href="#">
                                 <i class="fa-solid fa-newspaper news-in"></i>
-                                <span id="MY_INFO" class="multilang">Thông Tin</span> 
+                                <span id="MY_INFO" class="multilang">Thông Tin</span>
                             </a>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                         <li class="nav-item phone">
                             <a class="nav-link active" aria-current="page" href="index.html">
                                 <i class="fa-solid fa-mobile"></i>
-                                <span id="MOBILE_PHONE" class="multilang">Điện Thoại</span> 
+                                <span id="MOBILE_PHONE" class="multilang">Điện Thoại</span>
                             </a>
                         </li>
                         <li class="nav-item laptop">
@@ -97,28 +97,28 @@
                         <li class="nav-item sales">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <i class="fa-solid fa-percent"></i>
-                                <span id="SALE" class="multilang">Khuyến Mãi</span> 
+                                <span id="SALE" class="multilang">Khuyến Mãi</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <span id="language">
-                <a href="#" onclick="setLang('VN')">
-                  <img width="30px" src="assets/img/icon_language/Flag_of_Vietnam.svg.webp" alt="">
+                <a href="#" class="vn">
+                    <img width="30px" src="assets/img/icon_language/Flag_of_Vietnam.svg.webp" alt="">
                 </a>
-                <a href="#" onclick="setLang('US')">
-                  <img width="30px" src="assets/img/icon_language/Grand-Union-Flag-January-1-1776.webp" alt="">
+                <a href="#" class="us">
+                    <img width="30px" src="assets/img/icon_language/Grand-Union-Flag-January-1-1776.webp" alt="">
                 </a>
             </span>
         </nav>
     </header>
     <div class="container-fluid form">
-        <div class="form-content container-md d-flex">
+        <div class="form-content container-sm d-flex">
             <div class="row">
 
-                <div class="form-login col-md-6">
-                    <div class="container-form">
+                <div class="form-login col-sm-6">
+                    <div class="container-form container-sm ">
                         <form name="sign-up" method="post">
                             <div class="header-form d-flex justify-content-between">
                                 <div class="title-login">
@@ -135,22 +135,28 @@
                             </div>
 
                             <div class="main-form">
-                                <label class="d-block" for="username"> <span id="USERNAME" class="multilang">TÊN ĐĂNG NHẬP:</span></label>
+                                <label class="d-block" for="username"> <span id="USERNAME" class="multilang">TÊN ĐĂNG
+                                        NHẬP:</span></label>
                                 <input type="text" id="username" name="username" placeholder="Tên đăng nhập">
-                                <label class="d-block" for="password"> <span id="PASSWORD" class="multilang">MẬT KHẨU: </span></label>
+                                <label class="d-block" for="password"> <span id="PASSWORD" class="multilang">MẬT KHẨU:
+                                    </span></label>
                                 <input type="password" id="password" name="password" placeholder="Mật khẩu">
-                                <label class="d-block" for="password"> <span id="PASSWORD_AGAIN" class="multilang">NHẬP LẠI MẬT KHẨU:</span></label>
+                                <label class="d-block" for="password"> <span id="PASSWORD_AGAIN" class="multilang">NHẬP
+                                        LẠI MẬT KHẨU:</span></label>
                                 <input type="password" id="re-password" name="re-password"
                                     placeholder="Nhập lại mật khẩu">
-                                <button type="submit" id="submit" class="btn-login btn btn-primary w-100"> <span id="REGISTER" class="multilang">ĐĂNG KÝ</span></button>
+                                <button type="submit" id="submit" class="btn-login btn btn-primary w-100"> <span
+                                        id="REGISTER" class="multilang">ĐĂNG KÝ</span></button>
                                 <div class="sign-up text-lg-center mt-3">
-                                    <p><span id="QUES1" class="multilang">Bạn đã có tài khoản? </span><a href="login.html"> <span id="LOGIN_NOW" class="multilang">Đăng Nhập Ngay</span></a></p>
+                                    <p><span id="QUES1" class="multilang">Bạn đã có tài khoản? </span><a
+                                            href="login.html"> <span id="LOGIN_NOW" class="multilang">Đăng Nhập
+                                                Ngay</span></a></p>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="card-img-login col-md-6 p-0">
+                <div class="card-img-login col-sm-6 p-0">
                     <img src="./assets/img/Login/banner-iphone-14-dat-hang-04-1-1024x1024.webp" alt=""
                         class="w-100 h-100">
                 </div>
