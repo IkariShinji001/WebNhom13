@@ -129,3 +129,13 @@ footer li a {
 .show:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 800px) {
+  .card-img-login {
+    display: none;
+  }
+  .form-login {
+    min-width: 350px !important;
+    margin-left: 35px;
+  }
+}

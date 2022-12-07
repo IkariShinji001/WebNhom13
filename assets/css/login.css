@@ -116,36 +116,13 @@ footer li a {
   color: black;
   font-weight: 100;
 }
-#apple,
-#samsung,
-#xiaomi,
-#asus,
-#oppo,
-#nokia {
-  display: block;
-}
 
-/* JAVA SCRIPT */
-/* .sp {
-  display: flex;
-  font-size: 20px;
-  font-family: monaco;
+@media screen and (max-width: 800px) {
+  .card-img-login {
+    display: none;
+  }
+  .form-login {
+    min-width: 350px !important;
+    margin-left: 35px;
+  }
 }
-.show {
-  position: absolute;
-  right: 47.5%;
-  padding: 5px 5px;
-  margin: 5px 0px;
-  font-weight: 300;
-  background-color: #fff;
-  border: 5px solid #fff;
-  border-radius: 10px;
-  opacity: 0.5;
-  transition: 0.25s;
-  background-color: hsla(292, 87%, 48%, 0.67);
-  color: white;
-  font-weight: 500;
-}
-.show:hover {
-  opacity: 1;
-} */
