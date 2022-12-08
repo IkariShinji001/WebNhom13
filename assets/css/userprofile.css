@@ -40,7 +40,7 @@
   flex-direction: column;
 }
 .btn-info-item {
-  border: none;
+  border: 2px solid #f0f0f0;
   text-align: left;
   padding-left: 10px;
   font-size: 20px;

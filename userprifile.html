@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin người dùng</title>
+    <title>Document</title>
     <link rel="stylesheet" href="assets/bootstrap-5.2.2-dist/css/bootstrap.css">
     <script src="assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/js/all.js">
     <link rel="stylesheet" href="assets/css/userprofile.css">
     <link rel="stylesheet" href="./assets/css/header.css">
-<<<<<<< HEAD
-=======
-    <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png.png">
->>>>>>> ff8fb7a2f8ebb644fd0337be51a1303604906fd5
 </head>
 
 <body>
@@ -73,8 +69,7 @@
                     <span class="navbar-toggler-icon" style="color:black"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarsExample07" style="background-color:black;
-                                                                                    z-index: 20;">
+                <div class="collapse navbar-collapse" id="navbarsExample07" style="background-color:black z-index: 20;">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item phone">
                             <a class="nav-link active" aria-current="page" href="index.html">
@@ -97,9 +92,9 @@
                     </ul>
                 </div>
             </div>
-            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <!-- begin -->
     <div class="container-fluid" style="margin-top: -90px">
         <div class="row begin">
@@ -234,11 +229,17 @@
             </div>
         </div>
     </div>
-    </main>
+</main>
 </body>
 <script src="assets/js/userprofile.js"></script>
 <script src="./assets/js/user.js"></script>
 <script>
+     var address=document.querySelector('.address');
+  var pay=document.querySelector('.pay');
+  var order=document.querySelector('.order');
+  pay.style.display="none";
+      address.style.display="none";
+      order.style.display="none";
     function loadcartNumbers() {
         let productNumbers = localStorage.getItem("cartNumbers");
         if (productNumbers) { document.querySelector(".cart-number span").textContent = productNumbers; }

@@ -47,3 +47,46 @@ if (localStorage.getItem("userInfo") != undefined) {
   userPhone1.textContent = "Vui lòng mua hàng";
   userAddress1.textContent = "Vui lòng mua hàng";
 }
+function Change_op(type)
+{
+  var active_btn=document.getElementsByClassName("btn-info-item");
+ for(var i=0;i<active_btn.length;i++)
+ {
+  active_btn[i].style.border="2px solid #f0f0f0"; }
+  var info=document.querySelector('.profile');
+  var address=document.querySelector('.address');
+  var pay=document.querySelector('.pay');
+  var order=document.querySelector('.order');
+  switch (type) {
+    case "info":
+      active_btn[0].style.border="2px solid #000";
+      info.style.display="block";
+      pay.style.display="none";
+      address.style.display="none";
+      order.style.display="none";
+      break;
+    case "pay":
+      active_btn[3].style.border="2px solid #000";
+      pay.style.display="block";
+      info.style.display="none";
+      address.style.display="none";
+      order.style.display="none";
+      break;
+    case "order":
+      active_btn[1].style.border="2px solid #000";
+      order.style.display="block";
+      info.style.display="none";
+      address.style.display="none";
+      pay.style.display="none";
+      break;
+    case "address":
+      active_btn[2].style.border="2px solid #000";
+      order.style.display="none";
+      info.style.display="none";
+      address.style.display="block";
+      pay.style.display="none";
+      break;
+  
+  
+  }
+}
