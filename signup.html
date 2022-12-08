@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="./assets/css/responsive-product.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png.png">
     <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/jquery.js"></script>
+    <title>Đăng ký</title>
 
 </head>
 
@@ -47,9 +49,9 @@
 
                     <div class="col-md-4 text-end">
                         <div class="cart">
-                            <a href="shopping-cart.html">
+                            <a href="#">
                                 <i class="fa-solid fa-cart-shopping cart-in"></i>
-                                Giỏ hàng
+                                <span id="CART" class="multilang"></span>
                             </a>
                             <div class="cart-number"><span>0</span></div>
                         </div>
@@ -57,14 +59,14 @@
                         <div class="user-info">
                             <a href="#" class="user">
                                 <i class="fa-solid fa-user user-info-in"></i>
-                                Tài khoản của tôi
+                                <span id="MY_ACCOUNT" class="multilang">Tài khoản của tôi </span>
                             </a>
                         </div>
 
                         <div class="news">
                             <a href="#">
                                 <i class="fa-solid fa-newspaper news-in"></i>
-                                Thông tin
+                                <span id="MY_INFO" class="multilang">Thông Tin</span>
                             </a>
                         </div>
                     </div>
@@ -80,13 +82,12 @@
                     <span class="navbar-toggler-icon" style="color:black"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarsExample07" style="background-color:black;
-                                                                                    z-index: 20;">
+                <div class="collapse navbar-collapse" id="navbarsExample07" style="background-color:black;">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item phone">
                             <a class="nav-link active" aria-current="page" href="index.html">
                                 <i class="fa-solid fa-mobile"></i>
-                                <span>Điện thoại</span>
+                                <span id="MOBILE_PHONE" class="multilang">Điện Thoại</span>
                             </a>
                         </li>
                         <li class="nav-item laptop">
@@ -98,7 +99,7 @@
                         <li class="nav-item sales">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <i class="fa-solid fa-percent"></i>
-                                <span>Khuyến mãi</span>
+                                <span id="SALE" class="multilang">Khuyến Mãi</span>
                             </a>
                         </li>
                     </ul>

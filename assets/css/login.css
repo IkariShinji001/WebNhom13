@@ -123,6 +123,10 @@ footer li a {
   }
   .form-login {
     min-width: 350px !important;
-    margin-left: 35px;
+    margin-left: 23px;
   }
+}
+
+body a {
+  text-decoration: none !important;
 }

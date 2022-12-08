@@ -347,3 +347,7 @@ footer {
     margin-top: 120px !important;
   }
 }
+
+body a {
+  text-decoration: none !important;
+}

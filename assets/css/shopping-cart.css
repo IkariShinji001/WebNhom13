@@ -1,11 +1,11 @@
 @media screen and (max-width: 1000px) {
-  main.container .col-5{
+  main.container .col-5 {
     width: 100%;
   }
-  main.container .cking{
-    margin-left:-250vw;
+  main.container .cking {
+    margin-left: -250vw;
   }
-  }
+}
 
 * {
   margin: 0;
@@ -100,7 +100,6 @@ main.container .btn-checking {
   background-color: rgb(54, 160, 231);
   border-color: rgb(54, 160, 231);
   width: 150px;
-
 }
 
 tr.spacing > td {
@@ -122,8 +121,8 @@ footer li a {
   background-color: #36a0e7;
   margin-top: 50px;
   flex-wrap: wrap;
-  margin-bottom:-100px;
-  margin-top:160px;
+  margin-bottom: -100px;
+  margin-top: 160px;
 }
 .footer-word {
   font-size: 15px;
@@ -138,4 +137,8 @@ footer li a {
 #oppo,
 #nokia {
   display: block;
+}
+
+body a {
+  text-decoration: none !important;
 }
