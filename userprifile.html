@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/js/all.js">
     <link rel="stylesheet" href="assets/css/userprofile.css">
     <link rel="stylesheet" href="./assets/css/header.css">
-<<<<<<< HEAD
-=======
     <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png.png">
->>>>>>> 265d34bcc05c48f96d2af179b1a29d5cbf589dd6
 </head>
 
 <body>
@@ -96,9 +93,9 @@
                     </ul>
                 </div>
             </div>
-          </div>
+            </div>
         </nav>
-      </header>
+    </header>
     <!-- begin -->
     <div class="container-fluid" style="margin-top: -90px">
         <div class="row begin">
@@ -198,26 +195,22 @@
                             <div style="font-size: 15px;font-weight: 600;" class="col-lg-3">Tiền</div>
                             <div style="font-size: 15px;font-weight: 600;" class="col-lg-8">Giao dịch</div>
                         </div>
-                        <div class="row info-pay">
-                            <div class="col-lg-3">-123123 đ</div>
-                            <div class="col-lg-8">Samsung Galaxy S22 Ultra 5G</div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</main>
+    </main>
 </body>
 <script src="assets/js/userprofile.js"></script>
 <script src="./assets/js/user.js"></script>
 <script>
-     var address=document.querySelector('.address');
-  var pay=document.querySelector('.pay');
-  var order=document.querySelector('.order');
-  pay.style.display="none";
-      address.style.display="none";
-      order.style.display="none";
+    var address = document.querySelector('.address');
+    var pay = document.querySelector('.pay');
+    var order = document.querySelector('.order');
+    pay.style.display = "none";
+    address.style.display = "none";
+    order.style.display = "none";
     function loadcartNumbers() {
         let productNumbers = localStorage.getItem("cartNumbers");
         if (productNumbers) { document.querySelector(".cart-number span").textContent = productNumbers; }
