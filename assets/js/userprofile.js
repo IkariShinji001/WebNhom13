@@ -33,6 +33,8 @@ var userName1 = document.querySelector(".username");
 var userPhone1 = document.querySelector(".userphone");
 var userMail1 = document.querySelector(".usermail");
 var userAddress1 = document.querySelector(".useraddress");
+var boxAddress = document.querySelector(".box-address");
+var boxPhone = document.querySelector(".box-phone");
 
 if (localStorage.getItem("userInfo") != undefined) {
   var userInfo = localStorage.getItem("userInfo");
@@ -41,6 +43,8 @@ if (localStorage.getItem("userInfo") != undefined) {
   userMail1.textContent = userInfo[0].userMail;
   userPhone1.textContent = userInfo[0].userPhone;
   userAddress1.textContent = userInfo[0].address;
+  boxAddress.textContent = userInfo[0].address;
+  boxPhone.textContent = userInfo[0].userPhone;
 } else {
   userName1.textContent = "Vui lòng mua hàng";
   userMail1.textContent = "Vui lòng mua hàng";
