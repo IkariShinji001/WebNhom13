@@ -164,7 +164,6 @@ const productData = getListPhoneData.find((product) => {
 });
 
 var titleFav = document.querySelector(".title-fav");
-
 titleFav.innerHTML = getProductUserChoose;
 
 var nameTitleProduct = document.querySelector(".name-product");
