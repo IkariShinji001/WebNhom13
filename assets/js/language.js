@@ -1,7 +1,6 @@
 function setLang(code) {
   window.localStorage.setItem("lang", code);
 }
-
 function getLang() {
   if (typeof localStorage.getItem("lang") === null) {
     window.localStorage.setItem("lang", "VN");

@@ -569,16 +569,15 @@ function Show(type) {
   `;
       list1.appendChild(item);
     }
-    var products = document.querySelectorAll(".products");
-    products.forEach((product) => {
-      product.addEventListener("click", () => {
-        var parentDiv = product.parentElement;
-        var nameProduct =
-          parentDiv.querySelector(".name-item-font").textContent;
-        localStorage.setItem("nameProduct", nameProduct);
-      });
-    });
   }
+  var products = document.querySelectorAll(".products");
+  products.forEach((product) => {
+    product.addEventListener("click", () => {
+      var parentDiv = product.parentElement;
+      var nameProduct = parentDiv.querySelector(".name-item-font").textContent;
+      localStorage.setItem("nameProduct", nameProduct);
+    });
+  });
 }
 
 window.onload=Render();
@@ -633,21 +632,40 @@ function ChangeList(type) {
     `;
         list1.appendChild(item);
       }
-      var products = document.querySelectorAll(".products");
-      products.forEach((product) => {
-        product.addEventListener("click", () => {
-          var parentDiv = product.parentElement;
-          var nameProduct =
-            parentDiv.querySelector(".name-item-font").textContent;
-          localStorage.setItem("nameProduct", nameProduct);
-        });
-      });
     }
 
     All();
   } else {
     Show(type);
   }
+
+  var addCartBtns = document.querySelectorAll(".add-cart");
+
+  addCartBtns.forEach((addCartBtn) => {
+    addCartBtn.addEventListener("click", () => {
+      var div = addCartBtn.parentElement.parentElement;
+      var name = div.querySelector(".name-item-font").textContent;
+      var found = Phone.find((phone) => {
+        return phone.name == name;
+      });
+      addCart(found.id);
+      toast({
+        title: "Success",
+        msg: `Đã thêm  <strong> ${found.name}</strong> vào giỏ hàng!`,
+        type: "success",
+        duration: 3000,
+      });
+    });
+  });
+
+  var products = document.querySelectorAll(".products");
+  products.forEach((product) => {
+    product.addEventListener("click", () => {
+      var parentDiv = product.parentElement;
+      var nameProduct = parentDiv.querySelector(".name-item-font").textContent;
+      localStorage.setItem("nameProduct", nameProduct);
+    });
+  });
 }
 
 function XemThem(type) {
@@ -698,15 +716,6 @@ function XemThem(type) {
       </a>
 `;
       list1.appendChild(item);
-      var products = document.querySelectorAll(".products");
-      products.forEach((product) => {
-        product.addEventListener("click", () => {
-          var parentDiv = product.parentElement;
-          var nameProduct =
-            parentDiv.querySelector(".name-item-font").textContent;
-          localStorage.setItem("nameProduct", nameProduct);
-        });
-      });
     }
   } else {
     btn_hidden.textContent = xemthem;
@@ -766,8 +775,16 @@ function XemThem(type) {
     document.documentElement.scrollTop = 0;
   }
 
+  var products = document.querySelectorAll(".products");
+  products.forEach((product) => {
+    product.addEventListener("click", () => {
+      var parentDiv = product.parentElement;
+      var nameProduct = parentDiv.querySelector(".name-item-font").textContent;
+      localStorage.setItem("nameProduct", nameProduct);
+    });
+  });
   var addCartBtns = document.querySelectorAll(".add-cart");
-  console.log(addCartBtns);
+
   addCartBtns.forEach((addCartBtn) => {
     addCartBtn.addEventListener("click", () => {
       var div = addCartBtn.parentElement.parentElement;

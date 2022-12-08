@@ -1,7 +1,3 @@
-const productLocation = () => {
-  window.location = "product.html";
-};
-
 const loginLocation = () => {
   window.location = "login.html";
 };

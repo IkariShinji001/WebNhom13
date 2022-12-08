@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@900&family=Oswald:wght@600&family=Quicksand:wght@300&family=Roboto:wght@100;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@900&family=Oswald:wght@600&family=Quicksand:wght@300&family=Roboto:wght@100;300;400;500&display=swap");
 
 body {
   background-image: linear-gradient(
@@ -10,8 +10,8 @@ body {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-}  
+  font-family: "Roboto", sans-serif;
+}
 /* Carousesl */
 .size-carousel {
   width: 1200px;
@@ -61,8 +61,7 @@ body {
 .box-item:hover {
   padding-bottom: 10px;
   border: 1px solid #ccc;
- border-radius: 10px;
- 
+  border-radius: 10px;
 }
 .name-item-font {
   font-size: 18px;
@@ -140,8 +139,8 @@ footer li {
 footer li a {
   color: black;
 }
-.footer-phone{
-color: red;
+.footer-phone {
+  color: red;
 }
 footer {
   margin-top: 80px;
@@ -166,39 +165,36 @@ footer {
   font-size: 20px;
   font-family: monaco;
 }
-#changetype{
+#changetype {
   display: flex;
   justify-content: center;
 }
-.show{
- padding: 5px 5px;
- margin: 5px 0px;
- font-weight: 300;
- background-color: #fff;
- border: 5px solid #fff;
- border-radius: 10px;
+.show {
+  padding: 5px 5px;
+  margin: 5px 0px;
+  font-weight: 300;
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 10px;
   opacity: 0.5;
   transition: 0.25s;
-width: 140px;
-font-size: 15px;
-margin-top: 10px;
-box-shadow: inset 0 0 0 0  rgb(65, 219, 224);
-transition: all 0.5s ease;
+  width: 140px;
+  font-size: 15px;
+  margin-top: 10px;
+  box-shadow: inset 0 0 0 0 rgb(65, 219, 224);
+  transition: all 0.5s ease;
 }
 .show:hover {
   opacity: 1;
   transform: scale(1.05);
   box-shadow: inset 200px 0 0 0 rgb(65, 219, 224);
-  border: 5px solid  rgb(65, 219, 224);
+  border: 5px solid rgb(65, 219, 224);
   color: #fff;
   font-weight: 700;
-  
- 
 }
 /* reponsive */
 /* Danh cho Mobile */
-@media only screen and (max-width: 739px)
-{
+@media only screen and (max-width: 739px) {
   .listItem {
     display: flex;
     flex-wrap: wrap;
@@ -207,38 +203,38 @@ transition: all 0.5s ease;
     padding-top: 1px;
     padding-bottom: 1px;
   }
-  .box-item{
+  .box-item {
     width: 50%;
     height: 100%;
   }
-  .box-item img{
+  .box-item img {
     width: 80%;
   }
-  .name-item-font{
+  .name-item-font {
     font-size: 0.625em;
   }
   .cost-after_sales {
-    font-size:  0.625em;
+    font-size: 0.625em;
     padding: 0.3125em;
     width: 50%;
   }
-  .cost-before_sales{
-    font-size:  0.625em;
+  .cost-before_sales {
+    font-size: 0.625em;
   }
-  .cost{
+  .cost {
     flex-direction: column;
   }
-  .about-item{
-    font-size:0.625em ;
+  .about-item {
+    font-size: 0.625em;
   }
-  .btn-item{
+  .btn-item {
     display: none;
   }
-  .sales-bank img{
+  .sales-bank img {
     width: 20%;
     height: 3.125em;
   }
-  .show{
+  .show {
     background-color: red;
     border: none;
     opacity: 1;
@@ -246,15 +242,14 @@ transition: all 0.5s ease;
   }
   /* footer */
   footer li {
-
     list-style: none;
     margin: 10px 0px;
   }
   footer li a {
     color: black;
   }
-  .footer-phone{
-  color: red;
+  .footer-phone {
+    color: red;
   }
   footer {
     margin-top: 20px;
@@ -275,43 +270,43 @@ transition: all 0.5s ease;
   }
 }
 
-@media only screen and (min-width: 740px) and (max-width: 1024px)  {
-  .listItem{
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+  .listItem {
     height: 100%;
   }
-  .box-item{
+  .box-item {
     width: 33%;
     height: 100%;
   }
-  .box-item img{
+  .box-item img {
     width: 70%;
   }
-  .name-item-font{
+  .name-item-font {
     font-size: 0.625em;
   }
   .cost-after_sales {
-    font-size:  0.625em;
+    font-size: 0.625em;
     padding: 0.3125em;
     width: 70%;
   }
-  .cost-before_sales{
-    font-size:  0.625em;
+  .cost-before_sales {
+    font-size: 0.625em;
   }
-  .cost{
+  .cost {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .about-item{
-    font-size:0.625em ;
+  .about-item {
+    font-size: 0.625em;
   }
-  .btn-item{
+  .btn-item {
     display: none;
   }
-  .sales-bank img{
+  .sales-bank img {
     width: 20%;
     height: 3.125em;
   }
-  .show{
+  .show {
     background-color: red;
     border: none;
     opacity: 1;
@@ -319,15 +314,14 @@ transition: all 0.5s ease;
   }
   /* footer */
   footer li {
-
     list-style: none;
     margin: 10px 0px;
   }
   footer li a {
     color: black;
   }
-  .footer-phone{
-  color: red;
+  .footer-phone {
+    color: red;
   }
   footer {
     margin-top: 80px;
@@ -345,5 +339,11 @@ transition: all 0.5s ease;
     margin-top: 10px;
     color: black;
     font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container.slider {
+    margin-top: 120px !important;
   }
 }
