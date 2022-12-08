@@ -16,7 +16,6 @@ function myFunction() {
       .attr("title", labels[obj.id][lang]);
   });
 }
-
 var vn = document.querySelector(".vn");
 var us = document.querySelector(".us");
 var userNameInput = document.querySelector("#username");

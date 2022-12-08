@@ -1,7 +1,5 @@
-
 @media screen and (max-width: 1000px) {
-
-  main.col-10{
+  main.col-10 {
     width: 100%;
   }
 
@@ -10,39 +8,39 @@
     top: 400px;
   }
 
-  table{
-    table-layout:fixed;
+  table {
+    table-layout: fixed;
     width: 100%;
   }
 
-  aside{
+  aside {
     opacity: 0;
   }
 
-  div .navbar{
+  div .navbar {
     opacity: 1;
     margin-top: 95px;
     z-index: 100;
   }
 
-  footer{
+  footer {
     opacity: 0;
   }
 }
 
 /* Dashboard */
 
-body{
+body {
   background: rgb(249, 249, 249);
 }
 
-body a{
-  text-decoration: none;
+body a {
+  text-decoration: none !important;
 }
 
 /*sidebar*/
 
-.hide{
+.hide {
   opacity: 0;
 }
 
@@ -55,88 +53,88 @@ aside.sidebar {
   box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
   margin-left: -12px;
   margin-top: -55px;
-  }
+}
 
-aside.sidebar .sidebar-in{
+aside.sidebar .sidebar-in {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-aside div .user-pic{
+aside div .user-pic {
   width: 50px;
-  height:50px;
+  height: 50px;
   border-radius: 50%;
   display: inline-flex;
   margin: 20px 10px 20px 30px;
 }
 
-  aside div .name{
-    display: inline-flex;
-    position: absolute;
-    margin-top:25px;
-  }
+aside div .name {
+  display: inline-flex;
+  position: absolute;
+  margin-top: 25px;
+}
 
-  aside div .email{
-    display: inline-flex;
-    position: absolute;
-    font-size: 11px;
-    margin-top:50px;
-  }
+aside div .email {
+  display: inline-flex;
+  position: absolute;
+  font-size: 11px;
+  margin-top: 50px;
+}
 
-aside .menu-icon{
-  margin-right:20px;
+aside .menu-icon {
+  margin-right: 20px;
   font-size: 15px;
-  color:black;
-  margin-left:20px;
+  color: black;
+  margin-left: 20px;
 }
 
-    aside .menu-icon-active{
-      margin-right:20px;
-      font-size: 15px;
-      color: rgb(54, 160, 231);
-      margin-left:20px;
-    }
-
-aside .tab-name{
-  color:black;
+aside .menu-icon-active {
+  margin-right: 20px;
+  font-size: 15px;
+  color: rgb(54, 160, 231);
+  margin-left: 20px;
 }
 
-    aside .tab-name-active{
-      color: rgb(54, 160, 231);
-      font-weight:600;
-    }
+aside .tab-name {
+  color: black;
+}
 
-    aside .tab-name:hover{
-      font-weight: 600;
-      cursor: pointer;
-    }
+aside .tab-name-active {
+  color: rgb(54, 160, 231);
+  font-weight: 600;
+}
 
-aside .tab-name:hover > .tab-name-child{
+aside .tab-name:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+aside .tab-name:hover > .tab-name-child {
   opacity: 1;
 }
 
-aside .tab-name-child{
+aside .tab-name-child {
   opacity: 0;
   font-weight: 400;
-  font-size:15px;
+  font-size: 15px;
   padding: 10px 0 20px 65px;
 }
 
-aside .tab-name-label{
-  color:black;
+aside .tab-name-label {
+  color: black;
 }
 
-  aside .tab-name-label:hover{
-    color:rgb(54, 160, 231);
-  }
+aside .tab-name-label:hover {
+  color: rgb(54, 160, 231);
+}
 
-aside .tab-active{
+aside .tab-active {
   background-color: rgba(0, 0, 0, 0.101);
 }
 
-aside .aside-item{
-  width:100%;
+aside .aside-item {
+  width: 100%;
   padding: 10px;
 }
 
@@ -148,77 +146,74 @@ aside .aside-item{
   flex-direction: column;
   background-color: none;
   margin-top: -55px;
-  }
-
-.content-wrapper {
-background: rgb(249, 249, 249);
-padding-bottom: 20px;
-margin: 0 auto;
 }
 
-.main-panel .content-wrapper .row .col-6 .page-header{
-font-weight: 600;
-font-size: 35px;
-margin-top:20px;
-margin-bottom: 20px;
+.content-wrapper {
+  background: rgb(249, 249, 249);
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.main-panel .content-wrapper .row .col-6 .page-header {
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .main-panel .content-wrapper .row .card {
-border: 1px solid #edf2fa;
-box-shadow: 0 1px 20px 0 rgb(236 242 251 / 68%);
-margin-bottom:30px;
+  border: 1px solid #edf2fa;
+  box-shadow: 0 1px 20px 0 rgb(236 242 251 / 68%);
+  margin-bottom: 30px;
 }
 
-.main-panel .content-wrapper .row .col-lg-4 .card .card-items .icon{
-width: 56px;
-height: 56px;
-border-radius: 7px;
-background: rgb(54, 160, 231);
-text-align: center;
-margin-right: 24px;
+.main-panel .content-wrapper .row .col-lg-4 .card .card-items .icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 7px;
+  background: rgb(54, 160, 231);
+  text-align: center;
+  margin-right: 24px;
 }
-.main-panel .content-wrapper .row .col-lg-4 .card .card-items .icon i{
+.main-panel .content-wrapper .row .col-lg-4 .card .card-items .icon i {
   color: #ffffff;
   font-size: 20px;
   margin-top: 18px;
   display: inline-block;
 }
 
-.main-panel .content-wrapper .row .col-lg-4 .card .card-items{
-display: flex;
-padding:30px 50px 30px 30px;
+.main-panel .content-wrapper .row .col-lg-4 .card .card-items {
+  display: flex;
+  padding: 30px 50px 30px 30px;
 }
 
-.main-panel .content-wrapper .row .col-lg-4 .card .card-items .label{
-font-weight: 300;
-font-size: 20px;
+.main-panel .content-wrapper .row .col-lg-4 .card .card-items .label {
+  font-weight: 300;
+  font-size: 20px;
 }
 
-.main-panel .content-wrapper .row .col .card .table{
-
-width: 100%;
-color: #212529;
-
+.main-panel .content-wrapper .row .col .card .table {
+  width: 100%;
+  color: #212529;
 }
 
 .main-panel .content-wrapper .row .col .card table th,
-.main-panel .content-wrapper .row .col .card table td  {
-border-top: 0;
-border-bottom-width: 1px;
-padding-left: 25px;
-padding-top: 20px;
-padding-bottom: 20px;
-padding-right:24.5px;
-vertical-align: bottom;
-text-align: inherit;
-display: table-cell;
+.main-panel .content-wrapper .row .col .card table td {
+  border-top: 0;
+  border-bottom-width: 1px;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24.5px;
+  vertical-align: bottom;
+  text-align: inherit;
+  display: table-cell;
 }
 
-.main-panel .content-wrapper .row .col .card table th{
-color: rgb(54, 160, 231);
-background: #fafbfd;
-font-weight: 500;
-
+.main-panel .content-wrapper .row .col .card table th {
+  color: rgb(54, 160, 231);
+  background: #fafbfd;
+  font-weight: 500;
 }
 /* Footer */
 
@@ -235,7 +230,7 @@ footer li a {
   background-color: #36a0e7;
   margin-top: 50px;
   flex-wrap: wrap;
-  margin-bottom:-100px;
+  margin-bottom: -100px;
   z-index: 99999999;
 }
 .footer-word {

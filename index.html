@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
   <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/toast.css">
+  <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png.png">
 </head>
 
 
@@ -95,69 +96,79 @@
       </div>
     </nav>
   </header>
-<main>
+  <main>
 
-  <!-- carousel -->
-  <div style="margin-top: 20px;" class="container slider">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+    <!-- carousel -->
+    <div style="margin-top: 20px;" class="container slider">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div style="border-radius: 10px;" class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/carousel/638040713192525532_F-C1_1200x300.webp" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel/638046535045623245_F-C1_1200x300.webp" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel/638049281946839606_F-C1_1200x300.webp" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div style="border-radius: 10px;" class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/carousel/638040713192525532_F-C1_1200x300.webp" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/carousel/638046535045623245_F-C1_1200x300.webp" class="d-block w-100" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/carousel/638049281946839606_F-C1_1200x300.webp" class="d-block w-100" alt="">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-  </div>
-  <!-- select-Item -->
-  
-  <div id="ChangePhone" data-aos="fade-right" class="container Box-select ">
-    <div class="select-Item">
-      <div class="slider-item" onclick="ChangeList('all')">
-        <img width="50px" height="60px" src="./assets/img/logoPhone/unnamed.png" alt="">
+    <!-- select-Item -->
+
+    <div id="ChangePhone" data-aos="fade-right" class="container Box-select ">
+      <div class="select-Item">
+        <div class="slider-item" onclick="ChangeList('all')">
+          <img width="50px" height="60px" src="./assets/img/logoPhone/unnamed.png" alt="">
+        </div>
+        <div class="slider-item" onclick="ChangeList('Iphone')">
+          <img src="logo-phone/637340490193124614_iPhone-Apple@2x.webp" alt="">
+        </div>
+        <div class="slider-item" onclick="ChangeList('Vivo')">
+          <img src="logo-phone/vivo-logo-220-220x48-3.png" alt="">
+        </div>
+        <div class="slider-item" onclick="ChangeList('Nokia')">
+          <img src="logo-phone/Nokia42-b_21.jpg" alt="">
+        </div>
+        <div class="slider-item" onclick="ChangeList('Oppo')">
+          <img src="logo-phone/OPPO42-b_5.jpg" alt="">
+        </div>
+        <div class="slider-item" onclick="ChangeList('Samsung')">
+          <img src="logo-phone/samsungnew-220x48-1.png" alt="">
+        </div>
+        <div class="slider-item" onclick="ChangeList('Xiaomi')">
+          <img src="logo-phone/xiaomi.webp" alt="">
+        </div>
+
       </div>
-      <div class="slider-item" onclick="ChangeList('Iphone')">
-        <img src="logo-phone/637340490193124614_iPhone-Apple@2x.webp" alt="">
-      </div>
-      <div class="slider-item" onclick="ChangeList('Vivo')">
-        <img src="logo-phone/vivo-logo-220-220x48-3.png" alt="">
-      </div>
-      <div class="slider-item" onclick="ChangeList('Nokia')">
-        <img src="logo-phone/Nokia42-b_21.jpg" alt="">
-      </div>
-      <div class="slider-item" onclick="ChangeList('Oppo')">
-        <img src="logo-phone/OPPO42-b_5.jpg" alt="">
-      </div>
-      <div class="slider-item" onclick="ChangeList('Samsung')">
-        <img src="logo-phone/samsungnew-220x48-1.png" alt="">
-      </div>
-      <div class="slider-item" onclick="ChangeList('Xiaomi')">
-        <img src="logo-phone/xiaomi.webp" alt="">
-      </div>
-  
     </div>
+    <!-- Danh sach san pham -->
+    <div id="Sort-Item" class=" container ">
+      <div id="item" data-aos="fade-up" class="listItem "></div>
+      <!-- Nút xem thêm -->
+      <div id="changetype">
+        <button onclick="XemThem('show-hidden')" id="btn-show" class="show">Xem thêm</button>
+      </div>
+    </div>
+<<<<<<< HEAD
   </div>
   <!-- Danh sach san pham -->
   <div id="Sort-Item" class=" container ">
@@ -174,6 +185,15 @@
   <div class="container"><img style="border-radius: 10px;"
       src="assets/img/banner/CleanShot-2021-08-18-at-12.30.45@2x-scaled.jpg" width="100%" alt=""></div>
 </main>
+=======
+
+    <script>
+      AOS.init();
+    </script>
+    <div class="container"><img style="border-radius: 10px;"
+        src="assets/img/banner/CleanShot-2021-08-18-at-12.30.45@2x-scaled.jpg" width="100%" alt=""></div>
+  </main>
+>>>>>>> ff8fb7a2f8ebb644fd0337be51a1303604906fd5
 
 
   <footer>

@@ -171,3 +171,7 @@
   background-color: bisque;
   border-radius: 5px;
 }
+
+body a {
+  text-decoration: none !important;
+}
