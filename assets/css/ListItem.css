@@ -51,7 +51,7 @@ body {
 }
 .box-item {
   background-color: #fff;
-  height: 460px;
+  height: 100%;
   width: 25%;
   padding: 12px;
   vertical-align: top;
@@ -106,7 +106,7 @@ body {
   color: #fff;
   border: none;
   transition: all 0.3s ease;
-  display: none;
+  visibility: hidden;
 }
 .phone {
   display: flex;
@@ -118,7 +118,7 @@ body {
 }
 
 div.box-item:hover .btn-buy {
-  display: block;
+  visibility: visible;
 }
 div.box-item:hover .phone {
   transform: scale(1.1);
@@ -169,7 +169,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-.show {
+.show_xemthem {
   padding: 5px 5px;
   margin: 5px 0px;
   font-weight: 300;
@@ -184,7 +184,7 @@ footer {
   box-shadow: inset 0 0 0 0 rgb(65, 219, 224);
   transition: all 0.5s ease;
 }
-.show:hover {
+.show_xemthem:hover {
   opacity: 1;
   transform: scale(1.05);
   box-shadow: inset 200px 0 0 0 rgb(65, 219, 224);
