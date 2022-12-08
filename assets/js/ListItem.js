@@ -581,7 +581,7 @@ function Show(type) {
   }
 }
 
-Render();
+window.onload=Render();
 // Chọn loại sản phẩm
 function ChangeList(type) {
   var btn_hidden = document.getElementById("btn-show");
@@ -645,25 +645,19 @@ function ChangeList(type) {
     }
 
     All();
-    border_box();
   } else {
     Show(type);
   }
 }
-function border_box() {
-  var hide = document.getElementsByClassName("box-item");
-  hide[0].style.borderTopLeftRadius = "10px";
-  hide[3].style.borderTopRightRadius = "10px";
-}
-border_box();
 
 function XemThem(type) {
+  Hide();
   var btn_hidden = document.getElementById("btn-show");
   const xemthem = "Xem thêm";
   if (btn_hidden.textContent.toLowerCase().includes(xemthem.toLowerCase())) {
     btn_hidden.textContent = "Thu gọn";
     var list1 = document.getElementById("item");
-    for (var i = 12; i < Phone.length; i++) {
+    for (var i = 0; i < Phone.length; i++) {
       var item = document.createElement("div");
       item.classList.add("col-lg-3");
       item.classList.add("box-item");
@@ -716,9 +710,57 @@ function XemThem(type) {
     }
   } else {
     btn_hidden.textContent = xemthem;
-    var hide = document.getElementsByClassName("box-item");
-    for (var i = 12; i < hide.length; i++) {
-      hide[i].style.display = "none";
+    var list1 = document.getElementById("item");
+    for (var i = 0; i < 12; i++) {
+      var item = document.createElement("div");
+      item.classList.add("col-lg-3");
+      item.classList.add("box-item");
+      item.innerHTML = `
+      <a class="products" href="product.html">
+      <div class="phone">
+        <img class="img-item" src="${Phone[i].image}" alt="">
+      </div>
+      <div class="name-item">
+        <a style="text-decoration: none;" class="name-item-font" href="product.html">${Phone[i].name}</a>
+      </div>
+      <div class="cost">
+        <div class="cost-after_sales">
+        ${Phone[i].cost_after} đ
+        </div>
+        <div class="cost-before_sales">
+        <del>${Phone[i].cost_before} đ</del>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="chip-screen">
+          <p style="margin:0px 10px"><i class="fa-solid fa-microchip"></i>${Phone[i].cpu}</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-mobile-screen"></i> ${Phone[i].screen}</p>
+        </div>
+        <div class="ram">
+          <p style="margin:0px 10px"><i class="fa-solid fa-memory"></i> ${Phone[i].ram}</p>
+          <p style="margin:0px 10px"><i class="fa-solid fa-hard-drive"></i>${Phone[i].memory}</p>
+        </div>
+        <div class="sales-bank">
+        <img width="40px" height="40px" src="assets/img/iconBank/mbbank1.jpg" class="rounded-circle" alt="Cinque Terre">
+        <img width="40px" height="40px" src="assets/img/iconBank/zalopay.png" class="rounded-circle" alt="Cinque Terre">
+        <img width="40px" height="40px" src="assets/img/iconBank/bidv.png" class="rounded-circle" alt="Cinque Terre">
+        </div>
+      </div>
+      <div class="btn-item">
+        <button class="btn-buy add-cart">MUA NGAY</button>
+      </div>
+      </a>
+`;
+      list1.appendChild(item);
+      var products = document.querySelectorAll(".products");
+      products.forEach((product) => {
+        product.addEventListener("click", () => {
+          var parentDiv = product.parentElement;
+          var nameProduct =
+            parentDiv.querySelector(".name-item-font").textContent;
+          localStorage.setItem("nameProduct", nameProduct);
+        });
+      });
     }
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
