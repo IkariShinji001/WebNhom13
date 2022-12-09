@@ -1,54 +1,54 @@
-
 * {
   margin: 0;
-  padding: 0;@font-face {
-    font-family: 'Lexend';
+  padding: 0;
+  @font-face {
+    font-family: "Lexend";
     font-style: normal;
     font-weight: 900;
     font-display: swap;
     src: url(/WebNhom13/assets/fonts/Lexend-Regular.ttf);
   }
   @font-face {
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(/WebNhom13/assets/fonts/Oswald-Regular.ttf);
   }
   @font-face {
-    font-family: 'Quicksand';
+    font-family: "Quicksand";
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url(/WebNhom13/assets/fonts/Quicksand-Regular.ttf)
+    src: url(/WebNhom13/assets/fonts/Quicksand-Regular.ttf);
   }
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 100;
     font-display: swap;
-    src: url(/WebNhom13/assets/fonts/Roboto-Regular.ttf)
+    src: url(/WebNhom13/assets/fonts/Roboto-Regular.ttf);
   }
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url(/WebNhom13/assets/fonts/Roboto-Regular.ttf)
+    src: url(/WebNhom13/assets/fonts/Roboto-Regular.ttf);
   }
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/WebNhom13/assets/fonts/Roboto-Regular.ttf)
+    src: url(/WebNhom13/assets/fonts/Roboto-Regular.ttf);
   }
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url(/WebNhom13/assets/fonts/Roboto-Regular.ttf)
+    src: url(/WebNhom13/assets/fonts/Roboto-Regular.ttf);
   }
   font-family: "Roboto", sans-serif;
 }
@@ -93,6 +93,7 @@ header .title {
   font-size: 35px;
   color: rgb(255, 255, 255);
   margin-left: 10px;
+  font-weight: 800;
 }
 
 header .title:hover {
