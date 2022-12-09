@@ -5,6 +5,14 @@
   main.container .cking {
     margin-left: -250vw;
   }
+
+  main{
+    font-size:10px;
+  }
+
+  main.container .cart-number button{
+    padding:0px;
+  }
 }
 
 * {
@@ -64,7 +72,7 @@ main.container table .discount {
 }
 
 main.container .col-7 .search-box {
-  width: 430px;
+  width: 340px;
   background-color: rgb(54, 160, 231);
   border-radius: 0px 5px 5px 0px;
   height: 40px;
@@ -76,7 +84,7 @@ main.container .col-7 .search-in {
   border: 1px solid black;
   line-height: 38px;
   color: rgb(0, 0, 0);
-  width: 390px;
+  width: 300px;
   font-size: 14px;
   font-family: "Quicksand", sans-serif;
   padding-left: 10px;
