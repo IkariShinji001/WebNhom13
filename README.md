@@ -1,6 +1,6 @@
 ## Bài tập lớn môn CT188 (Nhập môn lập trình Web), do 3 thành viên đóng góp và xây dựng.
 + Trần Thanh Duy
-+ Nguyễn Văn Nhí
++ Phạm Văn Nhí
 + Nguyễn Trần Châu Hải Phụng
 
 ### Các công cụ sử dụng: 
